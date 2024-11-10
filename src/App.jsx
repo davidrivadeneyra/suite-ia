@@ -8,7 +8,7 @@ function App() {
     <>
       <main className="main main-background">
 		<div className="main-inner-section">
-			<h1 className="lg:w-[636px] title-bigger pb-3 lg:pb-6 pt-24">We craft designs that grow your business</h1>
+			<h1 className="lg:w-[636px] title-bigger pb-3 lg:pb-6 pt-24">A design partner for your startup</h1>
 			<p className="lg:w-[364px] descriptions pb-8 color-descripcion">From impactful websites to full visual identity, we design for growth and results.</p>
 			<a href="mailto:hello@craftme.agency" className="btn mb-24">Let's craft a meeting</a>
 
