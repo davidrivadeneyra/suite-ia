@@ -8,6 +8,7 @@ const ScrollSlider = () => {
   const fisrtSlider = useRef(null);
   const secondSlider = useRef(null);
   const slider = useRef(null);
+  const animatiion = useRef(null)
   let xPercent = 0;
   let direction = -1;
 
