@@ -22,6 +22,8 @@
     .button-ghost {
         background-color: rgba(250, 250, 251, 0.09);
         border: 1px solid rgba(212, 219, 231, 0.20);
+        font-family: "Silka";
+        font-weight: 600;
     }
 
     .color-cream-900 {
@@ -40,7 +42,6 @@
     }
 
     .bg-logos {
-        border-radius: 48px;
         background: linear-gradient(180deg, #121821 0%, #0037FF 100%);
 
     }

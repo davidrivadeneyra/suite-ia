@@ -23,15 +23,15 @@ function App() {
 		
 		
 
-		<div className="main-inner bg-white rounded-[72px] flex flex-col lg:flex-row gap-0 lg:gap-[72px] ">
+		<div className="main-inner bg-white rounded-[40px] lg:rounded-[72px] flex flex-col lg:flex-row gap-0 lg:gap-[72px] ">
 			
-			<div className='m-6 bg-logos lg:w-full h-96 lg:h-auto'>
+			<div className='m-2 lg:m-6 bg-logos lg:w-full h-72 lg:h-auto rounded-[32px] lg:rounded-[48px]'>
 				<div className=''>
 				</div>
 			</div>
-			<div className='p-[72px] w-full'>
-				<h1 className="title-big pb-8">We help brands stand out online</h1>
-				<p className="descriptions pb-8 text-[#586578]">From impactful websites to full visual identity, we design for growth and results.</p>
+			<div className='p-8 lg:p-[72px] w-full'>
+				<h1 className="title-big pb-2 lg:pb-8">We help brands stand out online</h1>
+				<p className="descriptions pb-6 lg:pb-8 text-[#586578]">From impactful websites to full visual identity, we design for growth and results.</p>
 				<a href="mailto:hello@craftme.agency" className="button-regular">Get it touch</a>
 			</div>
 			
