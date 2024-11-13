@@ -18,6 +18,9 @@
     .button-color {
         background-color: var(--button);
     }
+    .color-white {
+        color: white;
+    }
 
     .button-ghost {
         background-color: rgba(250, 250, 251, 0.09);
@@ -125,7 +128,7 @@
     }
 
     .button-regular {
-        @apply button-base inline-block justify-center content-center text-sm/[90%] md:text-base/[90%] button-color p-4 rounded-2xl color-cream-900
+        @apply button-base inline-block justify-center content-center text-sm/[90%] md:text-base/[90%] button-color p-4 rounded-2xl color-white
     }
 
     .btn-small {
