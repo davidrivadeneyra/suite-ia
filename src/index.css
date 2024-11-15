@@ -108,7 +108,7 @@
 @layer components {
 
     .title-bigger {
-        @apply title text-[40px] md:text-[80px] tracking-tighter leading-[100%]
+        @apply title text-[48px] md:text-[80px] tracking-tighter leading-[100%]
     }
 
     .title-big {
