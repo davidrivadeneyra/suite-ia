@@ -20,25 +20,22 @@ Clona este repositorio en tu máquina local utilizando Git:
 - git clone git@github.com:davidrivadeneyra/atelopus.git
 
 
-2. Navegar al directorio del proyecto
+### 2. Navegar al directorio del proyecto
 Accede al directorio del proyecto clonado:
 - cd atelopus
 
-3. Instalar dependencias
+### 3. Instalar dependencias
 Instala las dependencias necesarias utilizando npm:
 - npm install
 
-4. Configurar el entorno (opcional)
-Si el proyecto requiere variables de entorno, crea un archivo .env en la raíz del proyecto y configura las variables necesarias. Consulta al equipo de desarrollo si necesitas más información.
-
-5. Ejecutar el servidor de desarrollo
+### 4. Ejecutar el servidor de desarrollo
 Inicia el servidor de desarrollo con el siguiente comando:
 - npm run dev
 
 Esto iniciará el servidor de desarrollo y podrás acceder al proyecto en tu navegador en la dirección http://localhost:5173 (por defecto).
 
 
-## Estructura del proyecto
+### Estructura del proyecto
 La estructura principal del proyecto es la siguiente:
 
 atelopus/
