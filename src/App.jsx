@@ -51,13 +51,16 @@ function App() {
 	</main>
 	
 	
-	<div className="h-96"></div>
-	<div className="h-96"></div>
-	<div className="h-96"></div>
-	<div className="h-96"></div>
-	<div className="h-96"></div>
-	<div className="h-96"></div>
-	<div className="h-96"></div>
+	<div className="h-96">
+		<div className="main-inner-section">
+				<h1 className="lg:w-[636px] title-bigger pb-3 lg:pb-6 pt-24">Aquí va otra sección</h1>
+				<p className="lg:w-[364px] descriptions pb-8 color-descripcion">From impactful websites to full visual identity, we design for growth and results.</p>
+				<MagnetButtons>
+					<a href="mailto:hello@craftme.agency" className="button-regular mb-24">Get it touch</a>
+				</MagnetButtons>
+			</div>
+	</div>
+	
 
     </>
   )
