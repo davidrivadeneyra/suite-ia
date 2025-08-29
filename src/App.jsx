@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 
 
 
@@ -7,8 +7,10 @@ function App() {
     <div className="px-10 pt-10">
 
       <header className="flex justify-between items-start pb-6 max-h-3xl">
+		{/**LOGO */}
+		<div></div>
         <h1 className="text-2xl font-bold">Atelopus</h1>
-			{/* NAVEGADOR TENGO*/}
+			{/* NAVEGADOR*/}
         <nav>
           <ul className="flex flex-col items-end gap-1">
             <li><a href="#about" className="text-gray-800 font-bold hover:text-orange-500">About</a></li>
@@ -21,14 +23,15 @@ function App() {
 	  <body>
 		<hero className="max-h-full">{/*HERO SECTION */}
 			<section className="grid grid-cols-1 md:grid-cols-[3fr_2fr_1fr] h-[348px] items-stretch">
-				<div className="flex flex-col gap-6 h-full bg-white mr-10">
+				<div className="flex flex-col gap-6 h-full mr-10">
 					<h2 className=" text-6xl font-bold leading-none">Detección de robos en tiempo real. Con IA</h2>
 					<p className="text-black">Convierte tus camaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.</p>	
 					<div className="flex gap-4">
-						<button className="bg-black text-white px-10 py-3 font-bold rounded-md border-2 ">
+						{/**BOTONES */}
+						<button className="bg-black text-white flex-[5] py-3 font-bold rounded-md border-2 ">
 							Solicitar demo
 						</button>
-						<button className="bg-white tex-black px-4 py-3 font-bold rounded-md border-2">
+						<button className="bg-white tex-black flex-[3] py-3 font-bold rounded-md border-2">
 							Ver cómo funciona
 						</button>
 					</div>
@@ -59,9 +62,9 @@ function App() {
 						  Funciona con tus cámaras actuales y puedes usarla en tu local o en la nube.
 					</p>
 				</div>
-				<div className="bg-white rounded-md border-2 flex-[1]">
-					<h2 className="font-bold text-4xl">¿Cómo te ayuda</h2>
-					<p>
+				<div className="bg-white rounded-md border-2 flex-[1] p-16 flex flex-col justify-end ">
+					<h2 className="font-bold text-2xl">¿Cómo te ayuda</h2>
+					<p className="">
 						Reduce pérdidas, mejora la seguridad y ahorra horas de revisión manual 
 						al convertir video en acciones.
 					</p>
@@ -176,6 +179,58 @@ function App() {
 					</table>
 				</div>
 			</section>
+			{/**INDUSTRIAS */}
+			<section>
+				<div></div>
+				<div>
+					<h3></h3>
+					<p></p>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+			</section>
+			{/**METRICAS */}
+			<section>
+				<div>
+					<h3></h3>
+					<p></p>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+				{/***ALGUNAS METRICAS */}
+				<div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+			</section>
+			{/**PREGUNTAS FRECUENTES */}
+			<section></section>
 		</main>
 	  </body>
     </div>
