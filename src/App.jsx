@@ -6,12 +6,12 @@ function App() {
   return (
     <div className="px-10 pt-10">
 
-      <header className="flex justify-between items-start pb-4">
+      <header className="flex justify-between items-start pb-6 max-h-3xl">
         <h1 className="text-2xl font-bold">Atelopus</h1>
-
+			{/* NAVEGADOR TENGO*/}
         <nav>
           <ul className="flex flex-col items-end gap-1">
-            <li><a href="#about" className="text-gray-800 font-bold hover:text-orange-500">Abaut</a></li>
+            <li><a href="#about" className="text-gray-800 font-bold hover:text-orange-500">About</a></li>
             <li><a href="#features" className="text-gray-800 font-bold hover:text-orange-500">Features</a></li>
             <li><a href="#benefits" className="text-gray-800 font-bold hover:text-orange-500">Benefits</a></li>
 			<li><a href="#contact" className="text-gray-800 font-bold hover:text-orange-500">Contact</a></li>
@@ -19,10 +19,10 @@ function App() {
         </nav>
       </header>
 	  <body>
-		<hero>
-			<section className="grid grid-cols-1 md:grid-cols-[550px,1.5fr,1fr] gap-8 items-stretch">
-				<div className="flex-col gap-6">
-					<h1 className=" text-5xl font-bold leading-nne">Detección de robos en tiempo real. Con IA</h1>
+		<hero className="max-h-full">{/*HERO SECTION */}
+			<section className="grid grid-cols-1 md:grid-cols-[3fr_2fr_1fr] h-[348px] items-stretch">
+				<div className="flex flex-col gap-6 h-full bg-white mr-10">
+					<h2 className=" text-6xl font-bold leading-none">Detección de robos en tiempo real. Con IA</h2>
 					<p className="text-black">Convierte tus camaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.</p>	
 					<div className="flex gap-4">
 						<button className="bg-black text-white px-10 py-3 font-bold rounded-md border-2 ">
@@ -33,15 +33,150 @@ function App() {
 						</button>
 					</div>
 				</div>
-				<div className="flex justify-center">
+				<div className=" ml-5 mr-5">
 					<img src="" alt="Hombre identificado robando" className="rounded-lg shadow-lg max-w-full"/>
 				</div>
-				<div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center border">
-					<p className="text-2xl font-bold mt-4">+12</p>
+				<div className="bg-white rounded-lg shadow-md p-8 flex flex-col justify-end border">
+					<p className="text-6xl font-bold mt-4">+12</p>
 					<p className="">Clientes satifechos</p>
 				</div>
 			</section>
+			{/**VIDEO */}
+			<video className="w-full h-full object-cover">
+  					
+  
+			</video>
 		</hero>
+		<main>
+			<section className="flex gap-11 max-h-max">
+				<div className="bg-black p-16  rounded-md border-2 flex-[2] flex flex-col gap-7">
+					<h2 className="font-bold text-4xl text-white">¿Qué es Atelopus?</h2>
+					<p className="text-white max-w-2xl">
+						Un framework modular de analítica de video con IA en tiempo real.
+						 Funciona sobre tus cámaras observándolas 24/7 y te envía alertas 
+						 claras con video cuando detecta movimientos o comportamientos sospechosos
+						  (por ejemplo: ocultar productos, merodeo, acceso no autorizado). 
+						  Funciona con tus cámaras actuales y puedes usarla en tu local o en la nube.
+					</p>
+				</div>
+				<div className="bg-white rounded-md border-2 flex-[1]">
+					<h2 className="font-bold text-4xl">¿Cómo te ayuda</h2>
+					<p>
+						Reduce pérdidas, mejora la seguridad y ahorra horas de revisión manual 
+						al convertir video en acciones.
+					</p>
+				</div>
+			</section>
+
+			<section>{/**COMO FUNCIONA */}
+				<div>
+					<h2></h2>
+					<span></span>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+				{/**Grid */}
+				<div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+			</section>
+			{/**BENEFICIOS */}
+			<section>
+				<div>
+					<h2></h2>
+					<p></p>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+				{/**GRID */}
+				<div className="grid grid-cols-2 bg-black p-6 mx-auto">
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+				</div>
+			</section>
+			{/** VERSIONES O FUNCIONAMIENTO*/}
+			<section>
+				<div>
+					<h2>
+
+					</h2>
+					<p></p>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+				{/**TABLA */}
+				<div>
+					<table>
+
+					</table>
+				</div>
+			</section>
+		</main>
 	  </body>
     </div>
   );
