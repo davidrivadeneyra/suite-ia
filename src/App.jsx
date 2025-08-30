@@ -1,67 +1,240 @@
-import { useState } from 'react'
-import ScrollSlider from './components/ScrollSlider'
-import MagnetButtons from './MagnetButton'
+
+
+
 
 function App() {
   return (
-    <>
-      <main className="main ">
+    <div className="px-10 pt-10">
 
-		<div className='main-background mb-36'>
-			<header>
-				<div className='main-inner-section h-20 flex justify-between items-center'>
-					<MagnetButtons>
-						<a href="/">
-							<img className='h-4 lg:h-6'  src="/assets/logo.svg" alt="" />
-						</a>
-					</MagnetButtons>
-					<MagnetButtons>
-						<a href="mailto:hello@craftme.agency" className="btn-small">Get it touch</a>
-					</MagnetButtons>
+      <header className="flex justify-between items-start pb-6 max-h-3xl">
+		{/**LOGO */}
+		<div></div>
+        <h1 className="text-2xl font-bold">Atelopus</h1>
+			{/* NAVEGADOR*/}
+        <nav>
+          <ul className="flex flex-col items-end gap-1">
+            <li><a href="#about" className="text-gray-800 font-bold hover:text-orange-500">About</a></li>
+            <li><a href="#features" className="text-gray-800 font-bold hover:text-orange-500">Features</a></li>
+            <li><a href="#benefits" className="text-gray-800 font-bold hover:text-orange-500">Benefits</a></li>
+			<li><a href="#contact" className="text-gray-800 font-bold hover:text-orange-500">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+	  <body>
+		<hero className="max-h-full">{/*HERO SECTION */}
+			<section className="grid grid-cols-1 md:grid-cols-[3fr_2fr_1fr] h-[348px] items-stretch">
+				<div className="flex flex-col gap-6 h-full mr-10">
+					<h2 className=" text-6xl font-bold leading-none">Detección de robos en tiempo real. Con IA</h2>
+					<p className="text-black">Convierte tus camaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.</p>	
+					<div className="flex gap-4">
+						{/**BOTONES */}
+						<button className="bg-black text-white flex-[5] py-3 font-bold rounded-md border-2 ">
+							Solicitar demo
+						</button>
+						<button className="bg-white tex-black flex-[3] py-3 font-bold rounded-md border-2">
+							Ver cómo funciona
+						</button>
+					</div>
 				</div>
-			</header>
-			<div className="main-inner-section">
-				<h1 className="lg:w-[636px] title-bigger pb-3 lg:pb-6 pt-24">A design partner for your startup</h1>
-				<p className="lg:w-[364px] descriptions pb-8 color-descripcion">From impactful websites to full visual identity, we design for growth and results.</p>
-				<MagnetButtons>
-					<a href="mailto:hello@craftme.agency" className="button-regular mb-24">Get it touch</a>
-				</MagnetButtons>
-			</div>
-			<ScrollSlider/>
-		</div>
-		
-		<div className="mx-6 md:mx-auto main-inner bg-white rounded-[40px] lg:rounded-[72px] flex flex-col lg:flex-row gap-0 lg:gap-[72px] ">
-			
-			<div className='m-2 lg:m-6 bg-logos lg:w-full h-72 lg:h-auto rounded-[32px] lg:rounded-[48px]'>
-				<div className=''>
+				<div className=" ml-5 mr-5">
+					<img src="" alt="Hombre identificado robando" className="rounded-lg shadow-lg max-w-full"/>
 				</div>
-			</div>
-			<div className='p-8 lg:p-[72px] w-full'>
-				<h1 className="title-big pb-2 lg:pb-8">We help brands stand out online</h1>
-				<p className="descriptions pb-6 lg:pb-8 text-[#586578]">From impactful websites to full visual identity, we design for growth and results.</p>
-				<MagnetButtons>
-					<a href="mailto:hello@craftme.agency" className="button-regular">Get it touch</a>
-				</MagnetButtons>
-			</div>
-			
-		</div>
+				<div className="bg-white rounded-lg shadow-md p-8 flex flex-col justify-end border">
+					<p className="text-6xl font-bold mt-4">+12</p>
+					<p className="">Clientes satifechos</p>
+				</div>
+			</section>
+			{/**VIDEO */}
+			<video className="w-full h-full object-cover">
+  					
+  
+			</video>
+		</hero>
+		<main>
+			<section className="flex gap-11 max-h-max">
+				<div className="bg-black p-16  rounded-md border-2 flex-[2] flex flex-col gap-7">
+					<h2 className="font-bold text-4xl text-white">¿Qué es Atelopus?</h2>
+					<p className="text-white max-w-2xl">
+						Un framework modular de analítica de video con IA en tiempo real.
+						 Funciona sobre tus cámaras observándolas 24/7 y te envía alertas 
+						 claras con video cuando detecta movimientos o comportamientos sospechosos
+						  (por ejemplo: ocultar productos, merodeo, acceso no autorizado). 
+						  Funciona con tus cámaras actuales y puedes usarla en tu local o en la nube.
+					</p>
+				</div>
+				<div className="bg-white rounded-md border-2 flex-[1] p-16 flex flex-col justify-end ">
+					<h2 className="font-bold text-2xl">¿Cómo te ayuda</h2>
+					<p className="">
+						Reduce pérdidas, mejora la seguridad y ahorra horas de revisión manual 
+						al convertir video en acciones.
+					</p>
+				</div>
+			</section>
 
-	</main>
-	
-	
-	<div className="h-96">
-		<div className="main-inner-section">
-				<h1 className="lg:w-[636px] title-bigger pb-3 lg:pb-6 pt-24">Aquí va otra sección</h1>
-				<p className="lg:w-[364px] descriptions pb-8 color-descripcion">From impactful websites to full visual identity, we design for growth and results.</p>
-				<MagnetButtons>
-					<a href="mailto:hello@craftme.agency" className="button-regular mb-24">Get it touch</a>
-				</MagnetButtons>
-			</div>
-	</div>
-	
+			<section>{/**COMO FUNCIONA */}
+				<div>
+					<h2></h2>
+					<span></span>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+				{/**Grid */}
+				<div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<span></span>
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+			</section>
+			{/**BENEFICIOS */}
+			<section>
+				<div>
+					<h2></h2>
+					<p></p>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+				{/**GRID */}
+				<div className="grid grid-cols-2 bg-black p-6 mx-auto">
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+					<div className="bg-green-500">
+						<span></span>
+						<h3></h3>
+					</div>
+				</div>
+			</section>
+			{/** VERSIONES O FUNCIONAMIENTO*/}
+			<section>
+				<div>
+					<h2>
 
-    </>
-  )
+					</h2>
+					<p></p>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+				{/**TABLA */}
+				<div>
+					<table>
+
+					</table>
+				</div>
+			</section>
+			{/**INDUSTRIAS */}
+			<section>
+				<div></div>
+				<div>
+					<h3></h3>
+					<p></p>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+			</section>
+			{/**METRICAS */}
+			<section>
+				<div>
+					<h3></h3>
+					<p></p>
+					<div>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+				{/***ALGUNAS METRICAS */}
+				<div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+					<div>
+						<h3></h3>
+						<p></p>
+					</div>
+				</div>
+			</section>
+			{/**PREGUNTAS FRECUENTES */}
+			<section></section>
+		</main>
+	  </body>
+    </div>
+  );
 }
 
 export default App
