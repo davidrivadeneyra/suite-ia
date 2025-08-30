@@ -30,8 +30,6 @@ function App() {
 			<ScrollSlider/>
 		</div>
 		
-		
-
 		<div className="mx-6 md:mx-auto main-inner bg-white rounded-[40px] lg:rounded-[72px] flex flex-col lg:flex-row gap-0 lg:gap-[72px] ">
 			
 			<div className='m-2 lg:m-6 bg-logos lg:w-full h-72 lg:h-auto rounded-[32px] lg:rounded-[48px]'>
