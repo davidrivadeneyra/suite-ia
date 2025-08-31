@@ -26,12 +26,12 @@ function App() {
 				<div className="flex flex-col gap-6 h-full md:col-span-2 md:col-start-1 md:row-start-1 lg:col-span-1 mb-9 pr-0 md:pr-0 lg:pr-5">
 					<h2 className=" text-6xl font-bold leading-none flex justify-start">Detección de robos en tiempo real. Con IA</h2>
 					<p className="text-black">Convierte tus camaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.</p>	
-					<div className="flex gap-4">
+					<div className="flex flex-col md:flex-row gap-4">
 						{/**BOTONES VER BIEN LOS TAMAÑOS FLEX[*]*/}
 						<button className="bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2 ">
 							Solicitar demo
 						</button>
-						<button className="bg-white tex-black md:felx-[1.5] lg:flex-[3] py-3 font-bold rounded-lg border-2">
+						<button className="bg-white tex-black md:flex-[1.5] lg:flex-[3] py-3 font-bold rounded-lg border-2">
 							Ver cómo funciona
 						</button>
 					</div>
