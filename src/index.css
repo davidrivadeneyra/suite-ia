@@ -9,7 +9,14 @@
     --color-description: #9DA1AC;
     --button: #006FFF;;
   }
-
+@theme {
+    --font-jk:'Plus Jakarta Sans';
+    --font-m:'Space Mono';
+}
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url();
+}
 @layer base {
     body {
         background-color: #E1EEFE; 
@@ -82,21 +89,6 @@
         border-radius: 8px;
     }
 
-    .title {
-        font-family: "Silka";
-        font-weight: 500;
-    }
-
-    .button-base {
-        font-family: "Silka";
-        font-weight: 600;
-    }
-
-
-    .paragraph {
-        font-family: "Silka";
-        font-weight: 400;
-    }
 
     .main-inner {
         margin: 0 auto;
