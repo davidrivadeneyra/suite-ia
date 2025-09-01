@@ -80,7 +80,7 @@ function App() {
 			
 			</section>
 			{/**MODULOS CLAVE */}
-			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-16 rounded-lg bg-white">
+			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-16 rounded-lg bg-white mb-16">
 				<div>
 					<h2 className="font-bold text-4xl">Módulos clave</h2>
 					<img/>
@@ -125,7 +125,7 @@ function App() {
 				</div>
 			</section>
 			{/**COMO FUNCIONA */}{/**Para no cambiar el comportamiento, se utilizo space */}
-			<section className="space-y-11">
+			<section className="space-y-11 mb-16">
 				<div className="flex flex-col md:pl-16 md:w-[443px] ">
 					<h2 className="font-bold text-4xl mb-2">Cómo funciona</h2>
 					<span className="mb-4">Breve descripción de la herramienta va aqui</span>
@@ -183,66 +183,25 @@ function App() {
   
 			</section>
 
-			
-
-			
-  {/**GRID DE NIVEL NOOB */}
-{/**<div className="grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 md:gap-x-6 md:gap-y-6 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-6 lg:gap-y-6 [&>*]:m-0">
-					<div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>1</span>
-						</div>
-						<p className="p-7 font-bold text-2xl w-4/5 leading-none">Conecta tus cámaras</p>
-					</div>
-					<div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>2</span>
-						</div>
-						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Edge analiza en tiempo real</p>
-					</div><div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>3</span>
-						</div>
-						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Reglas y listas</p>
-					</div><div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>4</span>
-						</div>
-						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Alertas adicionales</p>
-					</div><div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>5</span>
-						</div>
-						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Automación (puertas/rádio)</p>
-					</div><div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>6</span>
-						</div>
-						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Métricas & reportes</p>
-					</div>
-				</div> */}
-
 			{/**BENEFICIOS */}
-			<section>
-				<div>
-					<h2></h2>
-					<p></p>
-					<div>
-						<button></button>
-						<button></button>
+			<section className="bg-black rounded-lg">
+				<div className="flex flex-col md:pl-16 md:w-[443px] ">
+					<h2 className="font-bold text-4xl text-white mb-2">Beneficios</h2>
+					<span className="text-white mb-4">Breve descripción de la herramienta va aqui</span>
+					<div className="flex flex-col gap-2 md:flex-row ">
+						<button className="bg-green-600 text-white py-2 px-2 font-bold rounded-lg border-green-600 border-2 md:flex-[1.2]">
+							Solicitar demo
+						</button>
+						<button className="bg-white tex-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+							Ver cómo funciona
+						</button>
 					</div>
 				</div>
 				{/**GRID */}
-				<div className="grid grid-cols-2 bg-black p-6 mx-auto">
-					<div className="bg-green-500">
-						<span></span>
-						<h3></h3>
+				<div className="grid grid-cols-1  md:grid-cols-2 md:grid-rows-4 bg-black p-6 mx-auto gap-2">
+					<div className="bg-green-500 justify-items-start items-start  rounded-lg">
+						<span>1</span>
+						<h3>No cambias camaras</h3>
 					</div>
 					<div className="bg-green-500">
 						<span></span>
