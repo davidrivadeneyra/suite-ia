@@ -50,7 +50,7 @@ function App() {
 			</video>
 		</hero>
 		<main>
-			{/**ABOUT */}
+			{/**ABOUT VER PORSIACASO EL BOX-MODEL DEL RESPONSIVE*/}
 			<section className="flex gap-11 max-h-max flex-col lg:flex-row mb-16">
 				<div className="bg-black p-16  rounded-lg border-2 flex flex-col gap-7 lg:flex-[2.1]">
 					<h2 className="font-bold text-4xl text-white">¿Qué es Atelopus?</h2>
@@ -69,55 +69,120 @@ function App() {
 						al convertir video en acciones.
 					</p>
 				</div>
+			
+			
 			</section>
+			
+			<section>
+				<div>
 
-			<section>{/**COMO FUNCIONA */}
-				<div className="flex flex-col md:pl-16 md:w-[519px]">
-					<h2 className="font-bold text-4xl mb-2">¿Cómo funciona?</h2>
+				</div>
+				<div></div>
+			</section>
+			{/**COMO FUNCIONA */}{/**Para no cambiar el comportamiento, se utilizo space */}
+			<section className="space-y-11">
+				<div className="flex flex-col md:pl-16 md:w-[443px] ">
+					<h2 className="font-bold text-4xl mb-2">Cómo funciona</h2>
 					<span className="mb-4">Breve descripción de la herramienta va aqui</span>
-					<div className="flex flex-col gap-4 md:flex-row ">
-						<button className="bg-black text-white py-3 font-bold rounded-lg border-2 md:flex-[4] lg:flex-[5]">
+					<div className="flex flex-col gap-2 md:flex-row ">
+						<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
 							Solicitar demo
 						</button>
-						<button className="bg-white tex-black  py-3 font-bold rounded-lg border-2 md:flex-[1.5] lg:flex-[3]">
+						<button className="bg-white tex-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
 							Ver cómo funciona
 						</button>
 					</div>
 				</div>
-				{/**Grid */}
-				<div>
-					<div>
-						<span></span>
-						<h3></h3>
-						<p></p>
+				{/**GRID COMO FUNCIONA*/}
+				<div className="grid grid-cols-1 grid-rows-1 gap-y-8 md:grid-cols-2 md:grid-rows-3 md:gap-y-12 md:gap-x-12 lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-12 lg:gap-x-12 [&>*]:m-0">
+						{/**TARJETAS */}
+					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>1</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5 leading-none">Conecta tus cámaras</p>
 					</div>
-					<div>
-						<span></span>
-						<h3></h3>
-						<p></p>
-					</div>
-					<div>
-						<span></span>
-						<h3></h3>
-						<p></p>
-					</div>
-					<div>
-						<span></span>
-						<h3></h3>
-						<p></p>
-					</div>
-					<div>
-						<span></span>
-						<h3></h3>
-						<p></p>
-					</div>
-					<div>
-						<span></span>
-						<h3></h3>
-						<p></p>
+					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>2</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Edge analiza en tiempo real</p>
+					</div><div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>3</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Reglas y listas</p>
+					</div><div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>4</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Alertas adicionales</p>
+					</div><div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>5</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Automación (puertas/rádio)</p>
+					</div><div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>6</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Métricas & reportes</p>
 					</div>
 				</div>
+  
 			</section>
+
+			
+
+			
+  {/**GRID DE NIVEL NOOB */}
+{/**<div className="grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 md:gap-x-6 md:gap-y-6 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-6 lg:gap-y-6 [&>*]:m-0">
+					<div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>1</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5 leading-none">Conecta tus cámaras</p>
+					</div>
+					<div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>2</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Edge analiza en tiempo real</p>
+					</div><div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>3</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Reglas y listas</p>
+					</div><div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>4</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Alertas adicionales</p>
+					</div><div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>5</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Automación (puertas/rádio)</p>
+					</div><div className="lg:w-80 lg:h-48 md:w-72 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between p-7">
+							<span>icon</span>
+						<span>6</span>
+						</div>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Métricas & reportes</p>
+					</div>
+				</div> */}
+
 			{/**BENEFICIOS */}
 			<section>
 				<div>
