@@ -80,12 +80,12 @@ function App() {
 			
 			</section>
 			{/**MODULOS CLAVE */}
-			<section className="flex justify-between p-16 rounded-lg bg-white">
+			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-16 rounded-lg bg-white">
 				<div>
 					<h2 className="font-bold text-4xl">Módulos clave</h2>
 					<img/>
 				</div>
-				<div className="w-1/2">
+				<div className="lg:w-1/2">
 					
 					{/* Botón del acordeón */}
 					
