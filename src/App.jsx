@@ -1,7 +1,13 @@
 // Supports weights 200-800
 import '@fontsource-variable/plus-jakarta-sans';
 import '@fontsource/space-mono';
+
+import AccordionItem from "./components/AccordionItem";
+
+
 function App() {
+
+
   return (
     <div className="px-10 pt-10">
 
@@ -21,7 +27,8 @@ function App() {
         </nav>
       </header>
 	  <body>
-		<hero className="max-h-full mb-16">{/*HERO SECTION*/}
+		{/*HERO SECTION*/}
+		<hero className="max-h-full mb-16">
 			<section className="grid grid-cols-1 md:grid-cols-[1.8fr_1fr] md:grid-rows-2 lg:grid-cols-[2fr_1.3fr_1fr] lg:grid-rows-1 items-stretch mb-9 gap-4">{/** EN CELULAR 1 COLUMNA-EN TABLET 2 ROWS 2 COLS(PERO SOLO UN OBJETO EN LA PRIMERA COL) EN DESK 3 COLS*/}
 				<div className="flex flex-col gap-6 h-full md:col-span-2 md:col-start-1 md:row-start-1 lg:col-span-1 mb-9 pr-0 md:pr-0 lg:pr-5">
 					<h1 className=" text-6xl font-bold leading-none flex justify-start ">Detección de robos en tiempo real. Con IA</h1>
@@ -72,12 +79,50 @@ function App() {
 			
 			
 			</section>
-			
-			<section>
+			{/**MODULOS CLAVE */}
+			<section className="flex justify-between p-16 rounded-lg bg-white">
 				<div>
-
+					<h2 className="font-bold text-4xl">Módulos clave</h2>
+					<img/>
 				</div>
-				<div></div>
+				<div className="w-1/2">
+					
+					{/* Botón del acordeón */}
+					
+						<AccordionItem title="Robos en Tiendas (Retail Theft)">
+							<div className="flex justify-start gap-1">
+								<span>ICON</span>
+								<h3 className="font-bold ">Qué hace: </h3>
+							</div>
+							<p className="leading-none mb-4">Detecta comportamientos de hurto en piso y caja y notifica con video..</p>
+							<div className="flex justify-start gap-1">
+								<span>ICON</span>
+								<h3 className="font-bold ">Alertas Típicas: </h3>
+							</div>
+							<p className="leading-none mb-4">“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.</p>
+							<div className="flex justify-start gap-1">
+								<span>ICON</span>
+								<h3 className="font-bold ">Impacto: </h3>
+							</div>
+							<p className="leading-none mb-4">Menos merma y menos horas revisando grabaciones.</p>
+						</AccordionItem>
+						
+						<AccordionItem title="Reconocimiento facial (IA)">
+        					<p>Detecta rostros y los compara con bases de datos autorizadas.</p>
+						</AccordionItem>
+
+						<AccordionItem title="PH / Accesos y Perímetro">
+							<p>Control de accesos y monitoreo de perímetro con alertas en tiempo real.</p>
+						</AccordionItem>
+
+						<AccordionItem title="Merodeo (Loitering) en áreas sensibles">
+							<p>Detecta presencia prolongada en áreas críticas.</p>
+						</AccordionItem>
+
+						<AccordionItem title="LPR – Placas y Control de Vehículos">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+				</div>
 			</section>
 			{/**COMO FUNCIONA */}{/**Para no cambiar el comportamiento, se utilizo space */}
 			<section className="space-y-11">
