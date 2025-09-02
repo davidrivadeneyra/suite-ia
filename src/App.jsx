@@ -57,7 +57,7 @@ function App() {
 			</video>
 		</hero>
 		<main>
-			{/**ABOUT VER PORSIACASO EL BOX-MODEL DEL RESPONSIVE*/}
+			{/**ABOUT VER POR SIACASO EL BOX-MODEL DEL RESPONSIVE*/}
 			<section className=" flex gap-11 max-h-max flex-col lg:flex-row mb-16">
 				<div className="bg-black p-6 md:p-16  rounded-lg border-2 flex flex-col gap-7 lg:flex-[2.1]">
 					<h2 className="font-bold text-4xl text-white">¿Qué es Atelopus?</h2>
@@ -126,14 +126,14 @@ function App() {
 			</section>
 			{/**COMO FUNCIONA */}{/**Para no cambiar el comportamiento, se utilizo space */}
 			<section className="space-y-11 mb-16">
-				<div className="flex flex-col px-6 md:px-16 md:w-[443px] ">
+				<div className="flex flex-col ml-6 md:ml-16 box-border md:w-[443px] ">
 					<h2 className="font-bold text-4xl mb-5">Cómo funciona</h2>
 					<span className="mb-5">Breve descripción de la herramienta va aqui</span>
-					<div className="flex flex-col gap-2 md:flex-row ">
+					<div className="flex flex-col gap-4 md:flex-row ">
 						<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
 							Solicitar demo
 						</button>
-						<button className="bg-white tex-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+						<button className="bg-white text-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
 							Ver cómo funciona
 						</button>
 					</div>
@@ -184,8 +184,8 @@ function App() {
 			</section>
 
 			{/**BENEFICIOS */}
-			<section className=" bg-black rounded-lg">
-				<div className="flex flex-col px-6 md:px-16 pt-6 md:pt-16 md:w-[443px] ">
+			<section className=" bg-black rounded-lg mb-16">
+				<div className="flex flex-col mx-6 md:ml-16 pt-6 md:pt-16 md:w-[443px] ">
 					<h2 className="font-bold text-4xl text-white mb-5">Beneficios</h2>
 					<span className="text-white mb-5">Breve descripción de la herramienta va aqui</span>
 					<div className="flex flex-col gap-2 md:flex-row mb-10">
@@ -198,52 +198,59 @@ function App() {
 					</div>
 				</div>
 				{/**GRID */}
-				<div className="grid grid-cols-1  md:grid-cols-2 md:grid-rows-4 bg-black px-6 md:px-16 pb-6 mx-auto gap-2">
-					<div className="bg-green-500 md:min-w-[297px] min-h-[200px] lg:min-w-[520px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+				<div className="grid grid-cols-1 grid-rows-8 md:grid-cols-2 md:grid-rows-4 bg-black px-6 md:px-16 pb-6 mx-auto gap-4">
+					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
 						<span className="px-7 ">1</span>
 						
 						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
-					<div className="bg-green-500">
-						<span></span>
-						<h3></h3>
+					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+						<span className="px-7 ">1</span>
+						
+						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
-					<div className="bg-green-500">
-						<span></span>
-						<h3></h3>
+					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+						<span className="px-7 ">1</span>
+						
+						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
-					<div className="bg-green-500">
-						<span></span>
-						<h3></h3>
+					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+						<span className="px-7 ">1</span>
+						
+						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
-					<div className="bg-green-500">
-						<span></span>
-						<h3></h3>
+					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+						<span className="px-7 ">1</span>
+						
+						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
-					<div className="bg-green-500">
-						<span></span>
-						<h3></h3>
+					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+						<span className="px-7 ">1</span>
+						
+						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
-					<div className="bg-green-500">
-						<span></span>
-						<h3></h3>
+					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+						<span className="px-7 ">1</span>
+						
+						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
-					<div className="bg-green-500">
-						<span></span>
-						<h3></h3>
+					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+						<span className="px-7 ">1</span>
+						
+						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
 				</div>
 			</section>
-			{/** VERSIONES O FUNCIONAMIENTO*/}
-			<section>
-				<div>
-					<h2 className="font-bold text-4xl mb-5">Versiones y opciones de funcionamiento</h2>
-					<span className="mb-5">Breve descripción de la herramienta va aqui</span>
+			{/** VERSIONES O FUNCIONAMIENTO FALTA HACER LA TABLA*/}
+			<section className="bg-white flex flex-col items-center mb-16">
+				<div className="flex flex-col max-w-[632px]">
+					<h2 className="font-bold text-4xl mb-5 text-center">Versiones y opciones de funcionamiento</h2>
+					<span className="mb-5 text-center">Breve descripción de la herramienta va aqui</span>
 					<div className="flex flex-col gap-2 md:flex-row ">
 						<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
 							Solicitar demo
 						</button>
-						<button className="bg-white tex-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+						<button className="bg-white text-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
 							Ver cómo funciona
 						</button>
 					</div>
@@ -255,58 +262,148 @@ function App() {
 					</table>
 				</div>
 			</section>
-			{/**INDUSTRIAS */}
-			<section>
-				<div></div>
-				<div>
-					<h3></h3>
-					<p></p>
-					<div>
-						<button></button>
-						<button></button>
+			{/**INDUSTRIAS EDITAR Y AÑADIR DESCRIPCIONES*/}
+			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16">
+				{/**ACORDEON NEGRO */}
+				<div className="lg:w-1/2">
+					
+					{/* Botón del acordeón */}
+					
+						<AccordionItem title="Robos en Tiendas (Retail Theft)" titleTextColor="text-white" buttonColor="text-white">
+							<div className="flex justify-start gap-1">
+								<span className="text-white">ICON</span>
+								<h3 className="font-bold text-white">Qué hace: </h3>
+							</div>
+							<p className="leading-none mb-4 text-white">Detecta comportamientos de hurto en piso y caja y notifica con video..</p>
+							<div className="flex justify-start gap-1">
+								<span className="text-white">ICON</span>
+								<h3 className="font-bold text-white">Alertas Típicas: </h3>
+							</div>
+							<p className="leading-none mb-4 text-white ">“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.</p>
+							<div className="flex justify-start gap-1">
+								<span className="text-white">ICON</span>
+								<h3 className="font-bold text-white">Impacto: </h3>
+							</div>
+							<p className="leading-none mb-4 text-white">Menos merma y menos horas revisando grabaciones.</p>
+						</AccordionItem>
+						
+						<AccordionItem title="Reconocimiento facial (IA)" titleTextColor="text-white">
+        					<p className="text-white">Detecta rostros y los compara con bases de datos autorizadas.</p>
+						</AccordionItem>
+
+						<AccordionItem title="PH / Accesos y Perímetro" titleTextColor="text-white">
+							<p className="text-white">Control de accesos y monitoreo de perímetro con alertas en tiempo real.</p>
+						</AccordionItem>
+
+						<AccordionItem title="Merodeo (Loitering) en áreas sensibles" titleTextColor="text-white">
+							<p className="text-white">Detecta presencia prolongada en áreas críticas.</p>
+						</AccordionItem>
+
+						<AccordionItem title="LPR – Placas y Control de Vehículos" titleTextColor="text-white">
+							<p className="text-white">Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+				</div>
+				<div className="flex flex-col md:w-[443px] ">
+					<h2 className="font-bold text-4xl text-white">Industrias</h2>
+					<p className="text-white">Breve descripcion</p>
+					<div className="flex flex-col gap-2 md:flex-row mb-10">
+						<button className="bg-green-600 text-white py-2 px-2 font-bold rounded-lg border-green-600 border-2 md:flex-[1.2]">
+							Solicitar demo
+						</button>
+						<button className="bg-white tex-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+							Ver cómo funciona
+						</button>
 					</div>
+					<img/>
 				</div>
 			</section>
 			{/**METRICAS */}
-			<section>
-				<div>
-					<h3></h3>
-					<p></p>
-					<div>
-						<button></button>
-						<button></button>
+			<section className="flex flex-col items-center">
+				<div className="flex flex-col  min-w-[632px] mb-10">
+					<h2 className="font-bold text-4xl mb-5 text-center">Métricas de impacto</h2>
+					<span className="mb-5 text-center">Breve descripción de la herramienta va aqui</span>
+					<div className="flex flex-col gap-2 md:flex-row ">
+						<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
+							Solicitar demo
+						</button>
+						<button className="bg-white tex-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+							Ver cómo funciona
+						</button>
 					</div>
 				</div>
 				{/***ALGUNAS METRICAS */}
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
+				<div className="grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-4">
+					<div className="flex flex-col justify-end bg-black p-8 rounded-lg h-64">
+						<h3 className="text-white text-2xl font-bold">1.82%</h3>
+						<p className="text-white">Tasa global de merma sobre ventas minoristas.(Global Shrink Index-Snsormatic)</p>
 					</div>
-					<div>
-						<h3></h3>
-						<p></p>
+					<div className="flex flex-col justify-end bg-black p-8 rounded-lg h-64">
+						<h3 className="text-white text-2xl font-bold">1.82%</h3>
+						<p className="text-white">Tasa global de merma sobre ventas minoristas.(Global Shrink Index-Snsormatic)</p>
 					</div>
-					<div>
-						<h3></h3>
-						<p></p>
+					<div className="flex flex-col justify-end bg-black p-8 rounded-lg h-64">
+						<h3 className="text-white text-2xl font-bold">1.82%</h3>
+						<p className="text-white">Tasa global de merma sobre ventas minoristas.(Global Shrink Index-Snsormatic)</p>
 					</div>
-					<div>
-						<h3></h3>
-						<p></p>
+					<div className="flex flex-col justify-end bg-black p-8 rounded-lg  h-64">
+						<h3 className="text-white text-2xl font-bold">1.82%</h3>
+						<p className="text-white">Tasa global de merma sobre ventas minoristas.(Global Shrink Index-Snsormatic)</p>
 					</div>
-					<div>
-						<h3></h3>
-						<p></p>
+					<div className="flex flex-col justify-end bg-black p-8 rounded-lg  h-64">
+						<h3 className="text-white text-2xl font-bold">1.82%</h3>
+						<p className="text-white">Tasa global de merma sobre ventas minoristas.(Global Shrink Index-Snsormatic)</p>
 					</div>
-					<div>
-						<h3></h3>
-						<p></p>
+					<div className="flex flex-col justify-end bg-black p-8 rounded-lg h-64">
+						<h3 className="text-white text-2xl font-bold">1.82%</h3>
+						<p className="text-white">Tasa global de merma sobre ventas minoristas.(Global Shrink Index-Snsormatic)</p>
 					</div>
 				</div>
 			</section>
 			{/**PREGUNTAS FRECUENTES */}
-			<section></section>
+			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
+				<div>
+					<h2 className="font-bold text-4xl">Preguntas frecuentes</h2>
+					<img/>
+				</div>
+				<div className="lg:w-1/2">
+					
+					{/* Botón del acordeón */}
+					
+						<AccordionItem title="Robos en Tiendas (Retail Theft)">
+							<div className="flex justify-start gap-1">
+								<span>ICON</span>
+								<h3 className="font-bold ">Qué hace: </h3>
+							</div>
+							<p className="leading-none mb-4">Detecta comportamientos de hurto en piso y caja y notifica con video..</p>
+							<div className="flex justify-start gap-1">
+								<span>ICON</span>
+								<h3 className="font-bold ">Alertas Típicas: </h3>
+							</div>
+							<p className="leading-none mb-4">“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.</p>
+							<div className="flex justify-start gap-1">
+								<span>ICON</span>
+								<h3 className="font-bold ">Impacto: </h3>
+							</div>
+							<p className="leading-none mb-4">Menos merma y menos horas revisando grabaciones.</p>
+						</AccordionItem>
+						
+						<AccordionItem title="Reconocimiento facial (IA)">
+        					<p>Detecta rostros y los compara con bases de datos autorizadas.</p>
+						</AccordionItem>
+
+						<AccordionItem title="PH / Accesos y Perímetro">
+							<p>Control de accesos y monitoreo de perímetro con alertas en tiempo real.</p>
+						</AccordionItem>
+
+						<AccordionItem title="Merodeo (Loitering) en áreas sensibles">
+							<p>Detecta presencia prolongada en áreas críticas.</p>
+						</AccordionItem>
+
+						<AccordionItem title="LPR – Placas y Control de Vehículos">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+				</div>
+			</section>
 		</main>
 	  </body>
     </div>
