@@ -25,7 +25,7 @@
   background-image: 
     linear-gradient(to right, #AAAAAA 1px, transparent 1px),
     linear-gradient(to bottom, #AAAAAA 1px, transparent 1px),
-    url('public/assets/bgn.png');
+    url('/assets/bgn.png');
   background-size: 
     205px 205px,
     205px 205px,
