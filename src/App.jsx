@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className="px-10 pt-10">
+    <div className=" px-4 md:px-12 md:pt-10">
 
       <header className="flex justify-between items-start mb-6">
 		{/**LOGO -AGREGAR*/}
@@ -28,9 +28,9 @@ function App() {
       </header>
 	  <body>
 		{/*HERO SECTION*/}
-		<hero className="max-h-full mb-16">
+		<hero className="max-h-full mb-16 ">
 			<section className="grid grid-cols-1 md:grid-cols-[1.8fr_1fr] md:grid-rows-2 lg:grid-cols-[2fr_1.3fr_1fr] lg:grid-rows-1 items-stretch mb-9 gap-4">{/** EN CELULAR 1 COLUMNA-EN TABLET 2 ROWS 2 COLS(PERO SOLO UN OBJETO EN LA PRIMERA COL) EN DESK 3 COLS*/}
-				<div className="flex flex-col gap-6 h-full md:col-span-2 md:col-start-1 md:row-start-1 lg:col-span-1 mb-9 pr-0 md:pr-0 lg:pr-5">
+				<div className=" bg-transparent flex flex-col gap-6 h-full md:col-span-2 md:col-start-1 md:row-start-1 lg:col-span-1 mb-9 pr-0 md:pr-0 lg:pr-5">
 					<h1 className=" text-6xl font-bold leading-none flex justify-start ">Detección de robos en tiempo real. Con IA</h1>
 					<p className="text-black">Convierte tus camaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.</p>	
 					<div className="flex flex-col md:flex-row gap-4">
@@ -58,8 +58,8 @@ function App() {
 		</hero>
 		<main>
 			{/**ABOUT VER PORSIACASO EL BOX-MODEL DEL RESPONSIVE*/}
-			<section className="flex gap-11 max-h-max flex-col lg:flex-row mb-16">
-				<div className="bg-black p-16  rounded-lg border-2 flex flex-col gap-7 lg:flex-[2.1]">
+			<section className=" flex gap-11 max-h-max flex-col lg:flex-row mb-16">
+				<div className="bg-black p-6 md:p-16  rounded-lg border-2 flex flex-col gap-7 lg:flex-[2.1]">
 					<h2 className="font-bold text-4xl text-white">¿Qué es Atelopus?</h2>
 					<p className="text-white max-w-2xl">
 						Un framework modular de analítica de video con IA en tiempo real.
@@ -69,7 +69,7 @@ function App() {
 						  Funciona con tus cámaras actuales y puedes usarla en tu local o en la nube.
 					</p>
 				</div>
-				<div className="bg-white rounded-lg border-2 p-16 flex flex-col justify-end lg:flex-[1]">
+				<div className="bg-white rounded-lg border-2 p-6 md:p-16 flex flex-col justify-end lg:flex-[1]">
 					<h2 className="font-bold text-2xl">¿Cómo te ayuda?</h2>
 					<p className="">
 						Reduce pérdidas, mejora la seguridad y ahorra horas de revisión manual 
@@ -80,7 +80,7 @@ function App() {
 			
 			</section>
 			{/**MODULOS CLAVE */}
-			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-16 rounded-lg bg-white mb-16">
+			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
 				<div>
 					<h2 className="font-bold text-4xl">Módulos clave</h2>
 					<img/>
@@ -126,9 +126,9 @@ function App() {
 			</section>
 			{/**COMO FUNCIONA */}{/**Para no cambiar el comportamiento, se utilizo space */}
 			<section className="space-y-11 mb-16">
-				<div className="flex flex-col md:pl-16 md:w-[443px] ">
-					<h2 className="font-bold text-4xl mb-2">Cómo funciona</h2>
-					<span className="mb-4">Breve descripción de la herramienta va aqui</span>
+				<div className="flex flex-col px-6 md:px-16 md:w-[443px] ">
+					<h2 className="font-bold text-4xl mb-5">Cómo funciona</h2>
+					<span className="mb-5">Breve descripción de la herramienta va aqui</span>
 					<div className="flex flex-col gap-2 md:flex-row ">
 						<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
 							Solicitar demo
@@ -177,18 +177,18 @@ function App() {
 							<span>icon</span>
 						<span>6</span>
 						</div>
-						<p className="p-7 font-bold text-2xl w-4/5  leading-none">Métricas & reportes</p>
+						<p className="p-7 font-bold text-2xl w-4/5  leading-none ">Métricas & reportes</p>
 					</div>
 				</div>
   
 			</section>
 
 			{/**BENEFICIOS */}
-			<section className="bg-black rounded-lg">
-				<div className="flex flex-col md:pl-16 md:w-[443px] ">
-					<h2 className="font-bold text-4xl text-white mb-2">Beneficios</h2>
-					<span className="text-white mb-4">Breve descripción de la herramienta va aqui</span>
-					<div className="flex flex-col gap-2 md:flex-row ">
+			<section className=" bg-black rounded-lg">
+				<div className="flex flex-col px-6 md:px-16 pt-6 md:pt-16 md:w-[443px] ">
+					<h2 className="font-bold text-4xl text-white mb-5">Beneficios</h2>
+					<span className="text-white mb-5">Breve descripción de la herramienta va aqui</span>
+					<div className="flex flex-col gap-2 md:flex-row mb-10">
 						<button className="bg-green-600 text-white py-2 px-2 font-bold rounded-lg border-green-600 border-2 md:flex-[1.2]">
 							Solicitar demo
 						</button>
@@ -198,10 +198,11 @@ function App() {
 					</div>
 				</div>
 				{/**GRID */}
-				<div className="grid grid-cols-1  md:grid-cols-2 md:grid-rows-4 bg-black p-6 mx-auto gap-2">
-					<div className="bg-green-500 justify-items-start items-start  rounded-lg">
-						<span>1</span>
-						<h3>No cambias camaras</h3>
+				<div className="grid grid-cols-1  md:grid-cols-2 md:grid-rows-4 bg-black px-6 md:px-16 pb-6 mx-auto gap-2">
+					<div className="bg-green-500 md:min-w-[297px] min-h-[200px] lg:min-w-[520px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
+						<span className="px-7 ">1</span>
+						
+						<h3 className="p-7 font-bold text-2xl w-4/5  leading-none">No cambias camaras</h3>
 					</div>
 					<div className="bg-green-500">
 						<span></span>
@@ -236,13 +237,15 @@ function App() {
 			{/** VERSIONES O FUNCIONAMIENTO*/}
 			<section>
 				<div>
-					<h2>
-
-					</h2>
-					<p></p>
-					<div>
-						<button></button>
-						<button></button>
+					<h2 className="font-bold text-4xl mb-5">Versiones y opciones de funcionamiento</h2>
+					<span className="mb-5">Breve descripción de la herramienta va aqui</span>
+					<div className="flex flex-col gap-2 md:flex-row ">
+						<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
+							Solicitar demo
+						</button>
+						<button className="bg-white tex-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+							Ver cómo funciona
+						</button>
 					</div>
 				</div>
 				{/**TABLA */}
