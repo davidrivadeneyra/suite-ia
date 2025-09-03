@@ -31,7 +31,7 @@ function App() {
 		<hero className="max-h-full mb-16 ">
 			<section className="grid grid-cols-1 md:grid-cols-[1.8fr_1fr] md:grid-rows-2 lg:grid-cols-[2fr_1.3fr_1fr] lg:grid-rows-1 items-stretch mb-9 gap-4">{/** EN CELULAR 1 COLUMNA-EN TABLET 2 ROWS 2 COLS(PERO SOLO UN OBJETO EN LA PRIMERA COL) EN DESK 3 COLS*/}
 				<div className=" bg-transparent flex flex-col gap-6 h-full md:col-span-2 md:col-start-1 md:row-start-1 lg:col-span-1 mb-9 pr-0 md:pr-0 lg:pr-5">
-					<h1 className=" text-6xl font-bold leading-none flex justify-start ">Detección de robos en tiempo real. Con IA</h1>
+					<h1 className="title-bigger text-6xl font-bold leading-none flex justify-start ">Detección de robos en tiempo real. Con IA</h1>
 					<p className="text-black">Convierte tus camaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.</p>	
 					<div className="flex flex-col md:flex-row gap-4">
 						{/**BOTONES */}

@@ -13,13 +13,19 @@
     --font-jk:'Plus Jakarta Sans';
     --font-m:'Space Mono';
 } */
-@font-face {
+/* @font-face {
     font-family: 'Plus Jakarta Sans';
     src: url();
-}
+} */
+
+
 
 @layer base {
     
+    .title {
+        font-family: "Clash Display", sans-serif;
+    }
+
     body {
        background-color: #F7F7F7;
   background-image: 

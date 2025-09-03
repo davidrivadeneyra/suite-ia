@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-				'jk': ['Plus Jakarta Sans']
+				'descriptions': ['Plus Jakarta Sans', 'system-ui'],
+				'title': ['Clash Display', 'system-ui'],
 			}
     },
   },
