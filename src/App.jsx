@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className=" px-4 md:px-12 md:pt-10">
+    <div className=" px-4 pt-4 md:px-12 md:pt-12">
 
       <header className="flex justify-between items-start mb-6">
 		{/**LOGO -AGREGAR*/}
@@ -124,7 +124,7 @@ function App() {
 						</AccordionItem>
 				</div>
 			</section>
-			{/**COMO FUNCIONA */}{/**Para no cambiar el comportamiento, se utilizo space */}
+			{/**COMO FUNCIONA ARREGLAR EL FLOW*/}{/**Para no cambiar el comportamiento, se utilizo space */}
 			<section className="space-y-11 mb-16">
 				<div className="flex flex-col ml-6 md:ml-16 box-border md:w-[443px] ">
 					<h2 className="font-bold text-4xl mb-5">Cómo funciona</h2>
@@ -139,7 +139,8 @@ function App() {
 					</div>
 				</div>
 				{/**GRID COMO FUNCIONA*/}
-				<div className="grid grid-cols-1 grid-rows-1 gap-y-8 md:grid-cols-2 md:grid-rows-3 md:gap-y-12 md:gap-x-12 lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-12 lg:gap-x-12 [&>*]:m-0">
+				<div className="grid grid-cols-1 grid-rows-1 gap-y-8 md:grid-cols-2 md:grid-rows-3 md:gap-y-12 md:gap-x-12 
+				lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-12 lg:gap-x-12 [&>*]:m-0 px-6 md:px-16 pb-16">
 						{/**TARJETAS */}
 					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
 						<div className="flex justify-between p-7">
@@ -198,7 +199,7 @@ function App() {
 					</div>
 				</div>
 				{/**GRID */}
-				<div className="grid grid-cols-1 grid-rows-8 md:grid-cols-2 md:grid-rows-4 bg-black px-6 md:px-16 pb-6 mx-auto gap-4">
+				<div className="grid grid-cols-1 grid-rows-8 md:grid-cols-2 md:grid-rows-4 px-6 md:px-16 pb-16 mx-auto gap-4">
 					<div className="bg-green-500 min-h-[200px]  lg:min-h-[288px] flex flex-col justify-end rounded-lg">
 						<span className="px-7 ">1</span>
 						
@@ -241,12 +242,12 @@ function App() {
 					</div>
 				</div>
 			</section>
-			{/** VERSIONES O FUNCIONAMIENTO FALTA HACER LA TABLA*/}
-			<section className="bg-white flex flex-col items-center mb-16">
-				<div className="flex flex-col max-w-[632px]">
+			{/** VERSIONES O FUNCIONAMIENTO FALTA HACERLA RESPONSIVE*/}
+			<section className="bg-white flex flex-col items-center mb-16 rounded-lg p-6 md:p-16">
+				<div className="flex flex-col max-w-[443px]">
 					<h2 className="font-bold text-4xl mb-5 text-center">Versiones y opciones de funcionamiento</h2>
 					<span className="mb-5 text-center">Breve descripción de la herramienta va aqui</span>
-					<div className="flex flex-col gap-2 md:flex-row ">
+					<div className="flex flex-col gap-2 md:flex-row mb-10">
 						<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
 							Solicitar demo
 						</button>
@@ -256,13 +257,46 @@ function App() {
 					</div>
 				</div>
 				{/**TABLA */}
-				<div>
-					<table>
-
+				<div>{/**border-spacing quita el espacio por defectode cada cuadrado table-fixed permite ajustar tamaño, no es nece
+				 * sario agregar el tamaño a acada tabla, solo al titulo esta bien
+				 */}
+					<table className="border-separate border-spacing-0 rounded-lg bg-black table-fixed " >
+						<thead>
+							<tr >
+								<th className="bg-green-100 border-2 border-black rounded-lg w-52">Opción</th>
+								<th className="bg-green-100 border-2 border-black rounded-lg border-l-0 w-52 h-24">Dónde corre</th>
+								<th className="bg-green-100 border-2 border-black rounded-lg border-l-0 w-52 h-24"> Video fuera del sitio</th>
+								<th className="bg-green-100 border-2 border-black rounded-lg border-l-0 w-52 h-24">Gestión multi-sede</th>
+								<th className="bg-green-100 border-2 border-black rounded-lg border-l-0 w-52 h-24">Ideal para</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0">Local(On-Prem)</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Todo en Edge/Datacenter del cliente</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">No (opcional solo metadatos)</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Vía panel en sitio / VPN</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Compliance estricto, casinos, gobierno</td>
+							</tr>
+							<tr>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0">Híbrido</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Detección en Edge + gestión en nube</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Mínimo (clips/eventos)</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Sí</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Retail y PH multi-sede</td>
+							</tr>
+							<tr>
+								<td className=" bg-white border-2 border-black rounded-lg border-t-0">SaaS (Cloud)</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Procesamiento principalmente en nube</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Sí</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Sí</td>
+								<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0">Clientes con menor restricción y rápida escalabilidad</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</section>
-			{/**INDUSTRIAS EDITAR Y AÑADIR DESCRIPCIONES*/}
+			{/**INDUSTRIAS EDITAR +- Y AÑADIR DESCRIPCIONES ARREGLAR EL FLOW*/}
 			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16">
 				{/**ACORDEON NEGRO */}
 				<div className="lg:w-1/2">
@@ -303,9 +337,10 @@ function App() {
 							<p className="text-white">Reconoce placas vehiculares y gestiona entradas/salidas.</p>
 						</AccordionItem>
 				</div>
-				<div className="flex flex-col md:w-[443px] ">
-					<h2 className="font-bold text-4xl text-white">Industrias</h2>
-					<p className="text-white">Breve descripcion</p>
+				{/**BOTONES */}
+				<div className="flex flex-col md:w-[443px]">
+					<h2 className="font-bold text-4xl text-white mb-5">Industrias</h2>
+					<p className="text-white mb-5">Breve descripcion</p>
 					<div className="flex flex-col gap-2 md:flex-row mb-10">
 						<button className="bg-green-600 text-white py-2 px-2 font-bold rounded-lg border-green-600 border-2 md:flex-[1.2]">
 							Solicitar demo
@@ -318,8 +353,8 @@ function App() {
 				</div>
 			</section>
 			{/**METRICAS */}
-			<section className="flex flex-col items-center">
-				<div className="flex flex-col  min-w-[632px] mb-10">
+			<section className="flex flex-col items-center p-16 mb-16">
+				<div className="flex flex-col  min-w-[443px] mb-10">
 					<h2 className="font-bold text-4xl mb-5 text-center">Métricas de impacto</h2>
 					<span className="mb-5 text-center">Breve descripción de la herramienta va aqui</span>
 					<div className="flex flex-col gap-2 md:flex-row ">
@@ -359,17 +394,18 @@ function App() {
 					</div>
 				</div>
 			</section>
-			{/**PREGUNTAS FRECUENTES */}
-			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
+			{/**PREGUNTAS FRECUENTES ARREGLAR EL RESPONSIVE*/}
+			<section className="flex flex-col gap-16 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
 				<div>
 					<h2 className="font-bold text-4xl">Preguntas frecuentes</h2>
 					<img/>
 				</div>
+				{/* Botón del acordeón */}
 				<div className="lg:w-1/2">
 					
-					{/* Botón del acordeón */}
 					
-						<AccordionItem title="Robos en Tiendas (Retail Theft)">
+					
+						<AccordionItem title="1. ¿Qué es exactamente esta plataforma?">
 							<div className="flex justify-start gap-1">
 								<span>ICON</span>
 								<h3 className="font-bold ">Qué hace: </h3>
@@ -387,21 +423,60 @@ function App() {
 							<p className="leading-none mb-4">Menos merma y menos horas revisando grabaciones.</p>
 						</AccordionItem>
 						
-						<AccordionItem title="Reconocimiento facial (IA)">
+						<AccordionItem title="2. ¿Necesito cambiar mis cámaras?">
         					<p>Detecta rostros y los compara con bases de datos autorizadas.</p>
 						</AccordionItem>
 
-						<AccordionItem title="PH / Accesos y Perímetro">
+						<AccordionItem title="3. ¿Cómo recibo las alertas?">
 							<p>Control de accesos y monitoreo de perímetro con alertas en tiempo real.</p>
 						</AccordionItem>
 
-						<AccordionItem title="Merodeo (Loitering) en áreas sensibles">
+						<AccordionItem title="4. ¿Qué pasa si se cae Internet?">
 							<p>Detecta presencia prolongada en áreas críticas.</p>
 						</AccordionItem>
 
-						<AccordionItem title="LPR – Placas y Control de Vehículos">
+						<AccordionItem title="5. ¿Qué tan precisa es? ¿Y los falsos positivos?">
 							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
 						</AccordionItem>
+						<AccordionItem title="6. ¿Se integra con mis sistemas actuales?">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+						<AccordionItem title="7.¿Cómo cuidan la privacidad?">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+						<AccordionItem title="8.¿Puedo usarlo en cualquier país?">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+						<AccordionItem title="9.¿Cuánto tarda la instalación?">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+						<AccordionItem title="10. ¿Qué opciones de uso tienen (nube o local)?">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+						<AccordionItem title="11. ¿Cuánto cuesta?">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+						<AccordionItem title="12.¿Qué necesito para empezar?">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+						<AccordionItem title="13.¿Quién atiende y capacita a mi equipo?">
+							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
+						</AccordionItem>
+						
+				</div>
+			</section>
+			{/**TOMAR DEMO */}
+			<section className="bg-black rounded-lg mb-16 flex justify-center p-16">
+				<div className="flex flex-col  max-w-[443px] mb-10">
+					<h2 className="font-bold text-4xl mb-5 text-center text-white">¿Listo para prevenir pérdidas y automatizar tu seguridad?</h2>
+					<div className="flex flex-col gap-2 md:flex-row ">
+						<button className="bg-green-600 text-black py-2 px-2 font-bold rounded-lg border-2 border-black md:flex-[1.2]">
+							Solicitar demo
+						</button>
+						<button className="bg-white tex-black  py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+							Ver cómo funciona
+						</button>
+					</div>
 				</div>
 			</section>
 		</main>
