@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-				'sans': ['Silka', 'system-ui']
+				'jk': ['Plus Jakarta Sans']
 			}
     },
   },
   plugins: [],
-}
+};
