@@ -1,6 +1,6 @@
 // Supports weights 200-800
-import '@fontsource-variable/plus-jakarta-sans';
-import '@fontsource/space-mono';
+// import '@fontsource-variable/plus-jakarta-sans';
+// import '@fontsource/space-mono';
 
 import AccordionItem from "./components/AccordionItem";
 
