@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource-variable/plus-jakarta-sans": "^5.2.6",
-    "@fontsource/space-mono": "^5.2.8",
     "gsap": "^3.12.5",
     "motion": "^11.11.17",
     "react": "^18.3.1",
