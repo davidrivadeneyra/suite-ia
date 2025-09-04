@@ -58,7 +58,7 @@ function App() {
 		</hero>
 		<main>
 			{/**ABOUT VER POR SIACASO EL BOX-MODEL DEL RESPONSIVE*/}
-			<section className=" flex gap-11 max-h-max flex-col lg:flex-row mb-16">
+			<section id="about"className=" flex gap-11 max-h-max flex-col lg:flex-row mb-16">
 				<div className="bg-black p-6 md:p-16  rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1]">
 					<h2 className="font-semibold font-title text-5xl text-white ">¿Qué es Atelopus?</h2>
 					<p className="text-white max-w-2xl text-base font-descriptions">
@@ -162,7 +162,7 @@ function App() {
 				</div>
 			</section>
 			{/**COMO FUNCIONA ARREGLAR EL FLOW*/}{/**Para no cambiar el comportamiento, se utilizo space */}
-			<section className="space-y-11 mb-16">
+			<section id="features"className="space-y-11 mb-16">
 				<div className="flex flex-col ml-6 md:ml-16 box-border md:w-[443px] ">
 					<h2 className="font-semibold text-5xl font-title mb-4">Cómo funciona</h2>
 					<span className="mb-6 font-descriptions">Breve descripción de la herramienta va aqui</span>
@@ -180,49 +180,95 @@ function App() {
 				lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-12 lg:gap-x-12 [&>*]:m-0 px-6 md:px-16 pb-16">
 						{/**TARJETAS */}
 					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>1</span>
+						<div className="flex justify-between">
+							<div className="p-7">
+								<img src="assets/icon1.svg" alt="" />
+							</div>
+							<div className="relative w-16 h-16 flex items-center justify-center m-7">
+								<img src="assets/esquinas.svg" alt="marco"  
+								className="absolute inset-0 w-full h-full"/>
+								<span>1</span>
+							</div>
 						</div>
-						<p className="p-7 font-semibold font-title text-2xl w-4/5 leading-none">Conecta tus cámaras</p>
+						
+						<p className="px-7 pb-7  font-semibold font-title text-2xl w-4/5 leading-none">Conecta tus cámaras</p>
 					</div>
-					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>2</span>
+					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between">
+							<div className="p-7">
+								<img src="assets/icon2.svg" alt="" />
+							</div>
+							<div className="relative w-16 h-16 flex items-center justify-center m-7">
+								<img src="assets/esquinas.svg" alt="marco"  
+								className="absolute inset-0 w-full h-full"/>
+								<span>2</span>
+							</div>
 						</div>
-						<p className="p-7 font-semibold font-title text-2xl w-4/5 leading-none">Edge analiza en tiempo real</p>
-					</div><div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>3</span>
+						
+						<p className="px-7 pb-7  font-semibold font-title text-2xl w-4/5 leading-none">Edge analiza en tiempo real</p>
+					</div>
+					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between">
+							<div className="p-7">
+								<img src="assets/icon3.svg" alt="" />
+							</div>
+							<div className="relative w-16 h-16 flex items-center justify-center m-7">
+								<img src="assets/esquinas.svg" alt="marco"  
+								className="absolute inset-0 w-full h-full"/>
+								<span>3</span>
+							</div>
 						</div>
-						<p className="p-7 font-semibold font-title text-2xl w-4/5 leading-none">Reglas y listas</p>
-					</div><div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>4</span>
+						
+						<p className="px-7 pb-7  font-semibold font-title text-2xl w-4/5 leading-none">Reglas y listas</p>
+					</div>
+					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between">
+							<div className="p-7">
+								<img src="assets/icon4.svg" alt="" />
+							</div>
+							<div className="relative w-16 h-16 flex items-center justify-center m-7">
+								<img src="assets/esquinas.svg" alt="marco"  
+								className="absolute inset-0 w-full h-full"/>
+								<span>4</span>
+							</div>
 						</div>
-						<p className="p-7 font-semibold font-title text-2xl w-4/5 leading-none">Alertas adicionales</p>
-					</div><div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>5</span>
+						
+						<p className="px-7 pb-7  font-semibold font-title text-2xl w-4/5 leading-none">Metricas & reportes</p>
+					</div>
+					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between">
+							<div className="p-7">
+								<img src="assets/icon5.svg" alt="" />
+							</div>
+							<div className="relative w-16 h-16 flex items-center justify-center m-7">
+								<img src="assets/esquinas.svg" alt="marco"  
+								className="absolute inset-0 w-full h-full"/>
+								<span>5</span>
+							</div>
 						</div>
-						<p className="p-7 font-semibold font-title text-2xl w-4/5 leading-none">Automación (puertas/rádio)</p>
-					</div><div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 bg-white rounded-lg border-green-700 border-2 ">
-						<div className="flex justify-between p-7">
-							<span>icon</span>
-						<span>6</span>
+						
+						<p className="px-7 pb-7  font-semibold font-title text-2xl w-4/5 leading-none">Automatización (puertas/radio)</p>
+					</div>
+					<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
+						<div className="flex justify-between">
+							<div className="p-7">
+								<img src="assets/icon6.svg" alt="" />
+							</div>
+							<div className="relative w-16 h-16 flex items-center justify-center m-7">
+								<img src="assets/esquinas.svg" alt="marco"  
+								className="absolute inset-0 w-full h-full"/>
+								<span>6</span>
+							</div>
 						</div>
-						<p className="p-7 font-semibold font-title text-2xl w-4/5 leading-none">Métricas & reportes</p>
+						
+						<p className="px-7 pb-7  font-semibold font-title text-2xl w-4/5 leading-none">Métricas & reportes</p>
 					</div>
 				</div>
   
 			</section>
 
 			{/**BENEFICIOS */}
-			<section className=" bg-black rounded-lg mb-16">
+			<section id="benefits"className=" bg-black rounded-lg mb-16">
 				<div className="flex flex-col mx-6 md:ml-16 pt-6 md:pt-16 md:w-[443px] ">
 					<h2 className="font-semibold font-title text-5xl text-white mb-4">Beneficios</h2>
 					<span className="text-white mb-6 font-descriptions">Breve descripción de la herramienta va aqui</span>
@@ -632,7 +678,8 @@ function App() {
 			</section>
 		</main>
 	  </body>
-	  <footer className="bg-white flex flex-col lg:flex-row p-16 mb-16 gap-28">
+	  {/**CONTACTO */}
+	  <footer id="contact"className="bg-white flex flex-col lg:flex-row p-16 mb-16 gap-28 rounded-lg">
 		<div className="">
 			<h1 className="text-sm font-title font-semibold">Atelopus</h1>
 				<p>© 2025 ATELOPUS.Todos los derechos reservados.</p>
