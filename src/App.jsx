@@ -503,7 +503,7 @@ function App() {
 				</div>
 			</section>
 			{/**TOMAR DEMO */}
-			<section className="bg-black rounded-lg mb-16 flex justify-center p-16">
+			<section className="bg-black rounded-lg mb-16 flex justify-center p-16 ">
 				<div className="flex flex-col  max-w-[443px]">
 					<h2 className="font-semibold font-title text-5xl mb-14 text-center text-white">¿Listo para prevenir pérdidas y automatizar tu seguridad?</h2>
 					<div className="flex flex-col gap-4 md:flex-row ">
@@ -516,8 +516,151 @@ function App() {
 					</div>
 				</div>
 			</section>
+			{/**SOLICITAR DEMO */}
+			<section className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-16 mb-16">
+				
+				<div className=" max-w-2xl w-full">
+					<div className="mb-8">
+					<h1 className="text-6xl font-bold text-gray-800 mb-2">Solicita una demo</h1>
+					<p className="text-gray-600">Breve descripción de la herramienta va aquí</p>
+					</div>
+				</div>
+					
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+					{/* Primera fila - Nombre */}
+					<div className="md:col-span-2">
+						<label className="block font-descriptions mb-2">
+							Nombre *
+						</label>
+						<input
+							type="text"
+							name="nombre"
+							
+							placeholder="Jon Doe"
+							required
+							className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 
+							focus:border-transparent outline-none transition-all"/>
+					</div>
+					{/* Segunda fila -Empresa y pais */}
+					<div>
+						<label className="block font-descriptions mb-2">
+							Empresa *
+						</label>
+						<input
+							type="text"
+							name="empresa"
+							
+							placeholder="Transmira INC"
+							required
+							className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 
+							focus:border-transparent outline-none transition-all"/>
+					</div>
+					
+					
+					<div>
+						<label className="block font-descriptions mb-2">
+							País *
+						</label>
+						<input
+							type="text"
+							name="pais"
+							
+							placeholder="Panamá"
+							required
+							className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 
+							focus:border-transparent outline-none transition-all"
+						/>
+					</div>
+
+					{/* Tercera fila - Email- Teléfono */}
+					<div>
+						<label className="block font-descriptions mb-2">
+							Email *
+						</label>
+						<input
+							type="email"
+							name="email"
+							
+							placeholder="jon@mail.com"
+							required
+							className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 
+							focus:border-transparent outline-none transition-all"
+						/>
+					</div>
+					
+
+					
+					<div>
+						<label className="block font-descriptions mb-2">
+						Teléfono *
+						</label>
+						<input
+						type="tel"
+						name="telefono"
+						
+						placeholder="88 999 000 888"
+						required
+						className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent outline-none transition-all"
+						/>
+					</div>
+
+					{/* Mensaje */}
+					<div className="md:col-span-2">
+						<label className="block font-descriptions mb-2">
+						Mensaje *
+						</label>
+						<textarea
+						name="mensaje"
+						
+						placeholder="Aquí va tu mensaje"
+						required
+						rows="4"
+						className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent outline-none transition-all resize-none"
+						></textarea>
+					</div>
+
+					{/* Botón de envío */}
+					<button
+						type="button"
+						
+						className="w-full bg-black text-white py-3 px-6 rounded-lg font-medium text-lg"
+					>
+						Solicitar demo
+					</button>
+				</div>
+				
+			</section>
 		</main>
 	  </body>
+	  <footer className="bg-white flex flex-col lg:flex-row p-16 mb-16 gap-28">
+		<div className="">
+			<h1 className="text-sm font-title font-semibold">Atelopus</h1>
+				<p>© 2025 ATELOPUS.Todos los derechos reservados.</p>
+			
+		</div>
+		<div className="flex gap-14">
+			<div>
+				<h1 className="text-sm font-title font-semibold">Producto</h1>
+					<p>About</p>
+					<p>Features</p>
+					<p>Benefits</p>
+					<p>Contact</p>
+				
+			</div>
+			<div>
+				<h1 className="text-sm font-title font-semibold">Contacto</h1>
+					<p>info@hypernovalabs.com</p>
+					<p>(+507) 202-4098/99</p>
+					<p>Edificio Frontenac, piso 1, Calle 50, Ciudad de Panamá</p>
+				
+			</div>
+			<div>
+				<h1 className="text-sm font-title font-semibold">Legal</h1>
+				<p>Términos de Servicio</p>
+				<p>Política de Privacidad</p>
+			</div>	
+		</div>			
+	  </footer>
     </div>
   );
 }

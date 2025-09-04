@@ -13,7 +13,7 @@ console.log('buttonColor:', buttonColor);
         className='flex w-full justify-between items-center py-3 text-2xl font-semibold font-title ${titleTextColor}'
       >
         {/**style={{color: 'white'}} */} {/**ESTO ARREGLA EL COLOR +-  */}
-        <h2 className={titleTextColor}>{title} </h2>
+        <h2 className={titleTextColor}>{title}</h2>
         <span className='text-2xl ${buttonColor}'>{isOpen ? "−" : "+"}</span>
       </button>
 
