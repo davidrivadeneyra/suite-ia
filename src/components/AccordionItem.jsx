@@ -10,7 +10,7 @@ console.log('buttonColor:', buttonColor);
       <hr className="border-black"></hr>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className='flex w-full justify-between items-center py-3 text-lg font-bold ${titleTextColor}'
+        className='flex w-full justify-between items-center py-3 text-2xl font-semibold font-title ${titleTextColor}'
       >
         {/**style={{color: 'white'}} */} {/**ESTO ARREGLA EL COLOR +-  */}
         <h2 className={titleTextColor}>{title}</h2>
@@ -19,7 +19,7 @@ console.log('buttonColor:', buttonColor);
 
       {/* Contenido */}
       {isOpen && (
-        <div className="p-4">
+        <div className="p-4 ">
           {children}
         </div>
       )}
