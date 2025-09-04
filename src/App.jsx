@@ -12,24 +12,25 @@ function App() {
     <div className=" px-4 pt-4 md:px-12 md:pt-12 max-w-[1350px] mx-auto">
 
       <header className="flex justify-between items-start mb-6">
-		{/**LOGO -AGREGAR*/}
-		<div>
-			
-			<h1 className="text-2xl font-bold">Atelopus</h1></div>
+		
+		<div className="flex items-center gap-2 ">
+			<img src="/assets/logo.svg" alt="Logo" className="max-h-9" />
+			<h1 className="text-2xl font-bold">Atelopus</h1>
+		</div>
 			{/* NAVEGADOR*/}
         <nav>
           <ul className="flex flex-col items-end gap-1">
-            <li><a href="#about" className="text-gray-800 font-bold hover:text-orange-500">About</a></li>
-            <li><a href="#features" className="text-gray-800 font-bold hover:text-orange-500">Features</a></li>
-            <li><a href="#benefits" className="text-gray-800 font-bold hover:text-orange-500">Benefits</a></li>
-			<li><a href="#contact" className="text-gray-800 font-bold hover:text-orange-500">Contact</a></li>
+            <li><a href="#about" className="text-gray-800 font-semibold hover:text-orange-500 font-descriptions text-sm">About</a></li>
+            <li><a href="#features" className="text-gray-800 font-semibold hover:text-orange-500 font-descriptions text-sm">Features</a></li>
+            <li><a href="#benefits" className="text-gray-800 font-semibold hover:text-orange-500 font-descriptions text-sm">Benefits</a></li>
+			<li><a href="#contact" className="text-gray-800 font-semibold hover:text-orange-500 font-descriptions text-sm">Contact</a></li>
           </ul>
         </nav>
       </header>
 	  <body>
-		{/*HERO SECTION*/}
+		{/*HERO SECTION ARREGLAR EL TAMAÑO DE LA IMAGEN EN LG*/}
 		<hero className="max-h-full mb-16 ">
-			<section className="grid grid-cols-1 md:grid-cols-[1.8fr_1fr] md:grid-rows-2 lg:grid-cols-[2fr_1.3fr_1fr] lg:grid-rows-1 items-stretch mb-9 gap-4">{/** EN CELULAR 1 COLUMNA-EN TABLET 2 ROWS 2 COLS(PERO SOLO UN OBJETO EN LA PRIMERA COL) EN DESK 3 COLS*/}
+			<section className="grid grid-cols-1 grid-rows-[2fr_1.3_1fr] md:grid-cols-[1.8fr_1fr] md:grid-rows-[.5fr_1fr] lg:grid-cols-[2fr_1.3fr_1fr] lg:grid-rows-1 items-stretch mb-9 gap-4">{/** EN CELULAR 1 COLUMNA-EN TABLET 2 ROWS 2 COLS(PERO SOLO UN OBJETO EN LA PRIMERA COL) EN DESK 3 COLS*/}
 				<div className=" bg-transparent flex flex-col h-full md:col-span-2 md:col-start-1 md:row-start-1 lg:col-span-1 mb-9 pr-0 md:pr-0 lg:pr-5">
 					<h1 className="font-title text-6xl font-semibold leading-none flex justify-start mb-7">Detección de robos en tiempo real. Con IA</h1>
 					<p className="text-black font-descriptions mb-6">Convierte tus camaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.</p>	
@@ -42,9 +43,10 @@ function App() {
 							Ver cómo funciona
 						</button>
 					</div>
-				</div>{/**Imagen */}
+				</div>
+				{/**Imagen */}
 				<div className="md:row-start-2 lg:row-start-auto mb-9">
-					<img src="" alt="Hombre identificado robando" className="rounded-lg shadow-lg max-w-full"/>
+					<img src="/assets/imgh.png" alt="Hombre identificado robando" className="rounded-lg shadow-lg max-w-full max-h-full"/>
 				</div>{/**CLIENTES SATISFECHOS */}
 				<div className="bg-white rounded-lg shadow-md pl-6 pb-6 flex flex-col justify-end item-start border md:row-start-2 lg:row-start-auto mb-9">
 					<p className="text-6xl font-semibold font-title mt-4">+12</p>
@@ -52,9 +54,7 @@ function App() {
 				</div>
 			</section>
 			{/**VIDEO */}
-			<video className="w-full h-full object-cover mb-16">
-  				
-			</video>
+			<img src="assets/vidh.png"className=" hidden lg:block w-full h-full object-cover mb-16"/>
 		</hero>
 		<main>
 			{/**ABOUT VER POR SIACASO EL BOX-MODEL DEL RESPONSIVE*/}
@@ -69,7 +69,8 @@ function App() {
 						  Funciona con tus cámaras actuales y puedes usarla en tu local o en la nube.
 					</p>
 				</div>
-				<div className="bg-white rounded-lg border-2 p-6 md:p-16 flex flex-col justify-end lg:flex-[1] gap-3">
+				<div className="bg-white rounded-lg border-2 p-6 md:p-16 flex flex-col justify-end items-start lg:flex-[1] gap-3">
+					<img src="/assets/logo.svg" alt="LOGO" className="max-h-20"/>
 					<h2 className="font-semibold text-2xl font-title">¿Cómo te ayuda?</h2>
 					<p className="text-base font-descriptions">
 						Reduce pérdidas, mejora la seguridad y ahorra horas de revisión manual 
@@ -80,10 +81,10 @@ function App() {
 			
 			</section>
 			{/**MODULOS CLAVE */}
-			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
-				<div>
+			<section className="flex flex-col gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
+				<div className="flex flex-col lg:w-1/2 gap-10">
 					<h2 className="font-semibold text-5xl font-title">Módulos clave</h2>
-					<img/>
+					<img src="assets/vidh.png" className="w-full max-h-[463px] rounded-lg"/>
 				</div>
 				<div className="lg:w-1/2">
 					
@@ -333,7 +334,7 @@ function App() {
 				</div>
 			</section>
 			{/**INDUSTRIAS EDITAR +- Y AÑADIR DESCRIPCIONES ARREGLAR EL FLOW*/}
-			<section className="flex flex-col gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16">
+			<section className="flex flex-col-reverse gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16">
 				{/**ACORDEON NEGRO */}
 				<div className="lg:w-1/2">
 					
@@ -374,7 +375,7 @@ function App() {
 						</AccordionItem>
 				</div>
 				{/**BOTONES */}
-				<div className="flex flex-col md:w-[443px]">
+				<div className="flex flex-col lg:1/2">
 					<h2 className="font-semibold font-title text-5xl text-white mb-4">Industrias</h2>
 					<p className="text-white mb-6 font-descriptions">Breve descripcion</p>
 					<div className="flex flex-col gap-4 md:flex-row mb-10">
@@ -385,7 +386,7 @@ function App() {
 							Ver cómo funciona
 						</button>
 					</div>
-					<img/>
+					<img src="assets/vidh.png" className="w-full max-h-[463px] rounded-lg"/>
 				</div>
 			</section>
 			{/**METRICAS */}
@@ -431,17 +432,17 @@ function App() {
 				</div>
 			</section>
 			{/**PREGUNTAS FRECUENTES ARREGLAR EL RESPONSIVE*/}
-			<section className="flex flex-col gap-16 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
-				<div>
-					<h2 className="font-semibold font-title text-5xl">Preguntas frecuentes</h2>
-					<img/>
+			<section className="flex flex-col gap-14 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
+				<div className="flex flex-col lg:w-1/2 gap-10">
+					<h2 className="font-semibold font-title text-4xl">Preguntas frecuentes</h2>
+					<img src="/assets/vidh.png" alt="Imagen" className="w-full max-h-[463px] rounded-lg"/>
 				</div>
 				{/* Botón del acordeón */}
 				<div className="lg:w-1/2">
 					
 					
 					
-						<AccordionItem title="1. ¿Qué es exactamente esta plataforma?">
+						<AccordionItem title="1.¿Qué es exactamente esta plataforma?">
 							<div className="flex justify-start gap-1">
 								<span>ICON</span>
 								<h3 className="font-bold ">Qué hace: </h3>
@@ -459,22 +460,22 @@ function App() {
 							<p className="leading-none mb-4">Menos merma y menos horas revisando grabaciones.</p>
 						</AccordionItem>
 						
-						<AccordionItem title="2. ¿Necesito cambiar mis cámaras?">
+						<AccordionItem title="2.¿Necesito cambiar mis cámaras?">
         					<p>Detecta rostros y los compara con bases de datos autorizadas.</p>
 						</AccordionItem>
 
-						<AccordionItem title="3. ¿Cómo recibo las alertas?">
+						<AccordionItem title="3.¿Cómo recibo las alertas?">
 							<p>Control de accesos y monitoreo de perímetro con alertas en tiempo real.</p>
 						</AccordionItem>
 
-						<AccordionItem title="4. ¿Qué pasa si se cae Internet?">
+						<AccordionItem title="4.¿Qué pasa si se cae Internet?">
 							<p>Detecta presencia prolongada en áreas críticas.</p>
 						</AccordionItem>
 
-						<AccordionItem title="5. ¿Qué tan precisa es? ¿Y los falsos positivos?">
+						<AccordionItem title="5.¿Qué tan precisa es? ¿Y los falsos positivos?">
 							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
 						</AccordionItem>
-						<AccordionItem title="6. ¿Se integra con mis sistemas actuales?">
+						<AccordionItem title="6.¿Se integra con mis sistemas actuales?">
 							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
 						</AccordionItem>
 						<AccordionItem title="7.¿Cómo cuidan la privacidad?">
@@ -486,10 +487,10 @@ function App() {
 						<AccordionItem title="9.¿Cuánto tarda la instalación?">
 							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
 						</AccordionItem>
-						<AccordionItem title="10. ¿Qué opciones de uso tienen (nube o local)?">
+						<AccordionItem title="10.¿Qué opciones de uso tienen (nube o local)?">
 							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
 						</AccordionItem>
-						<AccordionItem title="11. ¿Cuánto cuesta?">
+						<AccordionItem title="11.¿Cuánto cuesta?">
 							<p>Reconoce placas vehiculares y gestiona entradas/salidas.</p>
 						</AccordionItem>
 						<AccordionItem title="12.¿Qué necesito para empezar?">
