@@ -1,12 +1,10 @@
-// Supports weights 200-800
-// import '@fontsource-variable/plus-jakarta-sans';
-// import '@fontsource/space-mono';
-
 import AccordionItem from "./components/AccordionItem";
+import { useLanguage } from './i18n/LanguageProvider';
+import Switcher from "./components/LandguageSwitch";
 
 
 function App() {
-
+	const { t } = useLanguage();
 
   return (
     <div className=" px-4 pt-4 md:px-12 md:pt-12 max-w-[1350px] mx-auto">
@@ -17,6 +15,7 @@ function App() {
 			<img src="/assets/logo.svg" alt="Logo" className="max-h-9" />
 			<h1 className="text-2xl font-bold">Atelopus</h1>
 		</div>
+		<Switcher></Switcher>
 			{/* NAVEGADOR*/}
         <nav>
           <ul className="flex flex-col items-end gap-1">
@@ -32,7 +31,7 @@ function App() {
 		<hero className="max-h-full mb-16 ">
 			<section className="grid grid-cols-1 grid-rows-[2fr_1.3_1fr] md:grid-cols-[1.8fr_1fr] md:grid-rows-[.5fr_1fr] lg:grid-cols-[2fr_1.3fr_1fr] lg:grid-rows-1 items-stretch mb-9 gap-4">{/** EN CELULAR 1 COLUMNA-EN TABLET 2 ROWS 2 COLS(PERO SOLO UN OBJETO EN LA PRIMERA COL) EN DESK 3 COLS*/}
 				<div className=" bg-transparent flex flex-col h-full md:col-span-2 md:col-start-1 md:row-start-1 lg:col-span-1 mb-9 pr-0 md:pr-0 lg:pr-5">
-					<h1 className="font-title text-6xl font-semibold leading-none flex justify-start mb-7">Detección de robos en tiempo real. Con IA</h1>
+					<h1 className="font-title text-6xl font-semibold leading-none flex justify-start mb-7">{t('hero.title')}</h1>
 					<p className="text-black font-descriptions mb-6">Convierte tus camaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.</p>	
 					<div className="flex flex-col md:flex-row gap-4">
 						{/**BOTONES */}
