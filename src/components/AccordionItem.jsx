@@ -14,7 +14,7 @@ console.log('buttonColor:', buttonColor);
       >
         {/**style={{color: 'white'}} */} {/**ESTO ARREGLA EL COLOR +-  */}
         <h2 className={titleTextColor}>{title}</h2>
-        <span className='text-2xl ${buttonColor}'>{isOpen ? "−" : "+"}</span>
+        <span className={`text-2xl ${buttonColor}`}>{isOpen ? "−" : "+"}</span>
       </button>
 
       {/* Contenido */}

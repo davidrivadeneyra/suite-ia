@@ -380,7 +380,7 @@ function App() {
 				</div>
 			</section>
 			{/**INDUSTRIAS EDITAR +- Y AÑADIR DESCRIPCIONES ARREGLAR EL FLOW*/}
-			<section className="flex flex-col-reverse gap-3 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16">
+			<section className="flex flex-col-reverse gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16">
 				{/**ACORDEON NEGRO */}
 				<div className="lg:w-1/2">
 					
@@ -404,19 +404,19 @@ function App() {
 							<p className="leading-none mb-4 text-white">Menos merma y menos horas revisando grabaciones.</p>
 						</AccordionItem>
 						
-						<AccordionItem title="Reconocimiento facial (IA)" titleTextColor="text-white">
+						<AccordionItem title="Reconocimiento facial (IA)" titleTextColor="text-white" buttonColor="text-white">
         					<p className="text-white">Detecta rostros y los compara con bases de datos autorizadas.</p>
 						</AccordionItem>
 
-						<AccordionItem title="PH / Accesos y Perímetro" titleTextColor="text-white">
+						<AccordionItem title="PH / Accesos y Perímetro" titleTextColor="text-white" buttonColor="text-white">
 							<p className="text-white">Control de accesos y monitoreo de perímetro con alertas en tiempo real.</p>
 						</AccordionItem>
 
-						<AccordionItem title="Merodeo (Loitering) en áreas sensibles" titleTextColor="text-white">
+						<AccordionItem title="Merodeo (Loitering) en áreas sensibles" titleTextColor="text-white" buttonColor="text-white">
 							<p className="text-white">Detecta presencia prolongada en áreas críticas.</p>
 						</AccordionItem>
 
-						<AccordionItem title="LPR – Placas y Control de Vehículos" titleTextColor="text-white">
+						<AccordionItem title="LPR – Placas y Control de Vehículos" titleTextColor="text-white" buttonColor="text-white">
 							<p className="text-white">Reconoce placas vehiculares y gestiona entradas/salidas.</p>
 						</AccordionItem>
 				</div>
