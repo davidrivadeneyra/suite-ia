@@ -567,8 +567,8 @@ function App() {
 				
 				<div className=" max-w-2xl w-full">
 					<div className="mb-8">
-					<h1 className="text-6xl font-bold text-gray-800 mb-2">Solicita una demo</h1>
-					<p className="text-gray-600">Breve descripción de la herramienta va aquí</p>
+					<h1 className="text-6xl font-bold font-title mb-2">Solicita una demo</h1>
+					<p className="font-descriptions">Breve descripción de la herramienta va aquí</p>
 					</div>
 				</div>
 					
