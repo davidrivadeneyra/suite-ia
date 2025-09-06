@@ -18,19 +18,16 @@
 
     body {
        background-color: #F7F7F7;
-        background-image: 
-            linear-gradient(to right, #AAAAAA 1px, transparent 1px),
-            linear-gradient(to bottom, #AAAAAA 1px, transparent 1px),
-            url('/assets/bgn.png');
-        background-size: 
-            205px 205px,
-            205px 205px,
-            auto;
-        background-repeat: repeat;
-        background-blend-mode: multiply; /* esto puede ayudar a mezclar mejor */
-        background-attachment: fixed, fixed, local;
-        margin: 0;
-        min-height: 100vh;
+        background-image: url('/assets/bgn.png');
+        /* background-size:  */
+            /* 205px 205px, */
+            /* 205px 205px, */
+            /* auto; */
+        /* background-repeat: repeat; */
+        /* background-blend-mode: multiply; esto puede ayudar a mezclar mejor */
+        /* background-attachment: fixed, fixed, local; */
+        /* margin: 0; */
+        /* min-height: 100vh; */
     }
 
     .button-color {

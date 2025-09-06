@@ -2,13 +2,19 @@ import AccordionItem from "./components/AccordionItem";
 import { useLanguage } from './i18n/LanguageProvider';
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import GridOverlay from "./components/GridOverlay";
 
 
 function App() {
 	const { t } = useLanguage();
 
   return (
-    <div className=" px-4 pt-4 md:px-12 md:pt-12 max-w-[1350px] mx-auto">
+	<>
+
+	
+	
+	<div className=" px-4 pt-4 md:px-12 md:pt-12 max-w-[1350px] mx-auto relative">
+		<GridOverlay/>
 
       <Header></Header>
 	  <Hero />
@@ -667,7 +673,8 @@ function App() {
 			</div>	
 		</div>			
 	  </footer>
-    </div>
+    </div>	</>
+    
   );
 }
 

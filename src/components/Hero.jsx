@@ -7,7 +7,7 @@ export default function Hero() {
 
     const { t } = useLanguage();
     return (
-	<main className="max-h-full mb-16">
+	<main className="max-h-full">
 			<section className="flex flex-col lg:flex-row gap-14 mb-12">
 				<div className="w-full">
 					<h1 className="title-bigger pb-4">{t('hero.title')}</h1>
@@ -45,7 +45,20 @@ export default function Hero() {
 				
 			</section>
 			{/**VIDEO */}
-			<img src="assets/vidh.png"className=" hidden lg:block w-full h-full object-cover mb-16"/>
+            <video
+                className="block w-full h-full object-cover mb-16 rounded-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls={false}
+                preload="auto"
+                poster="/assets/video/atelopus-poster.jpg"   // opcional
+                aria-hidden="true"                           // opcional si es decorativo
+                >
+                <source src="/assets/video/atelopus.mp4" type="video/mp4" />
+                {/* <source src="/assets/video/atelopus.webm" type="video/webm" /> */}
+            </video>
 		</main>
     )
 }
