@@ -7,7 +7,7 @@ export const translations = {
     'nav.contact': 'Contact',
 
     // Hero
-    'hero.title': 'Real-time theft detection. With AI',
+    'hero.title': 'Real-time detection of thefts and suspicious activity',
     'hero.subtitle': 'Turn your cameras into useful alerts: Detect suspicious behavior and receive video alerts on your phone to act in seconds.',
     'hero.demo': 'Request demo',
     'hero.how': 'See how it works',
@@ -174,7 +174,7 @@ export const translations = {
     'nav.contact': 'Contacto',
 
     // Hero
-    'hero.title': 'Detección de robos en tiempo real. Con IA',
+    'hero.title': 'Detección de robos y movimientos sospechosos en tiempo real',
     'hero.subtitle': 'Convierte tus cámaras en alertas útiles: Detecta comportamientos sospechosos y recibe alertas con video a tu celular para actuar en segundos.',
     'hero.demo': 'Solicitar demo',
     'hero.how': 'Ver cómo funciona',

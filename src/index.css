@@ -80,24 +80,33 @@
 
 @layer components {
 
+    .title-color {
+        @apply text-neutral-900
+    }
+
     .title-bigger {
-        @apply text-[48px] md:text-[80px]  leading-[100%]
+        @apply title-color text-[48px] md:text-[64px] leading-[100%];
     }
 
     .title-big {
-        @apply text-[32px] md:text-[72px]  leading-[100%]
+        @apply title-color text-[32px] md:text-[48px] leading-[100%];
     }
 
     .title-regular {
-        @apply text-[24px] md:text-[56px]  leading-[100%]
+        @apply title-color text-[28px] md:text-[38px] leading-[100%];
     }
 
     .title-small {
-        @apply text-[16px] md:text-[32px]  leading-[100%]
+        @apply title-color text-[21px] md:text-[28px] leading-[100%];
     }
 
-    .title-uppercase {
-        @apply text-[10px] md:text-[12px] tracking-widest leading-[100%] uppercase
+    /* (Opcional) Para cubrir toda la escala del spec */
+    .title-smaller {
+        @apply title-color text-[17px] md:text-[24px] leading-[100%];
+    }
+
+    .title-tiny {
+        @apply title-color text-[16px] md:text-[18px] leading-[100%];
     }
 
     .descriptions {
