@@ -109,9 +109,18 @@
         @apply title-color text-[16px] md:text-[18px] leading-[100%];
     }
 
-    .descriptions {
-        @apply text-sm md:text-base leading-[170%] text-neutral-600
+    /* descriptions */
+
+   .descriptions {
+        @apply font-descriptions font-normal leading-[150%] text-[14px] md:text-[16px];
     }
+
+    .descriptions-sm {
+        @apply font-descriptions font-medium leading-[150%] text-[12px] md:text-[14px];
+    }
+
+
+    /* buttons */
 
     .btn-text-regular {
         @apply font-['Plus_Jakarta_Sans'] font-semibold leading-[150%] text-[14px] md:text-[16px];
