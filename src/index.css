@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 :root {
-    --color-primary: #1a73e8;
-    --main-background: radial-gradient(219.45% 100% at 50% 0%, #06080C 0%, #060D20 71.96%, #006FFF 84.02%, #9DC7FE 90.88%, #E1EEFE 100%);
-    --color-01: #E7E4DE;
-    --color-description: #9DA1AC;
-    --button: #006FFF;;
+
   }
 
 @layer base {
     
-    .title {
+    h1, h2, h3, h4, h5, h6{
         font-family: "Clash Display", sans-serif;
+    }
+
+    p, span, a, li, button {
+        font-family: "Plus Jakarta Sans", sans-serif;
     }
 
     body {

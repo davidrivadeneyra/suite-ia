@@ -6,19 +6,19 @@ export default function LanguageSwitch({ className = '' }) {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
+    <div className={`flex items-center gap-2 ${className} `}>
       {/* Icono de traducción */}
-      <Languages className="w-5 h-5 text-slate-700" />
+      <Languages className="w-5 h-5 text-neutral-700" />
 
       {/* Toggle */}
-      <div className="flex items-center bg-gray-200 rounded-full p-1">
+      <div className="flex items-center bg-neutral-200 rounded-full p-1 border-neutral-300 border">
         <button
           onClick={() => setLanguage('en')}
           aria-pressed={language === 'en'}
-          className={`px-3 py-1 text-sm font-bold rounded-full transition ${
+          className={`h-6 w-6 text-xs font-bold rounded-full transition ${
             language === 'en'
               ? 'bg-white shadow text-black'
-              : 'text-slate-600 hover:text-black'
+              : 'text-neutral-600 hover:text-black'
           }`}
         >
           EN
@@ -26,10 +26,10 @@ export default function LanguageSwitch({ className = '' }) {
         <button
           onClick={() => setLanguage('es')}
           aria-pressed={language === 'es'}
-          className={`px-3 py-1 text-sm font-bold rounded-full transition ${
+          className={`h-6 w-6 text-xs font-bold rounded-full transition ${
             language === 'es'
               ? 'bg-white shadow text-black'
-              : 'text-slate-600 hover:text-black'
+              : 'text-neutral-600 hover:text-black'
           }`}
         >
           ES
