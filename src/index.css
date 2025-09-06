@@ -9,16 +9,6 @@
     --color-description: #9DA1AC;
     --button: #006FFF;;
   }
-/* @theme {
-    --font-jk:'Plus Jakarta Sans';
-    --font-m:'Space Mono';
-} */
-/* @font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url();
-} */
-
-
 
 @layer base {
     
@@ -163,6 +153,11 @@
     .test {
         @apply inline-block justify-center content-center text-sm md:text-base
     }
+
+    /* NAVBAR */
+    .nav-link {
+    @apply text-slate-800 font-semibold hover:text-green-700 font-descriptions text-sm;
+  }
   }
 
   

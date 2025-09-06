@@ -1,6 +1,6 @@
 import AccordionItem from "./components/AccordionItem";
 import { useLanguage } from './i18n/LanguageProvider';
-import Switcher from "./components/LandguageSwitch";
+import Header from "./components/Header";
 
 
 function App() {
@@ -9,23 +9,7 @@ function App() {
   return (
     <div className=" px-4 pt-4 md:px-12 md:pt-12 max-w-[1350px] mx-auto">
 
-      <header className="flex justify-between items-start mb-6">
-		
-		<div className="flex items-center gap-2 ">
-			<img src="/assets/logo.svg" alt="Logo" className="max-h-9" />
-			<h1 className="text-2xl font-bold">Atelopus</h1>
-		</div>
-		<Switcher></Switcher>
-			{/* NAVEGADOR*/}
-        <nav>
-          <ul className="flex flex-col items-end gap-1">
-            <li><a href="#about" className="text-gray-800 font-semibold hover:text-orange-500 font-descriptions text-sm">About</a></li>
-            <li><a href="#features" className="text-gray-800 font-semibold hover:text-orange-500 font-descriptions text-sm">Features</a></li>
-            <li><a href="#benefits" className="text-gray-800 font-semibold hover:text-orange-500 font-descriptions text-sm">Benefits</a></li>
-			<li><a href="#contact" className="text-gray-800 font-semibold hover:text-orange-500 font-descriptions text-sm">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+      <Header></Header>
 	  <body>
 		{/*HERO SECTION ARREGLAR EL TAMAÑO DE LA IMAGEN EN LG*/}
 		<hero className="max-h-full mb-16 ">
