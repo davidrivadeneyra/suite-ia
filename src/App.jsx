@@ -18,10 +18,7 @@ function App() {
 
       <Header></Header>
 	  <Hero />
-	  <body>
-		{/*HERO SECTION ARREGLAR EL TAMAÑO DE LA IMAGEN EN LG*/}
-	
-		<main>
+	 <main>
 			{/**ABOUT VER POR SIACASO EL BOX-MODEL DEL RESPONSIVE*/}
 			<section id="about"className=" flex gap-11 max-h-max flex-col lg:flex-row mb-16">
 				<div className="bg-black p-6 md:p-16  rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1]">
@@ -642,7 +639,6 @@ function App() {
 				
 			</section>
 		</main>
-	  </body>
 	  {/**CONTACTO */}
 	  <footer id="contact"className="bg-white flex flex-col lg:flex-row p-16 mb-16 gap-28 rounded-lg">
 		<div className="">
