@@ -5,7 +5,7 @@ import { useLanguage } from '../i18n/LanguageProvider';
 export default function Header() {
   return (
     <header className="flex justify-between items-start mb-6">
-      <div className="flex flex-col md:flex-row md:items-center gap-10">
+      <div className="flex flex-row gap-10">
         <div className="flex items-center gap-2">
         <img src="/assets/logo.svg" alt="Logo" className="max-h-9" />
         <h1 className="text-2xl font-bold">Atelopus</h1>
