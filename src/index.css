@@ -18,19 +18,19 @@
 
     body {
        background-color: #F7F7F7;
-  background-image: 
-    linear-gradient(to right, #AAAAAA 1px, transparent 1px),
-    linear-gradient(to bottom, #AAAAAA 1px, transparent 1px),
-    url('/assets/bgn.png');
-  background-size: 
-    205px 205px,
-    205px 205px,
-    auto;
-  background-repeat: repeat;
-  background-blend-mode: multiply; /* esto puede ayudar a mezclar mejor */
-  background-attachment: fixed, fixed, local;
-  margin: 0;
-  min-height: 100vh;
+        background-image: 
+            linear-gradient(to right, #AAAAAA 1px, transparent 1px),
+            linear-gradient(to bottom, #AAAAAA 1px, transparent 1px),
+            url('/assets/bgn.png');
+        background-size: 
+            205px 205px,
+            205px 205px,
+            auto;
+        background-repeat: repeat;
+        background-blend-mode: multiply; /* esto puede ayudar a mezclar mejor */
+        background-attachment: fixed, fixed, local;
+        margin: 0;
+        min-height: 100vh;
     }
 
     .button-color {
@@ -71,36 +71,6 @@
         color: var(--color-description);
     }
 
-    .slider-container {
-        position: relative;
-        /* overflow: hidden; */
-        display: flex;
-        white-space: nowrap;
-        gap: 32px;
-        width: max-content;
-    }
-      
-    .slider {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        white-space: nowrap;
-        gap: 32px;
-    }
-
-    .slider-container .slider:nth-of-type(2) {
-        position: absolute;
-        left: 100%;
-        margin-left: 32px;
-    }
-      
-    .slider-img-control {
-        width: auto; 
-        object-fit: contain;
-        border-radius: 8px;
-    }
-
-
     .main-inner {
         margin: 0 auto;
         max-width: 1320px;
@@ -111,24 +81,54 @@
 @layer components {
 
     .title-bigger {
-        @apply title text-[48px] md:text-[80px] tracking-tighter leading-[100%]
+        @apply text-[48px] md:text-[80px]  leading-[100%]
     }
 
     .title-big {
-        @apply title text-[32px] md:text-[72px] tracking-tighter leading-[100%]
+        @apply text-[32px] md:text-[72px]  leading-[100%]
     }
 
     .title-regular {
-        @apply title text-[24px] md:text-[56px] tracking-tighter leading-[100%]
+        @apply text-[24px] md:text-[56px]  leading-[100%]
     }
 
     .title-small {
-        @apply title text-[16px] md:text-[32px] tracking-tighter leading-[100%]
+        @apply text-[16px] md:text-[32px]  leading-[100%]
     }
 
     .title-uppercase {
-        @apply title text-[10px] md:text-[12px] tracking-widest leading-[100%] uppercase
+        @apply text-[10px] md:text-[12px] tracking-widest leading-[100%] uppercase
     }
+
+    .descriptions {
+        @apply text-sm md:text-base leading-[170%] text-neutral-600
+    }
+
+    .btn-text-regular {
+        @apply font-['Plus_Jakarta_Sans'] font-semibold leading-[150%] text-[14px] md:text-[16px];
+    }
+
+    .btn-text-small {
+        @apply font-['Plus_Jakarta_Sans'] font-semibold leading-[150%] text-[12px] md:text-[14px];
+    }
+
+    .btn-dark {
+        @apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2 
+    }
+
+    .btn-regular {
+        @apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2 
+    }
+    .btn-green {
+        @apply bg-green-700 text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2 
+    }
+    .btn-white {
+        @apply bg-white text-neutral-900 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2 
+    }
+    .btn-gray {
+        @apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2 
+    }
+
 
     .button-regular {
         @apply button-base inline-block justify-center content-center text-sm/[90%] md:text-base/[90%] button-color p-4 rounded-2xl color-white
@@ -138,10 +138,7 @@
         @apply button-ghost inline-block justify-center content-center text-xs/[90%] md:text-sm/[90%] button-color p-3 rounded-2xl 
     }
 
-    .descriptions {
-        @apply paragraph text-sm md:text-base leading-[170%]
-    }
-
+    
     .main-inner-section {
         @apply main-inner px-6 md:px-8 2xl:px-0
     }
@@ -156,7 +153,7 @@
 
     /* NAVBAR */
     .nav-link {
-    @apply text-slate-800 font-semibold hover:text-green-700 font-descriptions text-sm;
+    @apply text-slate-600 font-semibold hover:text-green-700 font-descriptions text-sm;
   }
   }
 
