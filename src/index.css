@@ -64,10 +64,6 @@
 
     }
 
-    .color-descripcion {
-        color: var(--color-description);
-    }
-
     .main-inner {
         margin: 0 auto;
         max-width: 1320px;
@@ -79,6 +75,10 @@
 
     .title-color {
         @apply text-neutral-900
+    }
+
+     .description-color {
+        @apply text-neutral-500
     }
 
     .title-bigger {
@@ -109,23 +109,23 @@
     /* descriptions */
 
    .descriptions {
-        @apply font-descriptions font-normal leading-[150%] text-[14px] md:text-[16px];
+        @apply description-color font-normal leading-[150%] text-[14px] md:text-[16px];
     }
 
     .descriptions-sm {
-        @apply font-descriptions font-medium leading-[150%] text-[12px] md:text-[14px];
+        @apply description-color font-medium leading-[150%] text-[12px] md:text-[14px];
     }
 
 
     /* buttons */
 
-    .btn-text-regular {
+    /* .btn-text-regular {
         @apply font-['Plus_Jakarta_Sans'] font-semibold leading-[150%] text-[14px] md:text-[16px];
     }
 
     .btn-text-small {
         @apply font-['Plus_Jakarta_Sans'] font-semibold leading-[150%] text-[12px] md:text-[14px];
-    }
+    } */
 
     .btn-dark {
         @apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2 
@@ -143,16 +143,6 @@
     .btn-gray {
         @apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2 
     }
-
-
-    .button-regular {
-        @apply button-base inline-block justify-center content-center text-sm/[90%] md:text-base/[90%] button-color p-4 rounded-2xl color-white
-    }
-
-    .btn-small {
-        @apply button-ghost inline-block justify-center content-center text-xs/[90%] md:text-sm/[90%] button-color p-3 rounded-2xl 
-    }
-
     
     .main-inner-section {
         @apply main-inner px-6 md:px-8 2xl:px-0
@@ -168,7 +158,7 @@
 
     /* NAVBAR */
     .nav-link {
-    @apply text-slate-600 font-semibold hover:text-green-700 font-descriptions text-sm;
+    @apply font-semibold hover:text-green-700 description-color text-[12px] md:text-[14px];
   }
   }
 
