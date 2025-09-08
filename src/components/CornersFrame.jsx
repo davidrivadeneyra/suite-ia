@@ -3,6 +3,8 @@ import React from "react";
 export default function CornerFrame({
   className = "",
   color = "#22C55E",
+  strokeColor,
+  pathClassName = "",
   strokeWidth = 2,
   radius = 2,
   cornerSize = 8,
@@ -20,23 +22,33 @@ export default function CornerFrame({
     "aria-hidden": true,
   };
 
+  // Resuelve el color final del trazo:
+  // - Usa strokeColor si viene
+  // - Si no, usa color (default)
+  const resolvedStroke = strokeColor ?? color;
+
   const pathProps = {
     d,
-    stroke: color,
+    stroke: resolvedStroke, // <— ahora sobrescribible con 'strokeColor'
     strokeWidth,
     vectorEffect: "non-scaling-stroke",
     strokeLinecap: "butt",
     strokeLinejoin: "round",
+    className: pathClassName, // <— clases directas al <path>
   };
 
   // Usamos valores exactos 6px → 8px y un ease bonito
   const posBase =
     "absolute transition-all duration-200 ease-in-out will-change:transform";
 
-  const tl = "top-[6px] left-[6px] group-hover/frame:top-[8px] group-hover/frame:left-[8px]";
-  const tr = "top-[6px] right-[6px] group-hover/frame:top-[8px] group-hover/frame:right-[8px]";
-  const bl = "bottom-[6px] left-[6px] group-hover/frame:bottom-[8px] group-hover/frame:left-[8px]";
-  const br = "bottom-[6px] right-[6px] group-hover/frame:bottom-[8px] group-hover/frame:right-[8px]";
+  const tl =
+    "top-[6px] left-[6px] group-hover/frame:top-[8px] group-hover/frame:left-[8px]";
+  const tr =
+    "top-[6px] right-[6px] group-hover/frame:top-[8px] group-hover/frame:right-[8px]";
+  const bl =
+    "bottom-[6px] left-[6px] group-hover/frame:bottom-[8px] group-hover/frame:left-[8px]";
+  const br =
+    "bottom-[6px] right-[6px] group-hover/frame:bottom-[8px] group-hover/frame:right-[8px]";
 
   return (
     <div className={`pointer-events-none select-none ${className}`}>

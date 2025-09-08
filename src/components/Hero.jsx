@@ -77,11 +77,11 @@ export default function Hero() {
           {/* Buttons */}
           <div ref={buttonsRef} className="flex flex-col md:flex-row gap-4">
             <button className="btn-text-regular btn-dark relative">
-              Solicitar demo
+              {t("hero.demo")}
               <CornerFrame className="absolute inset-0 fill-green-500 bg-transparent" />
             </button>
             <button className="btn-text-regular btn-white relative">
-              Ver cómo funciona
+              {t("hero.how")}
               <CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
             </button>
           </div>

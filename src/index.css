@@ -162,20 +162,20 @@
     } */
 
 	.btn-dark {
-		@apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2;
+		@apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 
 	.btn-regular {
-		@apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2;
+		@apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 	.btn-green {
-		@apply bg-green-700 text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2;
+		@apply bg-green-700 text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 	.btn-white {
-		@apply bg-white text-neutral-900 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2;
+		@apply bg-white text-neutral-900 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 	.btn-gray {
-		@apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg border-2;
+		@apply bg-neutral-200 text-neutral-900 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 
 	.main-inner-section {

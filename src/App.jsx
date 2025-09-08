@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 // import GridOverlay from "./components/GridOverlay";
 import GridSquares from "./components/GridSsquares";
 import AccordionData from "./components/AccordionData";
+import CornerFrame from "./components/CornersFrame";
 
 function App() {
 	const { t } = useLanguage();
@@ -27,13 +28,13 @@ function App() {
 					{/* ABOUT */}
 					<section
 						id="about"
-						className=" flex gap-11 max-h-max flex-col lg:flex-row mb-16"
+						className=" flex gap-8 max-h-max flex-col lg:flex-row mb-16"
 					>
-						<div className="bg-black p-6 md:p-16 rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1]">
+						<div className="bg-neutral-950 p-6 md:p-16 rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1]">
 							<h2 className="title-big font-semibold text-white">
 								{t("about.title")}
 							</h2>
-							<p className="descriptions text-white max-w-2xl">
+							<p className="descriptions text-neutral-400 max-w-2xl">
 								{t("about.desc")}
 							</p>
 						</div>
@@ -207,14 +208,16 @@ function App() {
 							<span className="descriptions mb-6">
 								{t("metrics.desc")}
 							</span>
-							<div className="flex flex-col gap-4 md:flex-row ">
-								<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
-									{t("hero.demo")}
-								</button>
-								<button className="bg-white text-black py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
-									{t("hero.how")}
-								</button>
-							</div>
+							 <div className="flex flex-col md:flex-row gap-4">
+                          <button className="btn-text-regular btn-dark relative">
+                            {t("hero.demo")}
+                            <CornerFrame className="absolute inset-0 fill-green-500 bg-transparent" />
+                          </button>
+                          <button className="btn-text-regular btn-white relative">
+                            {t("hero.how")}
+                            <CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
+                          </button>
+                        </div>
 						</div>
 
 						{/* GRID CÓMO FUNCIONA */}
@@ -356,14 +359,16 @@ function App() {
 							<span className="descriptions text-white mb-6">
 								{t("metrics.desc")}
 							</span>
-							<div className="flex flex-col gap-4 md:flex-row mb-10">
-								<button className="bg-green-600 text-white py-2 px-2 font-bold rounded-lg border-green-600 border-2 md:flex-[1.2]">
-									{t("industries.demo")}
-								</button>
-								<button className="bg-white text-black py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
-									{t("industries.how")}
-								</button>
-							</div>
+							 <div className="flex flex-col md:flex-row gap-4">
+                          <button className="btn-text-regular btn-green relative">
+                            {t("hero.demo")}
+                            <CornerFrame strokeColor="currentColor" className="text-white" />
+                          </button>
+                          <button className="btn-text-regular btn-gray relative">
+                            {t("hero.how")}
+                            <CornerFrame strokeColor="currentColor" className="text-neutral-400"/>
+                          </button>
+                        </div>
 						</div>
 
 						{/* GRID BENEFICIOS */}
