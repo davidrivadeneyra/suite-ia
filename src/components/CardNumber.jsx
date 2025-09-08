@@ -1,25 +1,27 @@
 // CardNumber.jsx
 import React from "react";
+import CornerFrame from "./CornersFrame";
 
-/**
- * value: número a mostrar
- * FrameComponent: componente de marco opcional (p.ej. CornerFrame)
- * frameProps: props para ese FrameComponent (p.ej. { strokeColor: 'currentColor', hover:false, className:'text-green-700' })
- */
-export function CardNumber({
+export default function CardNumber({
   value,
-  className = "relative w-16 h-16 flex items-center justify-center m-7",
+  className = "relative w-10 h-10 flex items-center justify-center",
   numberClassName = "",
-  FrameComponent,
-  frameProps = {},
+  // Controles opcionales del marco (no necesarios en la instancia básica)
+  withFrame = true,
+  strokeColor = "currentColor", // el frame toma el color de texto
+  hoverFrame = true,           // por defecto sin hover (estático)
+  frameClassName = "text-green-700", // combina con el borde de la tarjeta
 }) {
   return (
     <div className={className}>
-      {/* Marco opcional */}
-      {FrameComponent ? (
-        <FrameComponent {...frameProps} />
-      ) : null}
-      <span className={`relative z-10 ${numberClassName}`}>{value}</span>
+      {withFrame && (
+        <CornerFrame
+          strokeColor={strokeColor}
+          hover={hoverFrame}
+          className={frameClassName}
+        />
+      )}
+      <span className={`text-xs md:text-sm relative z-10 ${numberClassName}`}>{value}</span>
     </div>
   );
 }

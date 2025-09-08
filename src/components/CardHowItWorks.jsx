@@ -1,27 +1,26 @@
 import React from "react";
+import CardNumber from "./CardNumber";
 
-export function Card({
+export default function CardHowItWorks({
   title,
+  number,
   numberNode,
   iconSrc,
   iconAlt = "",
   className = "",
-  titleClassName = "title-smaller px-7 pb-7 w-4/5",
-  bodyClassName = "flex justify-between",
-  iconWrapperClassName = "p-7",
+  titleClassName = "title-smaller w-4/5",
+  iconWrapperClassName = "",
   numberWrapperClassName = "", // por si quieres añadir utilidades extra
 }) {
   return (
-    <div className={`w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ${className}`}>
-      <div className={`${bodyClassName}`}>
+    <div className={`flex flex-col justify-between w-full p-6 md:h-48 bg-white rounded-lg border-green-700 border ${className}`}>
+      <div className="flex justify-between pb-8">
         <div className={iconWrapperClassName}>
           {iconSrc ? <img src={iconSrc} alt={iconAlt} /> : null}
         </div>
 
         {/* Slot para el número (ej. <CardNumber ... />) */}
-        <div className={numberWrapperClassName}>
-          {numberNode}
-        </div>
+        <CardNumber value={number} />
       </div>
 
       <h3 className={titleClassName}>{title}</h3>

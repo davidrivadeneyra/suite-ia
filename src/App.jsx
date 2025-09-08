@@ -6,6 +6,8 @@ import Hero from "./components/Hero";
 import GridSquares from "./components/GridSsquares";
 import AccordionData from "./components/AccordionData";
 import CornerFrame from "./components/CornersFrame";
+import CardNumber from "./components/CardNumber";
+import CardHowItWorks from "./components/CardHowItWorks";
 
 function App() {
 	const { t } = useLanguage();
@@ -31,7 +33,11 @@ function App() {
 						className=" flex gap-8 max-h-max flex-col lg:flex-row mb-16"
 					>
 						<div className="bg-neutral-950 p-6 md:p-16 rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1] relative overflow-hidden pointer-events-none -z-10">
-							<img className="absolute top-0 w-[600px] right-0 z-0" src="/assets/background/BG-Decoration.png" alt="Atelopus decoración"/>
+							<img
+								className="absolute top-0 w-[600px] right-0 z-0"
+								src="/assets/background/BG-Decoration.png"
+								alt="Atelopus decoración"
+							/>
 							<h2 className="title-big font-semibold text-white">
 								{t("about.title")}
 							</h2>
@@ -58,12 +64,11 @@ function App() {
 					{/* MÓDULOS CLAVE */}
 					<section className="relative flex flex-col gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
 						<CornerFrame
-										hover={false}
-										strokeColor="currentColor"
-										className="text-neutral-400"
-									/>
+							hover={false}
+							strokeColor="currentColor"
+							className="text-neutral-400"
+						/>
 						<div className="flex flex-col lg:w-1/2 gap-10">
-						
 							<h2 className="title-regular">
 								{t("modules.title")}
 							</h2>
@@ -207,18 +212,20 @@ function App() {
 					</section>
 
 					{/* CÓMO FUNCIONA */}
-					<section id="features" className="flex flex-col p-6 md:p-16 mb-16 relative">
+					<section
+						id="features"
+						className="flex flex-col p-6 md:p-16 mb-16 relative bg-neutral-100 rounded-lg"
+					>
 						<CornerFrame
-										hover={false}
-										strokeColor="currentColor"
-										className="text-neutral-500"
-									/>
-
+							hover={false}
+							strokeColor="currentColor"
+							className="text-neutral-500"
+						/>
 
 						<div className="flex flex-col box-border md:w-[443px] pb-8">
 							<div className="pb-6">
 								<h2 className="title-big font-semibold pb-2">
-								{t("features.title")}
+									{t("features.title")}
 								</h2>
 								<p className="descriptions">
 									{t("metrics.desc")}
@@ -230,9 +237,12 @@ function App() {
 									<CornerFrame className="absolute inset-0 fill-green-400" />
 								</button>
 								<button className="btn-text-regular btn-white relative">
-															{t("hero.how")}
-															<CornerFrame className="text-neutral-400" strokeColor="currentColor" />
-														</button>
+									{t("hero.how")}
+									<CornerFrame
+										className="text-neutral-400"
+										strokeColor="currentColor"
+									/>
+								</button>
 							</div>
 						</div>
 
@@ -241,125 +251,41 @@ function App() {
 							className="grid grid-cols-1 grid-rows-1 gap-y-8 md:grid-cols-2 md:grid-rows-3 md:gap-y-12 md:gap-x-12 
                 lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-12 lg:gap-x-12 [&>*]:m-0"
 						>
-							{/* Tarjeta 1 */}
-							<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
-								<div className="flex justify-between">
-									<div className="p-7">
-										<img src="assets/icon1.svg" alt="" />
-									</div>
-									<div className="relative w-16 h-16 flex items-center justify-center m-7">
-										<img
-											src="assets/esquinas.svg"
-											alt="marco"
-											className="absolute inset-0 w-full h-full"
-										/>
-										<span>1</span>
-									</div>
-								</div>
-								<h3 className="title-smaller px-7 pb-7 w-4/5">
-									{t("features.step1")}
-								</h3>
-							</div>
+							<CardHowItWorks
+								title={t("features.step1")}
+								iconSrc="assets/icon1.svg"
+								number={1}
+							/>
 
-							{/* Tarjeta 2 */}
-							<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
-								<div className="flex justify-between">
-									<div className="p-7">
-										<img src="assets/icon2.svg" alt="" />
-									</div>
-									<div className="relative w-16 h-16 flex items-center justify-center m-7">
-										<img
-											src="assets/esquinas.svg"
-											alt="marco"
-											className="absolute inset-0 w-full h-full"
-										/>
-										<span>2</span>
-									</div>
-								</div>
-								<h3 className="title-smaller px-7 pb-7 w-4/5">
-									{t("features.step2")}
-								</h3>
-							</div>
+							<CardHowItWorks
+								title={t("features.step2")}
+								iconSrc="assets/icon2.svg"
+								number={2}
+							/>
 
-							{/* Tarjeta 3 */}
-							<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
-								<div className="flex justify-between">
-									<div className="p-7">
-										<img src="assets/icon3.svg" alt="" />
-									</div>
-									<div className="relative w-16 h-16 flex items-center justify-center m-7">
-										<img
-											src="assets/esquinas.svg"
-											alt="marco"
-											className="absolute inset-0 w-full h-full"
-										/>
-										<span>3</span>
-									</div>
-								</div>
-								<h3 className="title-smaller px-7 pb-7 w-4/5">
-									{t("features.step3")}
-								</h3>
-							</div>
+							<CardHowItWorks
+								title={t("features.step3")}
+								iconSrc="assets/icon3.svg"
+								number={3}
+							/>
 
-							{/* Tarjeta 4 */}
-							<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
-								<div className="flex justify-between">
-									<div className="p-7">
-										<img src="assets/icon4.svg" alt="" />
-									</div>
-									<div className="relative w-16 h-16 flex items-center justify-center m-7">
-										<img
-											src="assets/esquinas.svg"
-											alt="marco"
-											className="absolute inset-0 w-full h-full"
-										/>
-										<span>4</span>
-									</div>
-								</div>
-								<h3 className="title-smaller px-7 pb-7 w-4/5">
-									{t("features.step4")}
-								</h3>
-							</div>
+							<CardHowItWorks
+								title={t("features.step4")}
+								iconSrc="assets/icon4.svg"
+								number={4}
+							/>
 
-							{/* Tarjeta 5 */}
-							<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
-								<div className="flex justify-between">
-									<div className="p-7">
-										<img src="assets/icon5.svg" alt="" />
-									</div>
-									<div className="relative w-16 h-16 flex items-center justify-center m-7">
-										<img
-											src="assets/esquinas.svg"
-											alt="marco"
-											className="absolute inset-0 w-full h-full"
-										/>
-										<span>5</span>
-									</div>
-								</div>
-								<h3 className="title-smaller px-7 pb-7 w-4/5">
-									{t("features.step5")}
-								</h3>
-							</div>
+							<CardHowItWorks
+								title={t("features.step5")}
+								iconSrc="assets/icon5.svg"
+								number={5}
+							/>
 
-							{/* Tarjeta 6 */}
-							<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">
-								<div className="flex justify-between">
-									<div className="p-7">
-										<img src="assets/icon6.svg" alt="" />
-									</div>
-									<div className="relative w-16 h-16 flex items-center justify-center m-7">
-										<img
-											src="assets/esquinas.svg"
-											alt="marco"
-											className="absolute inset-0 w-full h-full"
-										/>
-										<span>6</span>
-									</div>
-								</div>
-								<h3 className="title-smaller px-7 pb-7 w-4/5">
-									{t("features.step6")}
-								</h3>
-							</div>
+							<CardHowItWorks
+								title={t("features.step6")}
+								iconSrc="assets/icon6.svg"
+								number={6}
+							/>
 						</div>
 					</section>
 
@@ -368,9 +294,12 @@ function App() {
 						id="benefits"
 						className=" bg-neutral-950 rounded-lg mb-16 relative"
 					>
+						<img
+							className="absolute top-0 w-[600px] right-0 z-0"
+							src="/assets/background/BG-Decoration.png"
+							alt="Atelopus decoración"
+						/>
 
-						<img className="absolute top-0 w-[600px] right-0 z-0" src="/assets/background/BG-Decoration.png" alt="Atelopus decoración"/>
-						
 						<div className="flex flex-col mx-6 md:ml-16 pt-6 md:pt-16 md:w-[443px] ">
 							<h2 className="title-big font-semibold text-white mb-4">
 								{t("benefits.title")}
@@ -552,7 +481,11 @@ function App() {
 
 					{/* INDUSTRIAS */}
 					<section className="flex flex-col-reverse gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16 relative">
-						<img className="absolute top-0 w-[600px] right-0 z-0" src="/assets/background/BG-Decoration.png" alt="Atelopus decoración"/>
+						<img
+							className="absolute top-0 w-[600px] right-0 z-0"
+							src="/assets/background/BG-Decoration.png"
+							alt="Atelopus decoración"
+						/>
 						<div className="lg:w-1/2">
 							<AccordionItem
 								title={t("modules.retail.title")}
