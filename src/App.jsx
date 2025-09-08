@@ -208,16 +208,16 @@ function App() {
 							<span className="descriptions mb-6">
 								{t("metrics.desc")}
 							</span>
-							 <div className="flex flex-col md:flex-row gap-4">
-                          <button className="btn-text-regular btn-dark relative">
-                            {t("hero.demo")}
-                            <CornerFrame className="absolute inset-0 fill-green-500 bg-transparent" />
-                          </button>
-                          <button className="btn-text-regular btn-white relative">
-                            {t("hero.how")}
-                            <CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
-                          </button>
-                        </div>
+							<div className="flex flex-col md:flex-row gap-4">
+								<button className="btn-text-regular btn-dark relative">
+									{t("hero.demo")}
+									<CornerFrame className="absolute inset-0 fill-green-500 bg-transparent" />
+								</button>
+								<button className="btn-text-regular btn-white relative">
+									{t("hero.how")}
+									<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
+								</button>
+							</div>
 						</div>
 
 						{/* GRID CÓMO FUNCIONA */}
@@ -350,25 +350,31 @@ function App() {
 					{/* BENEFICIOS */}
 					<section
 						id="benefits"
-						className=" bg-black rounded-lg mb-16"
+						className=" bg-neutral-950 rounded-lg mb-16"
 					>
 						<div className="flex flex-col mx-6 md:ml-16 pt-6 md:pt-16 md:w-[443px] ">
 							<h2 className="title-big font-semibold text-white mb-4">
 								{t("benefits.title")}
 							</h2>
-							<span className="descriptions text-white mb-6">
+							<span className="descriptions text-neutral-400 mb-6">
 								{t("metrics.desc")}
 							</span>
-							 <div className="flex flex-col md:flex-row gap-4">
-                          <button className="btn-text-regular btn-green relative">
-                            {t("hero.demo")}
-                            <CornerFrame strokeColor="currentColor" className="text-white" />
-                          </button>
-                          <button className="btn-text-regular btn-gray relative">
-                            {t("hero.how")}
-                            <CornerFrame strokeColor="currentColor" className="text-neutral-400"/>
-                          </button>
-                        </div>
+							<div className="flex flex-col md:flex-row gap-4 pb-8">
+								<button className="btn-text-regular btn-green relative">
+									{t("hero.demo")}
+									<CornerFrame
+										strokeColor="currentColor"
+										className="text-white"
+									/>
+								</button>
+								<button className="btn-text-regular btn-gray relative">
+									{t("hero.how")}
+									<CornerFrame
+										strokeColor="currentColor"
+										className="text-neutral-400"
+									/>
+								</button>
+							</div>
 						</div>
 
 						{/* GRID BENEFICIOS */}

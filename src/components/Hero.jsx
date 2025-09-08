@@ -7,122 +7,138 @@ import { usePageAnimations } from "../anim/usePageAnimations";
 import { gsap } from "../anim/gsapSetup";
 
 export default function Hero() {
-  const { t } = useLanguage();
+	const { t } = useLanguage();
 
-  // Refs
-  const heroRef     = useRef(null);
-  const titleRef    = useRef(null);
-  const subtitleRef = useRef(null);
-  const buttonsRef  = useRef(null);
-  const imageRef    = useRef(null);
-  const statsRef    = useRef(null);
-  const videoRef    = useRef(null);
+	// Refs
+	const heroRef = useRef(null);
+	const titleRef = useRef(null);
+	const subtitleRef = useRef(null);
+	const buttonsRef = useRef(null);
+	const imageRef = useRef(null);
+	const statsRef = useRef(null);
+	const videoRef = useRef(null);
 
-  useLayoutEffect(() => {
-    if (typeof window === "undefined") return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+	useLayoutEffect(() => {
+		if (typeof window === "undefined") return;
+		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+			return;
 
-    // Limita todo al subtree de heroRef y limpia seguro en StrictMode
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { ease: "power2.out", duration: 0.6 } });
+		// Limita todo al subtree de heroRef y limpia seguro en StrictMode
+		const ctx = gsap.context(() => {
+			const tl = gsap.timeline({
+				defaults: { ease: "power2.out", duration: 0.6 },
+			});
 
-      // Añade al timeline solo si el nodo existe
-      const add = (el, vars, pos) => {
-        if (!el) return;
-        tl.from(el, vars, pos);
-      };
+			// Añade al timeline solo si el nodo existe
+			const add = (el, vars, pos) => {
+				if (!el) return;
+				tl.from(el, vars, pos);
+			};
 
-      add(titleRef.current,    { y: 24, opacity: 0 });
-      add(subtitleRef.current, { y: 16, opacity: 0 }, "-=0.35");
+			add(titleRef.current, { y: 24, opacity: 0 });
+			add(subtitleRef.current, { y: 16, opacity: 0 }, "-=0.35");
 
-      if (buttonsRef.current?.children?.length) {
-        const kids = Array.from(buttonsRef.current.children);
-        tl.from(kids, { y: 12, opacity: 0, stagger: 0.08 }, "-=0.30");
-      }
+			if (buttonsRef.current?.children?.length) {
+				const kids = Array.from(buttonsRef.current.children);
+				tl.from(kids, { y: 12, opacity: 0, stagger: 0.08 }, "-=0.30");
+			}
 
-      add(imageRef.current, { scale: 0.98, opacity: 0 }, "-=0.20");
-      add(statsRef.current, { y: 20, opacity: 0 }, "-=0.20");
+			add(imageRef.current, { scale: 0.98, opacity: 0 }, "-=0.20");
+			add(statsRef.current, { y: 20, opacity: 0 }, "-=0.20");
 
-      // Reveal del VIDEO cuando entra al viewport (solo si existe)
-      if (videoRef.current) {
-        gsap.from(videoRef.current, {
-          opacity: 0,
-          y: 24,
-          duration: 0.6,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: videoRef.current,
-            start: "top 85%",
-            once: true,
-          },
-        });
-      }
-    }, heroRef);
+			// Reveal del VIDEO cuando entra al viewport (solo si existe)
+			if (videoRef.current) {
+				gsap.from(videoRef.current, {
+					opacity: 0,
+					y: 24,
+					duration: 0.6,
+					ease: "power2.out",
+					scrollTrigger: {
+						trigger: videoRef.current,
+						start: "top 85%",
+						once: true,
+					},
+				});
+			}
+		}, heroRef);
 
-    return () => ctx.revert();
-  }, []);
+		return () => ctx.revert();
+	}, []);
 
-  return (
-    <main className="max-h-full">
-      <section ref={heroRef} className="flex flex-col lg:flex-row gap-14 mb-12">
-        <div className="w-full">
-          <h1 ref={titleRef} className="title-bigger pb-4">
-            {t("hero.title")}
-          </h1>
+	return (
+		<main className="max-h-full">
+			<section
+				ref={heroRef}
+				className="flex flex-col lg:flex-row gap-14 mb-12"
+			>
+				<div className="w-full">
+					<h1 ref={titleRef} className="title-bigger pb-4">
+						{t("hero.title")}
+					</h1>
 
-          <p ref={subtitleRef} className="descriptions mb-6">
-            {t("hero.subtitle")}
-          </p>
+					<p ref={subtitleRef} className="descriptions mb-6">
+						{t("hero.subtitle")}
+					</p>
 
-          {/* Buttons */}
-          <div ref={buttonsRef} className="flex flex-col md:flex-row gap-4">
-            <button className="btn-text-regular btn-dark relative">
-              {t("hero.demo")}
-              <CornerFrame className="absolute inset-0 fill-green-500 bg-transparent" />
-            </button>
-            <button className="btn-text-regular btn-white relative">
-              {t("hero.how")}
-              <CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
-            </button>
-          </div>
-        </div>
+					{/* Buttons */}
+					<div
+						ref={buttonsRef}
+						className="flex flex-col md:flex-row gap-4"
+					>
+						<button className="btn-text-regular btn-dark relative">
+							{t("hero.demo")}
+							<CornerFrame className="absolute inset-0 fill-green-500 bg-transparent" />
+						</button>
+						<button className="btn-text-regular btn-white relative">
+							{t("hero.how")}
+							<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
+						</button>
+					</div>
+				</div>
 
-        <div className="w-full flex gap-4 items-stretch">
-          <div ref={imageRef} className="relative flex-1 rounded-lg overflow-hidden">
-            <img
-              className="absolute inset-0 w-full h-full object-cover"
-              src="/assets/imgh.png"
-              alt="Hombre identificado robando"
-            />
-          </div>
+				<div className="w-full flex gap-4 items-stretch">
+					<div
+						ref={imageRef}
+						className="relative flex-1 rounded-lg overflow-hidden"
+					>
+						<img
+							className="absolute inset-0 w-full h-full object-cover"
+							src="/assets/imgh.png"
+							alt="Hombre identificado robando"
+						/>
+					</div>
 
-          <div
-            ref={statsRef}
-            className="flex-none w-fit lg:h-full h-96 self-start flex flex-col p-6 bg-white rounded-lg justify-end relative"
-          >
-            <p className="text-6xl font-semibold font-title mt-4">+12</p>
-            <p className="descriptions whitespace-nowrap">Clientes satisfechos</p>
-            <CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
-          </div>
-        </div>
-      </section>
+					<div
+						ref={statsRef}
+						className="flex-none w-fit lg:h-full h-96 self-start flex flex-col p-6 bg-white rounded-lg justify-end relative"
+					>
+						<p className="text-6xl font-semibold font-title mt-4">
+							+12
+						</p>
+						<p className="descriptions whitespace-nowrap">
+							Clientes satisfechos
+						</p>
+						<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
+					</div>
+				</div>
+			</section>
 
-      {/* VIDEO */}
-      <video
-        ref={videoRef}
-        className="block w-full h-full object-cover mb-16 rounded-lg"
-        autoPlay
-        loop
-        muted
-        playsInline
-        controls={false}
-        preload="auto"
-        poster="/assets/video/atelopus-poster.jpg"
-        aria-hidden="true"
-      >
-        <source src="/assets/video/atelopus.mp4" type="video/mp4" />
-        {/* <source src="/assets/video/atelopus.webm" type="video/webm" /> */}
-      </video>
-    </main>
-  );
+			{/* VIDEO */}
+			<video
+				ref={videoRef}
+				className="block w-full h-full object-cover mb-16 rounded-lg"
+				autoPlay
+				loop
+				muted
+				playsInline
+				controls={false}
+				preload="auto"
+				poster="/assets/video/atelopus-poster.jpg"
+				aria-hidden="true"
+			>
+				<source src="/assets/video/atelopus.mp4" type="video/mp4" />
+				{/* <source src="/assets/video/atelopus.webm" type="video/webm" /> */}
+			</video>
+		</main>
+	);
 }

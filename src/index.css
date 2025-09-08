@@ -169,7 +169,7 @@
 		@apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 	.btn-green {
-		@apply bg-green-700 text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
+		@apply bg-green-600 text-neutral-950 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 	.btn-white {
 		@apply bg-white text-neutral-900 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
