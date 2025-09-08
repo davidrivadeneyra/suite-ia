@@ -169,13 +169,13 @@
 		@apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 	.btn-green {
-		@apply bg-green-600 text-neutral-950 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
+		@apply bg-green-500 text-neutral-950 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 	.btn-white {
 		@apply bg-white text-neutral-900 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 	.btn-gray {
-		@apply bg-neutral-200 text-neutral-900 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
+		@apply bg-neutral-100 text-neutral-900 md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
 	}
 
 	.main-inner-section {

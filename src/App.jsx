@@ -2,12 +2,12 @@ import AccordionItem from "./components/AccordionItem";
 import { useLanguage } from "./i18n/LanguageProvider";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-// import GridOverlay from "./components/GridOverlay";
 import GridSquares from "./components/GridSsquares";
 import AccordionData from "./components/AccordionData";
 import CornerFrame from "./components/CornersFrame";
-import CardNumber from "./components/CardNumber";
 import CardHowItWorks from "./components/CardHowItWorks";
+import DashedConnector from "./components/DashConector";
+import { tr } from "motion/react-client";
 
 function App() {
 	const { t } = useLanguage();
@@ -247,45 +247,90 @@ function App() {
 						</div>
 
 						{/* GRID CÓMO FUNCIONA */}
-						<div
-							className="grid grid-cols-1 grid-rows-1 gap-y-8 md:grid-cols-2 md:grid-rows-3 md:gap-y-12 md:gap-x-12 
-                lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-12 lg:gap-x-12 [&>*]:m-0"
-						>
-							<CardHowItWorks
-								title={t("features.step1")}
-								iconSrc="assets/icon1.svg"
-								number={1}
-							/>
+						<div className="flex flex-col">
+							<div className="flex flex-col md:flex-row">
+								<CardHowItWorks
+									title={t("features.step1")}
+									iconSrc="assets/icon1.svg"
+									number={1}
+								/>
 
-							<CardHowItWorks
-								title={t("features.step2")}
-								iconSrc="assets/icon2.svg"
-								number={2}
-							/>
+								<DashedConnector className="hidden md:block w-16" />
+								<div className="w-full block md:hidden">
+									<DashedConnector className="h-16" orientation="vertical" />
+								</div>
 
-							<CardHowItWorks
-								title={t("features.step3")}
-								iconSrc="assets/icon3.svg"
-								number={3}
-							/>
+						
+								
 
-							<CardHowItWorks
-								title={t("features.step4")}
-								iconSrc="assets/icon4.svg"
-								number={4}
-							/>
+								<CardHowItWorks
+									title={t("features.step2")}
+									iconSrc="assets/icon2.svg"
+									number={2}
+								/>
 
-							<CardHowItWorks
-								title={t("features.step5")}
-								iconSrc="assets/icon5.svg"
-								number={5}
-							/>
+								<DashedConnector className="hidden md:block w-16" />
+								<div className="w-full block md:hidden">
+									<DashedConnector className="h-16" orientation="vertical" />
+								</div>
 
-							<CardHowItWorks
-								title={t("features.step6")}
-								iconSrc="assets/icon6.svg"
-								number={6}
-							/>
+								<CardHowItWorks
+									title={t("features.step3")}
+									iconSrc="assets/icon3.svg"
+									number={3}
+								/>
+							</div>
+							<div className="flex flex-row gap-16">
+								<div className="hidden md:block md:w-full"></div>
+								<div className="hidden md:block md:w-full"></div>
+								<div className="w-full flex justify-center">
+									<DashedConnector
+										className="h-full w-16"
+										orientation="vertical"
+									/>
+								</div>
+							</div>
+
+							<div className="flex flex-col md:flex-row">
+								<CardHowItWorks
+									title={t("features.step4")}
+									iconSrc="assets/icon4.svg"
+									number={4}
+								/>
+
+								<DashedConnector
+									className="hidden md:block  w-16"
+									reverse={true}
+								/>
+
+						
+								<div className="w-full block md:hidden">
+									<DashedConnector className="h-16" orientation="vertical" />
+								</div>
+
+								<CardHowItWorks
+									title={t("features.step5")}
+									iconSrc="assets/icon5.svg"
+									number={5}
+								/>
+
+								<DashedConnector
+									className="hidden md:block  w-16"
+									reverse={true}
+								/>
+
+						
+								<div className="w-full block md:hidden">
+									<DashedConnector className="h-16" orientation="vertical" />
+								</div>
+
+
+								<CardHowItWorks
+									title={t("features.step6")}
+									iconSrc="assets/icon6.svg"
+									number={6}
+								/>
+							</div>
 						</div>
 					</section>
 
@@ -312,7 +357,7 @@ function App() {
 									{t("hero.demo")}
 									<CornerFrame
 										strokeColor="currentColor"
-										className="text-white"
+										className="text-neutral-950"
 									/>
 								</button>
 								<button className="btn-text-regular btn-gray relative">
@@ -387,12 +432,20 @@ function App() {
 							<span className="descriptions mb-6 text-center">
 								{t("metrics.desc")}
 							</span>
-							<div className="flex flex-col gap-4 md:flex-row mb-10">
-								<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
+							<div className="flex flex-col md:flex-row gap-4 pb-8">
+								<button className="btn-text-regular btn-dark relative">
 									{t("hero.demo")}
+									<CornerFrame
+										className="text-green-500"
+										strokeColor="currentColor"
+									/>
 								</button>
-								<button className="bg-white text-black py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+								<button className="btn-text-regular btn-gray relative">
 									{t("hero.how")}
+									<CornerFrame
+										className="text-neutral-400"
+										strokeColor="currentColor"
+									/>
 								</button>
 							</div>
 						</div>
@@ -571,12 +624,20 @@ function App() {
 							<p className="descriptions text-white mb-6">
 								{t("industries.desc")}
 							</p>
-							<div className="flex flex-col gap-4 md:flex-row mb-10">
-								<button className="bg-green-600 text-white py-2 px-2 font-bold rounded-lg border-green-600 border-2 md:flex-[1.2]">
-									{t("industries.demo")}
+							<div className="flex flex-col md:flex-row gap-4 pb-8">
+								<button className="btn-text-regular btn-green relative">
+									{t("hero.demo")}
+									<CornerFrame
+										strokeColor="currentColor"
+										className="text-neutral-950"
+									/>
 								</button>
-								<button className="bg-white text-black py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
-									{t("industries.how")}
+								<button className="btn-text-regular btn-gray relative">
+									{t("hero.how")}
+									<CornerFrame
+										strokeColor="currentColor"
+										className="text-neutral-400"
+									/>
 								</button>
 							</div>
 							<img
@@ -595,12 +656,20 @@ function App() {
 							<span className="descriptions mb-6 text-center">
 								{t("metrics.desc")}
 							</span>
-							<div className="flex flex-col gap-4 md:flex-row ">
-								<button className="bg-black text-white py-2 px-2 font-bold rounded-lg border-2 md:flex-[1.2]">
+							<div className="flex flex-col md:flex-row gap-4">
+								<button className="btn-text-regular btn-dark relative">
 									{t("hero.demo")}
+									<CornerFrame
+										className="text-green-500"
+										strokeColor="currentColor"
+									/>
 								</button>
-								<button className="bg-white text-black py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
+								<button className="btn-text-regular btn-white relative">
 									{t("hero.how")}
+									<CornerFrame
+										className="text-neutral-400"
+										strokeColor="currentColor"
+									/>
 								</button>
 							</div>
 						</div>
