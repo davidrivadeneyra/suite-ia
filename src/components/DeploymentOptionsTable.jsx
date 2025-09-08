@@ -4,7 +4,7 @@ const COLUMNS = ["option", "where", "offsite", "multi", "ideal"];
 
 const ROWS = [
   { id: "onprem" },
-  { id: "hybrid" },
+  // { id: "hybrid" },
   { id: "saas" },
 ];
 

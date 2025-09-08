@@ -121,12 +121,12 @@ export const translations = {
 		"deploy.rows.onprem.multi": "Via on-site panel / VPN",
 		"deploy.rows.onprem.ideal": "Strict compliance, casinos, government",
 
-		"deploy.rows.hybrid.option": "Hybrid",
-		"deploy.rows.hybrid.where":
-			"Detection at the edge + management in the cloud",
-		"deploy.rows.hybrid.offsite": "Minimal (clips/events)",
-		"deploy.rows.hybrid.multi": "Yes",
-		"deploy.rows.hybrid.ideal": "Retail and multi-site PH",
+		// "deploy.rows.hybrid.option": "Hybrid",
+		// "deploy.rows.hybrid.where":
+		// 	"Detection at the edge + management in the cloud",
+		// "deploy.rows.hybrid.offsite": "Minimal (clips/events)",
+		// "deploy.rows.hybrid.multi": "Yes",
+		// "deploy.rows.hybrid.ideal": "Retail and multi-site PH",
 
 		"deploy.rows.saas.option": "SaaS (Cloud)",
 		"deploy.rows.saas.where": "Processing primarily in the cloud",
@@ -391,11 +391,11 @@ export const translations = {
 		"deploy.rows.onprem.multi": "Vía panel en sitio / VPN",
 		"deploy.rows.onprem.ideal": "Compliance estricto, casinos, gobierno",
 
-		"deploy.rows.hybrid.option": "Híbrido",
-		"deploy.rows.hybrid.where": "Detección en Edge + gestión en nube",
-		"deploy.rows.hybrid.offsite": "Mínimo (clips/eventos)",
-		"deploy.rows.hybrid.multi": "Sí",
-		"deploy.rows.hybrid.ideal": "Retail y PH multi-sede",
+		// "deploy.rows.hybrid.option": "Híbrido",
+		// "deploy.rows.hybrid.where": "Detección en Edge + gestión en nube",
+		// "deploy.rows.hybrid.offsite": "Mínimo (clips/eventos)",
+		// "deploy.rows.hybrid.multi": "Sí",
+		// "deploy.rows.hybrid.ideal": "Retail y PH multi-sede",
 
 		"deploy.rows.saas.option": "SaaS (Cloud)",
 		"deploy.rows.saas.where": "Procesamiento principalmente en nube",
