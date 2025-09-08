@@ -30,7 +30,8 @@ function App() {
 						id="about"
 						className=" flex gap-8 max-h-max flex-col lg:flex-row mb-16"
 					>
-						<div className="bg-neutral-950 p-6 md:p-16 rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1]">
+						<div className="bg-neutral-950 p-6 md:p-16 rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1] relative overflow-hidden pointer-events-none -z-10">
+							<img className="absolute top-0 w-[600px] right-0 z-0" src="/assets/background/BG-Decoration.png" alt="Atelopus decoración"/>
 							<h2 className="title-big font-semibold text-white">
 								{t("about.title")}
 							</h2>
@@ -365,8 +366,11 @@ function App() {
 					{/* BENEFICIOS */}
 					<section
 						id="benefits"
-						className=" bg-neutral-950 rounded-lg mb-16"
+						className=" bg-neutral-950 rounded-lg mb-16 relative"
 					>
+
+						<img className="absolute top-0 w-[600px] right-0 z-0" src="/assets/background/BG-Decoration.png" alt="Atelopus decoración"/>
+						
 						<div className="flex flex-col mx-6 md:ml-16 pt-6 md:pt-16 md:w-[443px] ">
 							<h2 className="title-big font-semibold text-white mb-4">
 								{t("benefits.title")}
@@ -547,7 +551,8 @@ function App() {
 					</section>
 
 					{/* INDUSTRIAS */}
-					<section className="flex flex-col-reverse gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16">
+					<section className="flex flex-col-reverse gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16 relative">
+						<img className="absolute top-0 w-[600px] right-0 z-0" src="/assets/background/BG-Decoration.png" alt="Atelopus decoración"/>
 						<div className="lg:w-1/2">
 							<AccordionItem
 								title={t("modules.retail.title")}
