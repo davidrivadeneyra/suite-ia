@@ -92,7 +92,7 @@ export default function CornerFrame({
 	return (
 		<div
 			ref={wrapperRef}
-			className={`pointer-events-none select-none ${className}`}
+			className={`pointer-events-none select-none ${className} absolute top-0 right-0 bottom-0 left-0`}
 		>
 			<span className={`${posBase} ${tl}`}>
 				<svg {...commonSvg}>

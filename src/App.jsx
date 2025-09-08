@@ -55,8 +55,14 @@ function App() {
 					</section>
 
 					{/* MÓDULOS CLAVE */}
-					<section className="flex flex-col gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
+					<section className="relative flex flex-col gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
+						<CornerFrame
+										hover={false}
+										strokeColor="currentColor"
+										className="text-neutral-400"
+									/>
 						<div className="flex flex-col lg:w-1/2 gap-10">
+						
 							<h2 className="title-regular">
 								{t("modules.title")}
 							</h2>
@@ -200,30 +206,39 @@ function App() {
 					</section>
 
 					{/* CÓMO FUNCIONA */}
-					<section id="features" className="space-y-11 mb-16">
-						<div className="flex flex-col ml-6 md:ml-16 box-border md:w-[443px] ">
-							<h2 className="title-big font-semibold mb-4">
+					<section id="features" className="flex flex-col p-6 md:p-16 mb-16 relative">
+						<CornerFrame
+										hover={false}
+										strokeColor="currentColor"
+										className="text-neutral-500"
+									/>
+
+
+						<div className="flex flex-col box-border md:w-[443px] pb-8">
+							<div className="pb-6">
+								<h2 className="title-big font-semibold pb-2">
 								{t("features.title")}
-							</h2>
-							<span className="descriptions mb-6">
-								{t("metrics.desc")}
-							</span>
+								</h2>
+								<p className="descriptions">
+									{t("metrics.desc")}
+								</p>
+							</div>
 							<div className="flex flex-col md:flex-row gap-4">
 								<button className="btn-text-regular btn-dark relative">
 									{t("hero.demo")}
-									<CornerFrame className="absolute inset-0 fill-green-500 bg-transparent" />
+									<CornerFrame className="absolute inset-0 fill-green-400" />
 								</button>
 								<button className="btn-text-regular btn-white relative">
-									{t("hero.how")}
-									<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
-								</button>
+															{t("hero.how")}
+															<CornerFrame className="text-neutral-400" strokeColor="currentColor" />
+														</button>
 							</div>
 						</div>
 
 						{/* GRID CÓMO FUNCIONA */}
 						<div
 							className="grid grid-cols-1 grid-rows-1 gap-y-8 md:grid-cols-2 md:grid-rows-3 md:gap-y-12 md:gap-x-12 
-                lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-12 lg:gap-x-12 [&>*]:m-0 px-6 md:px-16 pb-16"
+                lg:grid-cols-3 lg:grid-rows-2 lg:gap-y-12 lg:gap-x-12 [&>*]:m-0"
 						>
 							{/* Tarjeta 1 */}
 							<div className=" w-full lg:min-w-80 lg:h-48 md:min-w-72 md:h-48 bg-white rounded-lg border-green-700 border-2 ">

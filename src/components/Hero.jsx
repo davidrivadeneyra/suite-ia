@@ -87,11 +87,12 @@ export default function Hero() {
 					>
 						<button className="btn-text-regular btn-dark relative">
 							{t("hero.demo")}
-							<CornerFrame className="absolute inset-0 fill-green-500 bg-transparent" />
+							<CornerFrame className="text-green-500" strokeColor="currentColor" />
+							
 						</button>
 						<button className="btn-text-regular btn-white relative">
 							{t("hero.how")}
-							<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
+							<CornerFrame className="text-neutral-400" strokeColor="currentColor" />
 						</button>
 					</div>
 				</div>
