@@ -17,7 +17,7 @@
 	h3,
 	h4,
 	h5,
-	h6 {
+	h6, th {
 		font-family: "Clash Display", sans-serif;
 	}
 
@@ -25,7 +25,7 @@
 	span,
 	a,
 	li,
-	button {
+	button, td {
 		font-family: "Plus Jakarta Sans", sans-serif;
 	}
 

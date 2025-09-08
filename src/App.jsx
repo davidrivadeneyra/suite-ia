@@ -8,6 +8,7 @@ import CornerFrame from "./components/CornersFrame";
 import CardHowItWorks from "./components/CardHowItWorks";
 import DashedConnector from "./components/DashConector";
 import CardBenefits from "./components/CardBenefits";
+import DeploymentOptionsTable from "./components/DeploymentOptionsTable";
 import { tr } from "motion/react-client";
 
 function App() {
@@ -451,83 +452,7 @@ function App() {
 
 						{/* TABLA */}
 						<div>
-							<table className="border-separate border-spacing-0 rounded-lg bg-black table-fixed">
-								<thead>
-									<tr>
-										{/* TODO: i18n — agrega claves para estos encabezados si lo deseas */}
-										<th className="bg-green-100 border-2 border-black rounded-lg w-52 title-tiny text-green-600">
-											Opción
-										</th>
-										<th className="bg-green-100 border-2 border-black rounded-lg border-l-0 w-52 h-24 title-tiny text-green-600">
-											Dónde corre
-										</th>
-										<th className="bg-green-100 border-2 border-black rounded-lg border-l-0 w-52 h-24 title-tiny text-green-600">
-											Video fuera del sitio
-										</th>
-										<th className="bg-green-100 border-2 border-black rounded-lg border-l-0 w-52 h-24 title-tiny text-green-600">
-											Gestión multi-sede
-										</th>
-										<th className="bg-green-100 border-2 border-black rounded-lg border-l-0 w-52 h-24 title-tiny text-green-600">
-											Ideal para
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 descriptions font-semibold">
-											{t("versions.option1")}
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Todo en Edge/Datacenter del cliente
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											No (opcional solo metadatos)
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Vía panel en sitio / VPN
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Compliance estricto, casinos,
-											gobierno
-										</td>
-									</tr>
-									<tr>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 descriptions font-semibold">
-											{t("versions.option2")}
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Detección en Edge + gestión en nube
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Mínimo (clips/eventos)
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Sí
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Retail y PH multi-sede
-										</td>
-									</tr>
-									<tr>
-										<td className=" bg-white border-2 border-black rounded-lg border-t-0 descriptions font-semibold">
-											{t("versions.option3")}
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Procesamiento principalmente en nube
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Sí
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Sí
-										</td>
-										<td className="bg-white border-2 border-black rounded-lg border-t-0 border-l-0 descriptions">
-											Clientes con menor restricción y
-											rápida escalabilidad
-										</td>
-									</tr>
-								</tbody>
-							</table>
+							<DeploymentOptionsTable t={t}/>
 						</div>
 					</section>
 
