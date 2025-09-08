@@ -4,7 +4,7 @@
 
 :root {
 	--max-width: 1350px;
-	--grid-color: #DDE3DF
+	--grid-color: #D6D6D6
 }
 
 @layer base {
@@ -134,7 +134,7 @@
 
 	/* (Opcional) Para cubrir toda la escala del spec */
 	.title-smaller {
-		@apply title-color text-[17px] md:text-[24px] leading-[100%];
+		@apply title-color text-[17px] md:text-[21px] leading-[100%];
 	}
 
 	.title-tiny {

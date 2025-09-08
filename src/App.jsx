@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 // import GridOverlay from "./components/GridOverlay";
 import GridSquares from "./components/GridSsquares";
+import AccordionData from "./components/AccordionData";
 
 function App() {
 	const { t } = useLanguage();
@@ -11,16 +12,14 @@ function App() {
 	return (
 		<>
 			<div className="px-8 pt-8 md:px-12 md:py-12 max-width-custom mx-auto relative">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="px-4 pt-4 md:px-6 md:py-6 max-width-custom mx-auto absolute top-0 left-0 right-0">
-					<div style={{ padding: 0 }}>
-						<GridSquares className="" />
+				<div className="absolute inset-0 -z-10 overflow-hidden">
+					<div className="px-4 pt-4 md:px-6 md:py-6 max-width-custom mx-auto absolute top-0 left-0 right-0">
+						<div style={{ padding: 0 }}>
+							<GridSquares className="" />
+						</div>
 					</div>
 				</div>
 
-
-        </div>
-				
 				<Header />
 				<Hero />
 
@@ -67,90 +66,134 @@ function App() {
 						</div>
 
 						<div className="lg:w-1/2">
+							{/* Retail Theft */}
 							<AccordionItem title={t("modules.retail.title")}>
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-semibold">
-										{t("modules.retail.what")
-											? t("modules.retail.title") + ": "
-											: t("modules.retail.title")}
-									</h3>
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+										title={t("modules.retail.what.title")}
+										description={t(
+											"modules.retail.what.desc"
+										)}
+									/>
+									<AccordionData
+										title={t("modules.retail.alerts.title")}
+										description={t(
+											"modules.retail.alerts.desc"
+										)}
+									/>
+									<AccordionData
+										title={t("modules.retail.impact.title")}
+										description={t(
+											"modules.retail.impact.desc"
+										)}
+									/>
 								</div>
-								<p className="descriptions mb-4">
-									{t("modules.retail.what")}
-								</p>
-
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-semibold">
-										{t("modules.retail.title")
-											? t("modules.retail.title")
-											: "—"}
-									</h3>
-								</div>
-								<p className="descriptions mb-4">
-									{t("modules.retail.alerts")}
-								</p>
-
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-semibold">
-										Impacto:
-									</h3>
-								</div>
-								<p className="descriptions mb-4">
-									{t("modules.retail.impact")}
-								</p>
 							</AccordionItem>
 
+							{/* Facial Recognition (AI) */}
 							<AccordionItem title={t("modules.face.title")}>
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-semibold">
-										{t("modules.face.title")}:
-									</h3>
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+										title={t("modules.face.what.title")}
+										description={t(
+											"modules.face.what.desc"
+										)}
+									/>
+									<AccordionData
+										title={t("modules.face.alerts.title")}
+										description={t(
+											"modules.face.alerts.desc"
+										)}
+									/>
+									<AccordionData
+										title={t("modules.face.impact.title")}
+										description={t(
+											"modules.face.impact.desc"
+										)}
+									/>
 								</div>
-								<p className="descriptions mb-4">
-									{t("modules.face.what")}
-								</p>
-
-								{/* Solo hay alerts para retail; si deseas alerts aquí, añade claves en translations */}
 							</AccordionItem>
 
+							{/* PH / Access & Perimeter */}
 							<AccordionItem title={t("modules.perimeter.title")}>
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-semibold">
-										{t("modules.perimeter.title")}:
-									</h3>
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+										title={t(
+											"modules.perimeter.what.title"
+										)}
+										description={t(
+											"modules.perimeter.what.desc"
+										)}
+									/>
+									<AccordionData
+										title={t(
+											"modules.perimeter.alerts.title"
+										)}
+										description={t(
+											"modules.perimeter.alerts.desc"
+										)}
+									/>
+									<AccordionData
+										title={t(
+											"modules.perimeter.impact.title"
+										)}
+										description={t(
+											"modules.perimeter.impact.desc"
+										)}
+									/>
 								</div>
-								<p className="descriptions mb-4">
-									{t("modules.perimeter.what")}
-								</p>
 							</AccordionItem>
 
+							{/* Loitering in Sensitive Areas */}
 							<AccordionItem title={t("modules.loitering.title")}>
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-semibold">
-										{t("modules.loitering.title")}:
-									</h3>
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+										title={t(
+											"modules.loitering.what.title"
+										)}
+										description={t(
+											"modules.loitering.what.desc"
+										)}
+									/>
+									<AccordionData
+										title={t(
+											"modules.loitering.alerts.title"
+										)}
+										description={t(
+											"modules.loitering.alerts.desc"
+										)}
+									/>
+									<AccordionData
+										title={t(
+											"modules.loitering.impact.title"
+										)}
+										description={t(
+											"modules.loitering.impact.desc"
+										)}
+									/>
 								</div>
-								<p className="descriptions mb-4">
-									{t("modules.loitering.what")}
-								</p>
 							</AccordionItem>
 
+							{/* LPR – Vehicle Plates & Control */}
 							<AccordionItem title={t("modules.lpr.title")}>
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-semibold">
-										{t("modules.lpr.title")}:
-									</h3>
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+										title={t("modules.lpr.what.title")}
+										description={t("modules.lpr.what.desc")}
+									/>
+									<AccordionData
+										title={t("modules.lpr.alerts.title")}
+										description={t(
+											"modules.lpr.alerts.desc"
+										)}
+									/>
+									<AccordionData
+										title={t("modules.lpr.impact.title")}
+										description={t(
+											"modules.lpr.impact.desc"
+										)}
+									/>
 								</div>
-								<p className="descriptions mb-4">
-									{t("modules.lpr.what")}
-								</p>
 							</AccordionItem>
 						</div>
 					</section>

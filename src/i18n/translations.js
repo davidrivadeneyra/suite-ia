@@ -20,28 +20,54 @@ export const translations = {
     'about.help.title': 'How does it help you?',
     'about.help.desc': 'Reduces losses, improves security, and saves hours of manual review by turning video into actions.',
 
-    // Key Modules
+
+  // Key Modules
     'modules.title': 'Key Modules',
-   'modules.retail.title': 'Retail Theft',
-    'modules.retail.what': 'Detects theft behavior on floor and checkout and notifies with video.',
-    'modules.retail.alerts': '“Product concealment”, “No-payment exit”, “Label swapping”.',
-    'modules.retail.impact': 'Less shrinkage and fewer hours reviewing recordings.',
 
+    // Retail Theft
+    'modules.retail.title': 'Retail Theft',
+    'modules.retail.what.title': 'What it does:',
+    'modules.retail.what.desc': 'Detects theft behavior on floor and checkout and notifies with video.',
+    'modules.retail.alerts.title': 'Typical alerts:',
+    'modules.retail.alerts.desc': '“Product concealment”, “No-payment exit”, “Label swapping”.',
+    'modules.retail.impact.title': 'Impact:',
+    'modules.retail.impact.desc': 'Less shrinkage and fewer hours reviewing recordings.',
+
+    // Facial Recognition
     'modules.face.title': 'Facial Recognition (AI)',
-    'modules.face.what': 'Detects theft behavior on floor and checkout and notifies with video.',
-    'modules.face.alerts': '“Product concealment”, “No-payment exit”, “Label swapping”.',
+    'modules.face.what.title': 'What it does:',
+    'modules.face.what.desc': 'Compares faces with allowlists or watchlists to speed up access and enhance security.',
+    'modules.face.alerts.title': 'Typical alerts:',
+    'modules.face.alerts.desc': '“Frequent visitor detected”, “Watchlist person detected in lobby”.',
+    'modules.face.impact.title': 'Impact:',
+    'modules.face.impact.desc': 'Faster access, fewer false entries, and clear evidence.',
 
-    'modules.perimeter.title': 'PH / Access & Perimeter',
-    'modules.perimeter.what': 'Detects theft behavior on floor and checkout and notifies with video.',
-    'modules.perimeter.alerts': '“Product concealment”, “No-payment exit”, “Label swapping”.',
+    // Access & Perimeter
+    'modules.perimeter.title': 'Access & Perimeter',
+    'modules.perimeter.what.title': 'What it does:',
+    'modules.perimeter.what.desc': 'Access control (facial/LPR), perimeter monitoring, and admin notifications.',
+    'modules.perimeter.alerts.title': 'Typical alerts:',
+    'modules.perimeter.alerts.desc': '“Unauthorized access attempt at gate”, “Unregistered vehicle at checkpoint”.',
+    'modules.perimeter.impact.title': 'Impact:',
+    'modules.perimeter.impact.desc': 'Smooth entry for residents and fewer incidents in common areas.',
 
-    'modules.loitering.title': 'Loitering in sensitive areas',
-    'modules.loitering.what': 'Detects theft behavior on floor and checkout and notifies with video.',
-    'modules.loitering.alerts': '“Product concealment”, “No-payment exit”, “Label swapping”.',
+    // Loitering
+    'modules.loitering.title': 'Loitering in Sensitive Areas',
+    'modules.loitering.what.title': 'What it does:',
+    'modules.loitering.what.desc': 'Identifies unusual lingering near entrances, storefronts, ATMs, or hallways.',
+    'modules.loitering.alerts.title': 'Typical alerts:',
+    'modules.loitering.alerts.desc': '“Loitering > 10 min at main entrance”, “Loitering at ATM”.',
+    'modules.loitering.impact.title': 'Impact:',
+    'modules.loitering.impact.desc': 'Deterrence and fast response before an incident occurs.',
 
+    // LPR
     'modules.lpr.title': 'LPR – Vehicle Plates & Control',
-    'modules.lpr.what': 'Detects theft behavior on floor and checkout and notifies with video.',
-    'modules.lpr.alerts': '“Product concealment”, “No-payment exit”, “Label swapping”.',
+    'modules.lpr.what.title': 'What it does:',
+    'modules.lpr.what.desc': 'Recognizes plates for entry/exit, whitelist/blacklist, and parking audits.',
+    'modules.lpr.alerts.title': 'Typical alerts:',
+    'modules.lpr.alerts.desc': '“Unauthorized plate at access”, “Watchlist plate detected”.',
+    'modules.lpr.impact.title': 'Impact:',
+    'modules.lpr.impact.desc': 'Faster traffic flow and stronger vehicle security.',
 
     // Features (Steps)
     'features.title': 'How it works',
@@ -187,28 +213,53 @@ export const translations = {
     'about.help.title': '¿Cómo te ayuda?',
     'about.help.desc': 'Reduce pérdidas, mejora la seguridad y ahorra horas de revisión manual al convertir video en acciones.',
 
-    // Key Modules
-    'modules.title': 'Módulos clave',
-    'modules.retail.title': 'Robos en Tiendas (Retail Theft)',
-    'modules.retail.what': 'Detecta comportamientos de hurto en piso y caja y notifica con video.',
-    'modules.retail.alerts': '“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.',
-    'modules.retail.impact': 'Menos merma y menos horas revisando grabaciones.',
+       // Módulos Clave
+    'modules.title': 'Módulos Clave',
 
+    // Robos en Tiendas
+    'modules.retail.title': 'Robos en Tiendas',
+    'modules.retail.what.title': 'Qué hace:',
+    'modules.retail.what.desc': 'Detecta comportamientos de hurto en piso y caja y notifica con video.',
+    'modules.retail.alerts.title': 'Alertas típicas:',
+    'modules.retail.alerts.desc': '“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.',
+    'modules.retail.impact.title': 'Impacto:',
+    'modules.retail.impact.desc': 'Menos merma y menos horas revisando grabaciones.',
+
+    // Reconocimiento Facial
     'modules.face.title': 'Reconocimiento facial (IA)',
-    'modules.face.what': 'Detecta comportamientos de hurto en piso y caja y notifica con video.',
-    'modules.face.alerts': '“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.',
+    'modules.face.what.title': 'Qué hace:',
+    'modules.face.what.desc': 'Compara rostros con listas permitidas o de vigilancia para acelerar accesos y elevar seguridad.',
+    'modules.face.alerts.title': 'Alertas típicas:',
+    'modules.face.alerts.desc': '“Visitante frecuente detectado”, “Persona en lista de vigilancia en lobby”.',
+    'modules.face.impact.title': 'Impacto:',
+    'modules.face.impact.desc': 'Accesos más ágiles, menos falsos ingresos y evidencias claras.',
 
+    // Accesos y Perímetro
     'modules.perimeter.title': 'PH / Accesos y Perímetro',
-    'modules.perimeter.what': 'Detecta comportamientos de hurto en piso y caja y notifica con video.',
-    'modules.perimeter.alerts': '“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.',
+    'modules.perimeter.what.title': 'Qué hace:',
+    'modules.perimeter.what.desc': 'Control de acceso (facial/LPR), monitoreo de perímetro y avisos a administración.',
+    'modules.perimeter.alerts.title': 'Alertas típicas:',
+    'modules.perimeter.alerts.desc': '“Intento de acceso no autorizado en portón”, “Vehículo no registrado en garita”.',
+    'modules.perimeter.impact.title': 'Impacto:',
+    'modules.perimeter.impact.desc': 'Entradas fluidas para residentes y menos incidentes en áreas comunes.',
 
-    'modules.loitering.title': 'Merodeo (Loitering) en áreas sensibles',
-    'modules.loitering.what': 'Detecta comportamientos de hurto en piso y caja y notifica con video.',
-    'modules.loitering.alerts': '“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.',
+    // Merodeo
+    'modules.loitering.title': 'Merodeo en Áreas Sensibles',
+    'modules.loitering.what.title': 'Qué hace:',
+    'modules.loitering.what.desc': 'Identifica permanencias inusuales cerca de entradas, vitrinas, ATMs o pasillos.',
+    'modules.loitering.alerts.title': 'Alertas típicas:',
+    'modules.loitering.alerts.desc': '“Merodeo > 10 min en entrada principal”, “Merodeo en ATM”.',
+    'modules.loitering.impact.title': 'Impacto:',
+    'modules.loitering.impact.desc': 'Disuasión y respuesta rápida antes del incidente.',
 
+    // LPR
     'modules.lpr.title': 'LPR – Placas y Control de Vehículos',
-    'modules.lpr.what': 'Detecta comportamientos de hurto en piso y caja y notifica con video.',
-    'modules.lpr.alerts': '“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.',
+    'modules.lpr.what.title': 'Qué hace:',
+    'modules.lpr.what.desc': 'Reconoce matrículas para entradas/salidas, listas blancas/negra y auditoría de estacionamientos.',
+    'modules.lpr.alerts.title': 'Alertas típicas:',
+    'modules.lpr.alerts.desc': '“Placa no autorizada en acceso”, “Placa en lista de vigilancia detectada”.',
+    'modules.lpr.impact.title': 'Impacto:',
+    'modules.lpr.impact.desc': 'Tráfico más ágil y seguridad vehicular.',
 
     // Features (Steps)
     'features.title': 'Cómo funciona',
