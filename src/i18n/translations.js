@@ -136,35 +136,57 @@ export const translations = {
 			"Customers with fewer restrictions and rapid scalability",
 
 		// Industries
+
 		"industries.title": "Industries",
-		"industries.desc": "Brief description",
-		"industries.demo": "Request demo",
-		"industries.how": "See how it works",
+		"industries.retail.title": "Retail: Better shopping experience",
+		"industries.retail.tagline": "Better shopping experience",
+		"industries.retail.what.title": "What it is",
+		"industries.retail.what.desc":
+			"Recognizes habits and key moments so staff can help before friction arises.",
+		"industries.retail.loss.title": "Loss prevention",
+		"industries.retail.loss.desc":
+			"Detects common theft patterns (concealment, no-payment exits) and alerts with video.",
+		"industries.retail.safety.title": "In-store safety",
+		"industries.retail.safety.desc":
+			"Identifies risky situations in aisles, fitting rooms, and emergency exits.",
 
-		// Modules (with details)
-		"modules.retail.title": "Retail Theft",
-		"modules.retail.what":
-			"Detects theft behavior on floor and checkout and notifies with video.",
-		"modules.retail.alerts":
-			"“Product concealment”, “No-payment exit”, “Label swapping”.",
-		"modules.retail.impact":
-			"Less shrinkage and fewer hours reviewing recordings.",
+		"industries.gaming.title":
+			"Gaming/Casinos: gaming area, entrances, cashiers.",
+		"industries.gaming.tagline": "Gaming floor, access, cashiers.",
+		"industries.gaming.watchlists.title": "Live watchlists",
+		"industries.gaming.watchlists.desc":
+			"Identifies self-excluded or restricted persons and notifies the floor team.",
+		"industries.gaming.safeplay.title": "Safe play",
+		"industries.gaming.safeplay.desc":
+			"Flags risky behaviors at tables and cashiers.",
+		"industries.gaming.compliance.title": "Compliance & evidence",
+		"industries.gaming.compliance.desc":
+			"Clips and records for audits and regulatory reports.",
 
-		"modules.face.title": "Facial Recognition (AI)",
-		"modules.face.what":
-			"Detects faces and compares them with authorized databases.",
+		"industries.residential.title":
+			"Residential (Apartment buildings/Condominiums): lobbies, guardhouses, parking areas.",
+		"industries.residential.tagline": "Lobbies, guard posts, parking lots.",
+		"industries.residential.access.title": "Frictionless access",
+		"industries.residential.access.desc":
+			"Streamlines entry for residents and authorized visitors.",
+		"industries.residential.perimeter.title": "Protected perimeter",
+		"industries.residential.perimeter.desc":
+			"Alerts on unauthorized entry attempts at gates and parking areas.",
+		"industries.residential.management.title": "Building management",
+		"industries.residential.management.desc":
+			"Event history and reports for property management.",
 
-		"modules.perimeter.title": "PH / Access & Perimeter",
-		"modules.perimeter.what":
-			"Access control and perimeter monitoring with real-time alerts.",
-
-		"modules.loitering.title": "Loitering in sensitive areas",
-		"modules.loitering.what":
-			"Detects prolonged presence in critical areas.",
-
-		"modules.lpr.title": "LPR – Vehicle Plates & Control",
-		"modules.lpr.what":
-			"Recognizes vehicle plates and manages entries/exits.",
+		"industries.education.title": "Education (Schools/Universities)",
+		"industries.education.tagline": "—",
+		"industries.education.safety.title": "Safer environments",
+		"industries.education.safety.desc":
+			"Detects fights, vandalism, and loitering around perimeters.",
+		"industries.education.access.title": "Access",
+		"industries.education.access.desc":
+			"Controls entry to buildings and labs.",
+		"industries.education.response.title": "Coordinated response",
+		"industries.education.response.desc":
+			"Notifies campus security and authorities with precise location.",
 
 		// Metrics
 		"metrics.title": "Impact metrics",
@@ -383,35 +405,58 @@ export const translations = {
 			"Clientes con menor restricción y rápida escalabilidad",
 
 		// Industries
+
 		"industries.title": "Industrias",
-		"industries.desc": "Breve descripción",
-		"industries.demo": "Solicitar demo",
-		"industries.how": "Ver cómo funciona",
 
-		// Módulos (con detalles)
-		"modules.retail.title": "Robos en Tiendas (Retail Theft)",
-		"modules.retail.what":
-			"Detecta comportamientos de hurto en piso y caja y notifica con video.",
-		"modules.retail.alerts":
-			"“Ocultamiento de producto”, “Salida sin pago”, “Intercambio de etiquetas”.",
-		"modules.retail.impact":
-			"Menos merma y menos horas revisando grabaciones.",
+		"industries.retail.title": "Retail: Mejor experiencia de compra",
+		"industries.retail.tagline": "Mejor experiencia de compra",
+		"industries.retail.what.title": "Qué es",
+		"industries.retail.what.desc":
+			"Reconoce hábitos y momentos clave para que el staff atienda antes de que haya fricción.",
+		"industries.retail.loss.title": "Prevención de pérdidas",
+		"industries.retail.loss.desc":
+			"Detecta patrones típicos de hurto (ocultamiento, salidas sin pago) y avisa con video.",
+		"industries.retail.safety.title": "Seguridad en tienda",
+		"industries.retail.safety.desc":
+			"Identifica situaciones de riesgo en pasillos, probadores y salidas de emergencia.",
 
-		"modules.face.title": "Reconocimiento facial (IA)",
-		"modules.face.what":
-			"Detecta rostros y los compara con bases de datos autorizadas.",
+		"industries.gaming.title":
+			"Gaming/Casinos: sala de juego, accesos, cashiers.",
+		"industries.gaming.tagline": "Sala de juego, accesos, cashiers.",
+		"industries.gaming.watchlists.title": "Watchlists en vivo",
+		"industries.gaming.watchlists.desc":
+			"Identifica a autoexcluidos o personas restringidas y notifica al equipo de piso.",
+		"industries.gaming.safeplay.title": "Juego seguro",
+		"industries.gaming.safeplay.desc":
+			"Avisa sobre conductas de riesgo en mesas y cashiers.",
+		"industries.gaming.compliance.title": "Cumplimiento y evidencia",
+		"industries.gaming.compliance.desc":
+			"Clips y registros para auditorías y reportes regulatorios.",
 
-		"modules.perimeter.title": "PH / Accesos y Perímetro",
-		"modules.perimeter.what":
-			"Control de accesos y monitoreo de perímetro con alertas en tiempo real.",
+		"industries.residential.title":
+			"Residencial (PH/Condominios): lobbies, garitas, estacionamientos.",
+		"industries.residential.tagline": "Lobbies, garitas, estacionamientos.",
+		"industries.residential.access.title": "Acceso sin fricción",
+		"industries.residential.access.desc":
+			"Facilita la entrada de residentes y visitantes autorizados.",
+		"industries.residential.perimeter.title": "Perímetro protegido",
+		"industries.residential.perimeter.desc":
+			"Avisa sobre intentos de ingreso no autorizados en portones y estacionamientos.",
+		"industries.residential.management.title": "Gestión del edificio",
+		"industries.residential.management.desc":
+			"Historial de eventos y reportes para la administración.",
 
-		"modules.loitering.title": "Merodeo (Loitering) en áreas sensibles",
-		"modules.loitering.what":
-			"Detecta presencia prolongada en áreas críticas.",
-
-		"modules.lpr.title": "LPR – Placas y Control de Vehículos",
-		"modules.lpr.what":
-			"Reconoce placas vehiculares y gestiona entradas/salidas.",
+		"industries.education.title": "Educación (Colegios/Universidades)",
+		"industries.education.tagline": "—",
+		"industries.education.safety.title": "Entornos más seguros",
+		"industries.education.safety.desc":
+			"Detecta peleas, vandalismo y merodeo en perímetros.",
+		"industries.education.access.title": "Accesos",
+		"industries.education.access.desc":
+			"Controla entradas a edificios y laboratorios.",
+		"industries.education.response.title": "Respuesta coordinada",
+		"industries.education.response.desc":
+			"Notifica a seguridad y autoridades del campus con ubicación precisa.",
 
 		// Metrics
 		"metrics.title": "Métricas de impacto",

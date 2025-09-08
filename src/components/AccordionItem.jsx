@@ -1,19 +1,28 @@
 import { useState } from "react";
 
-export default function AccordionItem({ title, children, titleTextColor,buttonColor}) {
+export default function AccordionItem({
+  title,
+  children,
+  titleTextColor = "text-black",   // color de título (y del ícono)
+  borderColor = "border-black",    // color de borde
+  className = ""
+}) {
   const [isOpen, setIsOpen] = useState(false);
-console.log('buttonColor:', buttonColor);
+
   return (
-    
-    <div>
+    <div className={className}>
+      {/* Borde superior */}
+      <hr className={`${borderColor}`} />
+
       {/* Botón que abre/cierra */}
-      <hr className="border-black"></hr>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className='text-left flex w-full justify-between py-6'
+        className="text-left flex w-full justify-between py-6"
       >
-        <h2 className="title-small">{title}</h2>
-        <span className={`title-small ${buttonColor}`}>{isOpen ? "−" : "+"}</span>
+        <h2 className={`title-small ${titleTextColor}`}>{title}</h2>
+        <span className={`title-small ${titleTextColor}`}>
+          {isOpen ? "−" : "+"}
+        </span>
       </button>
 
       {/* Contenido */}

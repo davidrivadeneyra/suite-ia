@@ -85,18 +85,21 @@ function App() {
 							<AccordionItem title={t("modules.retail.title")}>
 								<div className="flex flex-col justify-start gap-6">
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.retail.what.title")}
 										description={t(
 											"modules.retail.what.desc"
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.retail.alerts.title")}
 										description={t(
 											"modules.retail.alerts.desc"
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.retail.impact.title")}
 										description={t(
 											"modules.retail.impact.desc"
@@ -109,18 +112,21 @@ function App() {
 							<AccordionItem title={t("modules.face.title")}>
 								<div className="flex flex-col justify-start gap-6">
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.face.what.title")}
 										description={t(
 											"modules.face.what.desc"
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.face.alerts.title")}
 										description={t(
 											"modules.face.alerts.desc"
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.face.impact.title")}
 										description={t(
 											"modules.face.impact.desc"
@@ -133,6 +139,7 @@ function App() {
 							<AccordionItem title={t("modules.perimeter.title")}>
 								<div className="flex flex-col justify-start gap-6">
 									<AccordionData
+										iconColor="text-green-600"
 										title={t(
 											"modules.perimeter.what.title"
 										)}
@@ -141,6 +148,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t(
 											"modules.perimeter.alerts.title"
 										)}
@@ -149,6 +157,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t(
 											"modules.perimeter.impact.title"
 										)}
@@ -163,6 +172,7 @@ function App() {
 							<AccordionItem title={t("modules.loitering.title")}>
 								<div className="flex flex-col justify-start gap-6">
 									<AccordionData
+										iconColor="text-green-600"
 										title={t(
 											"modules.loitering.what.title"
 										)}
@@ -171,6 +181,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t(
 											"modules.loitering.alerts.title"
 										)}
@@ -179,6 +190,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t(
 											"modules.loitering.impact.title"
 										)}
@@ -193,16 +205,19 @@ function App() {
 							<AccordionItem title={t("modules.lpr.title")}>
 								<div className="flex flex-col justify-start gap-6">
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.lpr.what.title")}
 										description={t("modules.lpr.what.desc")}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.lpr.alerts.title")}
 										description={t(
 											"modules.lpr.alerts.desc"
 										)}
 									/>
 									<AccordionData
+										iconColor="text-green-600"
 										title={t("modules.lpr.impact.title")}
 										description={t(
 											"modules.lpr.impact.desc"
@@ -347,6 +362,11 @@ function App() {
 						id="benefits"
 						className=" bg-neutral-950 rounded-lg mb-16 relative"
 					>
+						<CornerFrame
+							hover={false}
+							strokeColor="currentColor"
+							className="text-green-400"
+						/>
 						<img
 							className="absolute top-0 w-[600px] right-0 z-0"
 							src="/assets/background/BG-Decoration.png"
@@ -424,7 +444,12 @@ function App() {
 					</section>
 
 					{/* VERSIONES / FUNCIONAMIENTO */}
-					<section className="bg-white flex flex-col items-center mb-16 rounded-lg p-6 md:p-16">
+					<section className="bg-white flex flex-col items-center mb-16 rounded-lg p-6 md:p-16 relative">
+						<CornerFrame
+							strokeColor="currentColor"
+							className="text-neutral-400"
+						/>
+
 						<div className="flex flex-col max-w-[443px]">
 							<h2 className="title-big font-semibold mb-4 text-center">
 								{t("versions.title")}
@@ -452,92 +477,191 @@ function App() {
 
 						{/* TABLA */}
 						<div>
-							<DeploymentOptionsTable t={t}/>
+							<DeploymentOptionsTable t={t} />
 						</div>
 					</section>
 
 					{/* INDUSTRIAS */}
 					<section className="flex flex-col-reverse gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16 relative">
+						<CornerFrame
+							strokeColor="currentColor"
+							className="text-green-400"
+						/>
 						<img
 							className="absolute top-0 w-[600px] right-0 z-0"
 							src="/assets/background/BG-Decoration.png"
 							alt="Atelopus decoración"
 						/>
 						<div className="lg:w-1/2">
+							{/* Retail */}
 							<AccordionItem
-								title={t("modules.retail.title")}
+								title={t("industries.retail.title")}
 								titleTextColor="text-white"
-								buttonColor="text-white"
+								borderColor="border-neutral-700"
 							>
-								<div className="flex justify-start gap-1">
-									<span className="text-white">ICON</span>
-									<h3 className="title-small text-white font-bold">
-										{t("modules.retail.title")}:
-									</h3>
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+										iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.retail.what.title"
+										)}
+										description={t(
+											"industries.retail.what.desc"
+										)}
+									/>
+									<AccordionData
+										iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.retail.loss.title"
+										)}
+										description={t(
+											"industries.retail.loss.desc"
+										)}
+									/>
+									<AccordionData
+										iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.retail.safety.title"
+										)}
+										description={t(
+											"industries.retail.safety.desc"
+										)}
+									/>
 								</div>
-								<p className="descriptions text-white mb-4">
-									{t("modules.retail.what")}
-								</p>
+							</AccordionItem>
 
-								<div className="flex justify-start gap-1">
-									<span className="text-white">ICON</span>
-									<h3 className="title-small text-white font-bold">
-										Alertas Típicas:
-									</h3>
+							{/* Gaming / Casinos */}
+							<AccordionItem
+							 title={t("industries.gaming.title")}
+								titleTextColor="text-white"
+								borderColor="border-neutral-700">
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.gaming.watchlists.title"
+										)}
+										description={t(
+											"industries.gaming.watchlists.desc"
+										)}
+									/>
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.gaming.safeplay.title"
+										)}
+										description={t(
+											"industries.gaming.safeplay.desc"
+										)}
+									/>
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.gaming.compliance.title"
+										)}
+										description={t(
+											"industries.gaming.compliance.desc"
+										)}
+									/>
 								</div>
-								<p className="descriptions text-white mb-4">
-									{t("modules.retail.alerts")}
-								</p>
+							</AccordionItem>
 
-								<div className="flex justify-start gap-1">
-									<span className="text-white">ICON</span>
-									<h3 className="title-small text-white font-bold">
-										Impacto:
-									</h3>
+							{/* Residential */}
+							<AccordionItem
+								title={t("industries.residential.title")}
+								titleTextColor="text-white"
+								borderColor="border-neutral-700"
+							>
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.residential.access.title"
+										)}
+										description={t(
+											"industries.residential.access.desc"
+										)}
+									/>
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.residential.perimeter.title"
+										)}
+										description={t(
+											"industries.residential.perimeter.desc"
+										)}
+									/>
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.residential.management.title"
+										)}
+										description={t(
+											"industries.residential.management.desc"
+										)}
+									/>
 								</div>
-								<p className="descriptions text-white mb-4">
-									{t("modules.retail.impact")}
-								</p>
 							</AccordionItem>
 
+							{/* Education */}
 							<AccordionItem
-								title={t("modules.face.title")}
+								title={t("industries.education.title")}
 								titleTextColor="text-white"
-								buttonColor="text-white"
+								borderColor="border-neutral-700"
 							>
-								<p className="descriptions text-white">
-									{t("modules.face.what")}
-								</p>
-							</AccordionItem>
-
-							<AccordionItem
-								title={t("modules.perimeter.title")}
-								titleTextColor="text-white"
-								buttonColor="text-white"
-							>
-								<p className="descriptions text-white">
-									{t("modules.perimeter.what")}
-								</p>
-							</AccordionItem>
-
-							<AccordionItem
-								title={t("modules.loitering.title")}
-								titleTextColor="text-white"
-								buttonColor="text-white"
-							>
-								<p className="descriptions text-white">
-									{t("modules.loitering.what")}
-								</p>
-							</AccordionItem>
-
-							<AccordionItem
-								title={t("modules.lpr.title")}
-								titleTextColor="text-white"
-								buttonColor="text-white"
-							>
-								<p className="descriptions text-white">
-									{t("modules.lpr.what")}
-								</p>
+								<div className="flex flex-col justify-start gap-6">
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.education.safety.title"
+										)}
+										description={t(
+											"industries.education.safety.desc"
+										)}
+									/>
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.education.access.title"
+										)}
+										description={t(
+											"industries.education.access.desc"
+										)}
+									/>
+									<AccordionData
+									iconColor="text-green-400 currentColor"
+										titleTextColor="text-white"
+										descriptionColor="text-neutral-400"
+										title={t(
+											"industries.education.response.title"
+										)}
+										description={t(
+											"industries.education.response.desc"
+										)}
+									/>
+								</div>
 							</AccordionItem>
 						</div>
 
