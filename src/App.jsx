@@ -539,12 +539,13 @@ function App() {
 
 							{/* Gaming / Casinos */}
 							<AccordionItem
-							 title={t("industries.gaming.title")}
+								title={t("industries.gaming.title")}
 								titleTextColor="text-white"
-								borderColor="border-neutral-700">
+								borderColor="border-neutral-700"
+							>
 								<div className="flex flex-col justify-start gap-6">
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -555,7 +556,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -566,7 +567,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -587,7 +588,7 @@ function App() {
 							>
 								<div className="flex flex-col justify-start gap-6">
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -598,7 +599,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -609,7 +610,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -630,7 +631,7 @@ function App() {
 							>
 								<div className="flex flex-col justify-start gap-6">
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -641,7 +642,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -652,7 +653,7 @@ function App() {
 										)}
 									/>
 									<AccordionData
-									iconColor="text-green-400 currentColor"
+										iconColor="text-green-400 currentColor"
 										titleTextColor="text-white"
 										descriptionColor="text-neutral-400"
 										title={t(
@@ -724,36 +725,35 @@ function App() {
 						</div>
 
 						<div className="grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-4">
-						<CardMetric
-  title={t("metrics.1.title")}
-  description={t("metrics.1.desc")}
-/>
+							<CardMetric
+								title={t("metrics.1.title")}
+								description={t("metrics.1.desc")}
+							/>
 
-<CardMetric
-  title={t("metrics.2.title")}
-  description={t("metrics.2.desc")}
-/>
+							<CardMetric
+								title={t("metrics.2.title")}
+								description={t("metrics.2.desc")}
+							/>
 
-<CardMetric
-  title={t("metrics.3.title")}
-  description={t("metrics.3.desc")}
-/>
+							<CardMetric
+								title={t("metrics.3.title")}
+								description={t("metrics.3.desc")}
+							/>
 
-<CardMetric
-  title={t("metrics.4.title")}
-  description={t("metrics.4.desc")}
-/>
+							<CardMetric
+								title={t("metrics.4.title")}
+								description={t("metrics.4.desc")}
+							/>
 
-<CardMetric
-  title={t("metrics.5.title")}
-  description={t("metrics.5.desc")}
-/>
+							<CardMetric
+								title={t("metrics.5.title")}
+								description={t("metrics.5.desc")}
+							/>
 
-<CardMetric
-  title={t("metrics.6.title")}
-  description={t("metrics.6.desc")}
-/>
-
+							<CardMetric
+								title={t("metrics.6.title")}
+								description={t("metrics.6.desc")}
+							/>
 						</div>
 					</section>
 
