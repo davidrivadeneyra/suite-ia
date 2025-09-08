@@ -9,6 +9,7 @@ import CardHowItWorks from "./components/CardHowItWorks";
 import DashedConnector from "./components/DashConector";
 import CardBenefits from "./components/CardBenefits";
 import DeploymentOptionsTable from "./components/DeploymentOptionsTable";
+import CardMetric from "./components/CardMetric";
 import { tr } from "motion/react-client";
 
 function App() {
@@ -488,7 +489,7 @@ function App() {
 							className="text-green-400"
 						/>
 						<img
-							className="absolute top-0 w-[600px] right-0 z-0"
+							className="absolute top-0 w-[600px] right-0 z-0 pointer-events-none"
 							src="/assets/background/BG-Decoration.png"
 							alt="Atelopus decoración"
 						/>
@@ -669,7 +670,7 @@ function App() {
 							<h2 className="title-big text-white font-semibold mb-4">
 								{t("industries.title")}
 							</h2>
-							<p className="descriptions text-white mb-6">
+							<p className="descriptions text-neutral-400 mb-6">
 								{t("industries.desc")}
 							</p>
 							<div className="flex flex-col md:flex-row gap-4 pb-8">
@@ -723,19 +724,36 @@ function App() {
 						</div>
 
 						<div className="grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-4">
-							{Array.from({ length: 6 }).map((_, i) => (
-								<div
-									key={i}
-									className="flex flex-col justify-end bg-black p-8 rounded-lg h-64"
-								>
-									<h3 className="title-big text-white">
-										1.82%
-									</h3>
-									<p className="descriptions text-white">
-										{t("metrics.data")}
-									</p>
-								</div>
-							))}
+						<CardMetric
+  title={t("metrics.1.title")}
+  description={t("metrics.1.desc")}
+/>
+
+<CardMetric
+  title={t("metrics.2.title")}
+  description={t("metrics.2.desc")}
+/>
+
+<CardMetric
+  title={t("metrics.3.title")}
+  description={t("metrics.3.desc")}
+/>
+
+<CardMetric
+  title={t("metrics.4.title")}
+  description={t("metrics.4.desc")}
+/>
+
+<CardMetric
+  title={t("metrics.5.title")}
+  description={t("metrics.5.desc")}
+/>
+
+<CardMetric
+  title={t("metrics.6.title")}
+  description={t("metrics.6.desc")}
+/>
+
 						</div>
 					</section>
 
@@ -775,7 +793,7 @@ function App() {
 								<div className="flex justify-start gap-1">
 									<span>ICON</span>
 									<h3 className="title-small font-bold">
-										Impacto:
+										{t("metrics.title")}
 									</h3>
 								</div>
 								<p className="descriptions mb-4">

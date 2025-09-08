@@ -138,6 +138,8 @@ export const translations = {
 		// Industries
 
 		"industries.title": "Industries",
+		"industries.desc":
+			"Video surveillance solutions for multiple industries.",
 		"industries.retail.title": "Retail: Better shopping experience",
 		"industries.retail.tagline": "Better shopping experience",
 		"industries.retail.what.title": "What it is",
@@ -191,8 +193,30 @@ export const translations = {
 		// Metrics
 		"metrics.title": "Impact metrics",
 		"metrics.desc": "Brief description of the tool goes here",
-		"metrics.data":
-			"Global retail shrinkage rate over sales. (Global Shrink Index - Sensormatic)",
+
+		"metrics.1.title": "1.82%",
+		"metrics.1.desc":
+			"Global retail shrink rate. (Global Shrink Index – Sensormatic)",
+
+		"metrics.2.title": "US$ 99.6B",
+		"metrics.2.desc":
+			"Annual global shrink losses. (Sensormatic, 14 countries, ~80% of global sales)",
+
+		"metrics.3.title": "190M → 260M",
+		"metrics.3.desc":
+			"Security cameras shipped worldwide: ~190M in 2023 to 260M projected by 2028. (Omdia)",
+
+		"metrics.4.title": "US$ 73.8B → 147.7B",
+		"metrics.4.desc":
+			"Global video surveillance market growth 2024–2030 (CAGR ~12%). (Grand View Research)",
+
+		"metrics.5.title": "US$ 6.5B → 28.8B",
+		"metrics.5.desc":
+			"AI in video surveillance 2024–2030 (CAGR ~30.6%). (Grand View Research)",
+
+		"metrics.6.title": "US$ 10.3B → 48.9B",
+		"metrics.6.desc":
+			"Video analytics market 2024–2032 (CAGR ~21.8%). (Fortune Business Insights)",
 
 		// FAQ
 		"faq.title": "Frequently Asked Questions",
@@ -407,8 +431,8 @@ export const translations = {
 		// Industries
 
 		"industries.title": "Industrias",
-
-		"industries.retail.title": "Retail: Mejor experiencia de compra",
+		"industries.desc":
+			"Soluciones de videovigilancia para múltiples sectores.",
 		"industries.retail.tagline": "Mejor experiencia de compra",
 		"industries.retail.what.title": "Qué es",
 		"industries.retail.what.desc":
@@ -461,8 +485,29 @@ export const translations = {
 		// Metrics
 		"metrics.title": "Métricas de impacto",
 		"metrics.desc": "Breve descripción de la herramienta va aquí",
-		"metrics.data":
-			"Tasa global de merma sobre ventas minoristas. (Global Shrink Index - Sensormatic)",
+		"metrics.1.title": "1.82%",
+		"metrics.1.desc":
+			"Tasa global de merma sobre ventas minoristas. (Global Shrink Index – Sensormatic)",
+
+		"metrics.2.title": "US$ 99.6B",
+		"metrics.2.desc":
+			"Pérdidas globales por merma en retail en un año. (Sensormatic – 14 países, ~80% de las ventas globales)",
+
+		"metrics.3.title": "190M → 260M",
+		"metrics.3.desc":
+			"Cámaras de seguridad enviadas en el mundo: ~190M en 2023 a 260M proyectadas para 2028. (Omdia)",
+
+		"metrics.4.title": "US$ 73.8B → 147.7B",
+		"metrics.4.desc":
+			"Mercado global de videovigilancia crecerá de 2024 a 2030 (CAGR ~12%). (Grand View Research)",
+
+		"metrics.5.title": "US$ 6.5B → 28.8B",
+		"metrics.5.desc":
+			"IA en videovigilancia 2024–2030 (CAGR ~30.6%). (Grand View Research)",
+
+		"metrics.6.title": "US$ 10.3B → 48.9B",
+		"metrics.6.desc":
+			"Mercado de analítica de video 2024–2032 (CAGR ~21.8%). (Fortune Business Insights)",
 
 		// FAQ
 		"faq.title": "Preguntas frecuentes",

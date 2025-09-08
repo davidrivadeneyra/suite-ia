@@ -20,7 +20,7 @@ export default function CardBenefits({
     <div
       data-benefits-card
       className={[
-        "relative flex flex-col justify-end",
+        "group relative flex flex-col justify-end",
         "bg-neutral-900 rounded-lg",
         "min-h-[200px] lg:min-h-[288px] p-8 rounded-lg overflow-hidden cursor-pointer",
         className,
@@ -28,7 +28,7 @@ export default function CardBenefits({
     >
       {/* Imagen absoluta con máscara (fade desde abajo) */}
       {imgSrc && (
-        <div className=" pointer-events-none absolute top-0 right-0 bottom-0 left-0 w-full z-0">
+        <div className=" pointer-events-none absolute top-0 right-0 bottom-0 left-0 w-full z-0 transform transition-transform duration-500 ease-out group-hover:scale-110">
           <img
             src={imgSrc}
             alt={imgAlt}
