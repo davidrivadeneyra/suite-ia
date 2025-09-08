@@ -7,6 +7,7 @@ import AccordionData from "./components/AccordionData";
 import CornerFrame from "./components/CornersFrame";
 import CardHowItWorks from "./components/CardHowItWorks";
 import DashedConnector from "./components/DashConector";
+import CardBenefits from "./components/CardBenefits";
 import { tr } from "motion/react-client";
 
 function App() {
@@ -257,11 +258,11 @@ function App() {
 
 								<DashedConnector className="hidden md:block w-16" />
 								<div className="w-full block md:hidden">
-									<DashedConnector className="h-16" orientation="vertical" />
+									<DashedConnector
+										className="h-16"
+										orientation="vertical"
+									/>
 								</div>
-
-						
-								
 
 								<CardHowItWorks
 									title={t("features.step2")}
@@ -271,7 +272,10 @@ function App() {
 
 								<DashedConnector className="hidden md:block w-16" />
 								<div className="w-full block md:hidden">
-									<DashedConnector className="h-16" orientation="vertical" />
+									<DashedConnector
+										className="h-16"
+										orientation="vertical"
+									/>
 								</div>
 
 								<CardHowItWorks
@@ -303,9 +307,11 @@ function App() {
 									reverse={true}
 								/>
 
-						
 								<div className="w-full block md:hidden">
-									<DashedConnector className="h-16" orientation="vertical" />
+									<DashedConnector
+										className="h-16"
+										orientation="vertical"
+									/>
 								</div>
 
 								<CardHowItWorks
@@ -319,11 +325,12 @@ function App() {
 									reverse={true}
 								/>
 
-						
 								<div className="w-full block md:hidden">
-									<DashedConnector className="h-16" orientation="vertical" />
+									<DashedConnector
+										className="h-16"
+										orientation="vertical"
+									/>
 								</div>
-
 
 								<CardHowItWorks
 									title={t("features.step6")}
@@ -372,54 +379,46 @@ function App() {
 
 						{/* GRID BENEFICIOS */}
 						<div className="grid grid-cols-1 grid-rows-8 md:grid-cols-2 md:grid-rows-4 px-6 md:px-16 pb-16 mx-auto gap-4">
-							<div className="bg-green-500 min-h-[200px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
-								<span className="px-7">1</span>
-								<h3 className="title-small p-7 w-4/5">
-									{t("benefits.1")}
-								</h3>
-							</div>
-							<div className="bg-green-500 min-h-[200px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
-								<span className="px-7">2</span>
-								<h3 className="title-small p-7 w-4/5">
-									{t("benefits.2")}
-								</h3>
-							</div>
-							<div className="bg-green-500 min-h-[200px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
-								<span className="px-7">3</span>
-								<h3 className="title-small p-7 w-4/5">
-									{t("benefits.3")}
-								</h3>
-							</div>
-							<div className="bg-green-500 min-h-[200px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
-								<span className="px-7">4</span>
-								<h3 className="title-small p-7 w-4/5">
-									{t("benefits.4")}
-								</h3>
-							</div>
-							<div className="bg-green-500 min-h-[200px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
-								<span className="px-7">5</span>
-								<h3 className="title-small p-7 w-4/5">
-									{t("benefits.5")}
-								</h3>
-							</div>
-							<div className="bg-green-500 min-h-[200px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
-								<span className="px-7">6</span>
-								<h3 className="title-small p-7 w-4/5">
-									{t("benefits.6")}
-								</h3>
-							</div>
-							<div className="bg-green-500 min-h-[200px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
-								<span className="px-7">7</span>
-								<h3 className="title-small p-7 w-4/5">
-									{t("benefits.7")}
-								</h3>
-							</div>
-							<div className="bg-green-500 min-h-[200px] lg:min-h-[288px] flex flex-col justify-end rounded-lg">
-								<span className="px-7">8</span>
-								<h3 className="title-small p-7 w-4/5">
-									{t("benefits.8")}
-								</h3>
-							</div>
+							<CardBenefits
+								title={t("benefits.1")}
+								number={1}
+								imgSrc="/assets/benefits/benefit-1.png"
+							/>
+							<CardBenefits
+								title={t("benefits.2")}
+								number={2}
+								imgSrc="/assets/benefits/benefit-2.png"
+							/>
+							<CardBenefits
+								title={t("benefits.3")}
+								number={3}
+								imgSrc="/assets/benefits/benefit-3.png"
+							/>
+							<CardBenefits
+								title={t("benefits.4")}
+								number={4}
+								imgSrc="/assets/benefits/benefit-4.png"
+							/>
+							<CardBenefits
+								title={t("benefits.5")}
+								number={5}
+								imgSrc="/assets/benefits/benefit-5.png"
+							/>
+							<CardBenefits
+								title={t("benefits.6")}
+								number={6}
+								imgSrc="/assets/benefits/benefit-6.png"
+							/>
+							<CardBenefits
+								title={t("benefits.7")}
+								number={7}
+								imgSrc="/assets/benefits/benefit-7.png"
+							/>
+							<CardBenefits
+								title={t("benefits.8")}
+								number={8}
+								imgSrc="/assets/benefits/benefit-8.png"
+							/>
 						</div>
 					</section>
 

@@ -8,12 +8,12 @@ export default function CardHowItWorks({
   iconSrc,
   iconAlt = "",
   className = "",
-  titleClassName = "title-smaller w-4/5",
+  titleClassName = "title-smaller",
   iconWrapperClassName = "",
   numberWrapperClassName = "", // por si quieres añadir utilidades extra
 }) {
   return (
-    <div className={`flex flex-col justify-between w-full p-6 md:h-48 bg-white rounded-lg border-green-700 border ${className}`}>
+    <div className={`flex flex-col justify-between w-full p-6 md:h-56 bg-white rounded-lg border-green-700 border ${className}`}>
       <div className="flex justify-between pb-8">
         <div className={iconWrapperClassName}>
           {iconSrc ? <img src={iconSrc} alt={iconAlt} /> : null}
