@@ -24,7 +24,7 @@ export default function Footer({ className = "" }) {
     <>
       <footer
        
-        className={`bg-white flex flex-col lg:flex-row p-16 mb-4 gap-28 rounded-lg ${className} relative`}
+        className={`bg-white flex flex-col lg:flex-row p-6 md:p-16  mb-4 gap-28 rounded-lg ${className} relative`}
       >
         <CornerFrame
           hover={false}
@@ -71,7 +71,7 @@ export default function Footer({ className = "" }) {
         {/* Columnas */}
         <div className="flex flex-col md:flex-row gap-14">
           {/* Producto */}
-          <div className="py-3">
+          {/* <div className="py-3">
             <h2 className="title-tiny pb-6">{t("footer.product.title")}</h2>
             <div className="flex flex-col gap-2">
               <p className="descriptions-sm">{t("footer.product.about")}</p>
@@ -79,7 +79,7 @@ export default function Footer({ className = "" }) {
               <p className="descriptions-sm">{t("footer.product.benefits")}</p>
               <p className="descriptions-sm">{t("footer.product.contact")}</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Contacto */}
           <div className="py-3">

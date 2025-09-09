@@ -954,11 +954,11 @@ function App() {
 					{/* MÉTRICAS */}
 					<section
 						ref={metricsRef}
-						className="flex flex-col items-center p-16 mb-16 scroll-mt-20"
+						className="flex flex-col items-center p-6 md:p-16  mb-16 scroll-mt-20"
 					>
 						<div
 							ref={metricsHeaderRef}
-							className="flex flex-col min-w-[443px] mb-10"
+							className="flex flex-col mb-10"
 						>
 							<h2 className="title-big font-semibold mb-4 text-center">
 								{t("metrics.title")}
@@ -985,7 +985,7 @@ function App() {
 
 						<div
 							ref={metricsGridRef}
-							className="grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-4"
+							className="grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-4 w-full"
 						>
 							<CardMetric
 								title={t("metrics.1.title")}
@@ -1182,7 +1182,7 @@ function App() {
 					{/* CTA FINAL */}
 					<section
 						ref={ctaRef}
-						className="bg-black rounded-lg mb-16 flex justify-center p-16 relative scroll-mt-20"
+						className="bg-black rounded-lg mb-16 flex justify-center p-6 md:p-16  relative scroll-mt-20"
 					>
 						<CornerFrame
 							hover={false}
@@ -1216,7 +1216,7 @@ function App() {
 					{/* FORMULARIO DEMO */}
 					<section
 						ref={formRef}
-						className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-16 mb-16 relative scroll-mt-20"
+						className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-6 md:p-16  relative scroll-mt-20"
 						 id="contact"
 					>
 						<CornerFrame
