@@ -64,7 +64,7 @@ export default function Hero() {
 	}, []);
 
 	return (
-		<main className="max-h-full">
+		<main className="max-h-full mt-24">
 			<section
 				ref={heroRef}
 				className="flex flex-col lg:flex-row gap-14 mb-12"
