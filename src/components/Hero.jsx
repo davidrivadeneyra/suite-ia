@@ -2,6 +2,7 @@ import { useLanguage } from "../i18n/LanguageProvider";
 import React, { useRef, useLayoutEffect } from "react";
 import CornerFrame from "./CornersFrame";
 import ButtonLink from "./ButtonLink";
+import { Cctv } from "lucide-react";
 import { usePageAnimations } from "../anim/usePageAnimations";
 import { gsap } from "../anim/gsapSetup";
 
@@ -111,15 +112,21 @@ export default function Hero() {
 
 					<div
 						ref={statsRef}
-						className="flex-none w-fit lg:h-full h-96 self-start flex flex-col p-6 bg-white rounded-lg justify-end relative"
+						className="w-fit lg:h-full h-96 self-start flex flex-col justify-between p-6 bg-white rounded-lg relative items-end"
 					>
-						<p className="text-6xl font-semibold font-title mt-4">
-							+12
-						</p>
-						<p className="descriptions whitespace-nowrap">
-							Clientes satisfechos
-						</p>
-						<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
+						<Cctv
+							className="text-green-600 mb-2 scale-x-[-1]"
+							size={56}
+						/>
+						<div className="flex flex-col items-start gap-4">
+							<p className="text-6xl font-semibold font-title mt-4">
+								+12
+							</p>
+							<p className="descriptions whitespace-nowrap">
+								Clientes satisfechos
+							</p>
+							<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
+						</div>
 					</div>
 				</div>
 			</section>

@@ -256,16 +256,22 @@ function App() {
 					<section
 						id="about"
 						ref={aboutRef}
-						className=" flex gap-8 max-h-max flex-col lg:flex-row mb-16"
+						className=" flex gap-8 max-h-max flex-col lg:flex-row mb-16 relative"
 					>
+
+						
 						<div
 							ref={aboutLeftRef}
-							className="bg-neutral-950 p-6 md:p-16 rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1] relative overflow-hidden pointer-events-none -z-10"
+							className="bg-neutral-950 p-6 md:p-16 rounded-lg border-2 flex flex-col gap-6 lg:flex-[2.1] relative overflow-hidden pointer-events-none"
 						>
+							<CornerFrame
+							strokeColor="currentColor"
+							className="text-green-400"
+						/>
 							<img
 								className="absolute top-0 w-[600px] right-0 z-0"
 								src="/assets/background/BG-Decoration.png"
-								alt="Atelopus decoración"
+								alt="Atelopus decoración -z-50"
 							/>
 							<h2 className="title-big font-semibold text-white">
 								{t("about.title")}
@@ -279,6 +285,10 @@ function App() {
 							ref={aboutRightRef}
 							className="bg-white rounded-lg border-2 p-6 md:p-16 flex flex-col justify-end items-start lg:flex-[1] gap-3"
 						>
+							<CornerFrame
+							strokeColor="currentColor"
+							className="text-neutral-400"
+						/>
 							<img
 								src="/assets/logo.svg"
 								alt="LOGO"
