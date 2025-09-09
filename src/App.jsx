@@ -1219,7 +1219,7 @@ function App() {
 					{/* FORMULARIO DEMO */}
 					<section
 						ref={formRef}
-						className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-6 md:p-16  relative scroll-mt-20"
+						className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-6 md:p-16 mb-16 relative scroll-mt-20"
 						 id="contact"
 					>
 						<CornerFrame
