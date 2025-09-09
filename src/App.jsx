@@ -11,6 +11,7 @@ import CardBenefits from "./components/CardBenefits";
 import DeploymentOptionsTable from "./components/DeploymentOptionsTable";
 import CardMetric from "./components/CardMetric";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 import { tr } from "motion/react-client";
 
 function App() {
@@ -973,54 +974,7 @@ function App() {
 				</main>
 
 				{/* FOOTER */}
-				<footer
-					id="contact"
-					className="bg-white flex flex-col lg:flex-row p-16 mb-16 gap-28 rounded-lg"
-				>
-					<div>
-						<h1 className="title-tiny font-semibold">Atelopus</h1>
-						<p className="descriptions">{t("footer.rights")}</p>
-					</div>
-
-					<div className="flex gap-14">
-						<div>
-							<h1 className="title-tiny font-semibold">
-								{t("footer.product")}
-							</h1>
-							{/* TODO: i18n — podrías mapear estas entradas del footer con claves dedicadas */}
-							<p className="descriptions">About</p>
-							<p className="descriptions">Features</p>
-							<p className="descriptions">Benefits</p>
-							<p className="descriptions">
-								{t("footer.contact")}
-							</p>
-						</div>
-
-						<div>
-							<h1 className="title-tiny font-semibold">
-								{t("footer.contact")}
-							</h1>
-							<p className="descriptions">
-								info@hypernovalabs.com
-							</p>
-							<p className="descriptions">(+507) 202-4098/99</p>
-							<p className="descriptions">
-								Edificio Frontenac, piso 1, Calle 50, Ciudad de
-								Panamá
-							</p>
-						</div>
-
-						<div>
-							<h1 className="title-tiny font-semibold">
-								{t("footer.legal")}
-							</h1>
-							<p className="descriptions">{t("footer.terms")}</p>
-							<p className="descriptions">
-								{t("footer.privacy")}
-							</p>
-						</div>
-					</div>
-				</footer>
+				<Footer />
 			</div>
 		</>
 	);

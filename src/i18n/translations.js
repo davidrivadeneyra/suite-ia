@@ -298,12 +298,23 @@ export const translations = {
 		"form.placeholder": "Type your message here...",
 
 		// Footer
-		"footer.product": "Product",
-		"footer.legal": "Legal",
-		"footer.contact": "Contact",
-		"footer.rights": "© 2025 ATELOPUS. All rights reserved.",
-		"footer.terms": "Terms of Service",
-		"footer.privacy": "Privacy Policy",
+		  "footer.brand": "Atelopus",
+  "footer.copy": "© 2025 ATELOPUS. All rights reserved.",
+
+  "footer.product.title": "Product",
+  "footer.product.about": "About",
+  "footer.product.features": "Features",
+  "footer.product.benefits": "Benefits",
+  "footer.product.contact": "Contact",
+
+  "footer.contact.title": "Contact",
+  "footer.contact.email": "info@hypernovalabs.com",
+  "footer.contact.phone": "(+507) 202–4098/99",
+  "footer.contact.address": "Frontenac Building, 1st floor, Calle 50, Panama City",
+
+  "footer.legal.title": "Legal",
+  "footer.legal.terms": "Terms of Service",
+  "footer.legal.privacy": "Privacy Policy",
 	},
 
 	es: {
@@ -606,11 +617,22 @@ export const translations = {
 		"form.placeholder": "Escribe tu mensaje aquí...",
 		
 			// Footer
-		"footer.product": "Producto",
-		"footer.legal": "Legal",
-		"footer.contact": "Contacto",
-		"footer.rights": "© 2025 ATELOPUS. Todos los derechos reservados.",
-		"footer.terms": "Términos de Servicio",
-		"footer.privacy": "Política de Privacidad",
+		 "footer.brand": "Atelopus",
+  "footer.copy": "© 2025 ATELOPUS. Todos los derechos reservados.",
+
+  "footer.product.title": "Producto",
+  "footer.product.about": "Acerca de",
+  "footer.product.features": "Características",
+  "footer.product.benefits": "Beneficios",
+  "footer.product.contact": "Contacto",
+
+  "footer.contact.title": "Contacto",
+  "footer.contact.email": "info@hypernovalabs.com",
+  "footer.contact.phone": "(+507) 202–4098/99",
+  "footer.contact.address": "Edificio Frontenac, piso 1, Calle 50, Ciudad de Panamá",
+
+  "footer.legal.title": "Legal",
+  "footer.legal.terms": "Términos de Servicio",
+  "footer.legal.privacy": "Política de Privacidad"
 	},
 };

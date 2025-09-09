@@ -4,7 +4,7 @@
 
 :root {
 	--max-width: 1350px;
-	--grid-color: #D6D6D6
+	--grid-color: #d6d6d6;
 }
 
 @layer base {
@@ -17,15 +17,23 @@
 	h3,
 	h4,
 	h5,
-	h6, th {
+	h6,
+	th {
 		font-family: "Clash Display", sans-serif;
 	}
 
-	p,
+	.title {
+		font-family: "Clash Display", sans-serif;
+	}
+
+	a,
+    p,
 	span,
 	a,
 	li,
-	button, td {
+	button,
+	td,
+    address {
 		font-family: "Plus Jakarta Sans", sans-serif;
 	}
 
@@ -98,13 +106,16 @@
 		border: 0.5px solid var(--grid-color); /* Borde negro */
 	}
 
-        @media (max-width: 900px) {
-        .grid-1x1 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-        }
-        @media (max-width: 520px) {
-        .grid-1x1 { grid-template-columns: 1fr; }
-        }
-
+	@media (max-width: 900px) {
+		.grid-1x1 {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+	}
+	@media (max-width: 520px) {
+		.grid-1x1 {
+			grid-template-columns: 1fr;
+		}
+	}
 }
 
 @layer components {
@@ -117,28 +128,27 @@
 	}
 
 	.title-bigger {
-		@apply title-color text-[48px] md:text-[64px] leading-[100%];
+		@apply title title-color text-[48px] md:text-[64px] leading-[100%];
 	}
 
 	.title-big {
-		@apply title-color text-[32px] md:text-[48px] leading-[100%];
+		@apply title title-color text-[32px] md:text-[48px] leading-[100%];
 	}
 
 	.title-regular {
-		@apply title-color text-[28px] md:text-[38px] leading-[100%];
+		@apply title title-color text-[28px] md:text-[38px] leading-[100%];
 	}
 
 	.title-small {
-		@apply title-color text-[21px] md:text-[28px] leading-[100%];
+		@apply title title-color text-[21px] md:text-[28px] leading-[100%];
 	}
 
-	/* (Opcional) Para cubrir toda la escala del spec */
 	.title-smaller {
-		@apply title-color text-[17px] md:text-[21px] leading-[100%];
+		@apply title title-color text-[17px] md:text-[21px] leading-[100%];
 	}
 
 	.title-tiny {
-		@apply title-color text-[16px] md:text-[18px] leading-[100%];
+		@apply title title-color text-[16px] md:text-[18px] leading-[100%];
 	}
 
 	/* descriptions */
@@ -150,16 +160,6 @@
 	.descriptions-sm {
 		@apply description-color font-medium leading-[150%] text-[12px] md:text-[14px];
 	}
-
-	/* buttons */
-
-	/* .btn-text-regular {
-        @apply font-['Plus_Jakarta_Sans'] font-semibold leading-[150%] text-[14px] md:text-[16px];
-    }
-
-    .btn-text-small {
-        @apply font-['Plus_Jakarta_Sans'] font-semibold leading-[150%] text-[12px] md:text-[14px];
-    } */
 
 	.btn-dark {
 		@apply bg-black text-white md:flex-[4] lg:flex-[5] py-3 font-bold rounded-lg;
