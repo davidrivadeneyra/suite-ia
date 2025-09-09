@@ -1217,6 +1217,7 @@ function App() {
 					<section
 						ref={formRef}
 						className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-16 mb-16 relative scroll-mt-20"
+						 id="contact"
 					>
 						<CornerFrame
 							hover={false}

@@ -23,7 +23,7 @@ export default function Footer({ className = "" }) {
   return (
     <>
       <footer
-        id="contact"
+       
         className={`bg-white flex flex-col lg:flex-row p-16 mb-4 gap-28 rounded-lg ${className} relative`}
       >
         <CornerFrame
