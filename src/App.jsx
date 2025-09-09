@@ -378,9 +378,8 @@ function App() {
 							<h2 className="title-big font-semibold text-white mb-4">
 								{t("benefits.title")}
 							</h2>
-							<span className="descriptions text-neutral-400 mb-6">
-								{t("metrics.desc")}
-							</span>
+							<p className="text-neutral-400 pb-8">{t("benefits.desc")}</p>
+
 							<div className="flex flex-col md:flex-row gap-4 pb-8">
 								<button className="btn-text-regular btn-green relative">
 									{t("hero.demo")}
@@ -455,9 +454,9 @@ function App() {
 							<h2 className="title-big font-semibold mb-4 text-center">
 								{t("versions.title")}
 							</h2>
-							<span className="descriptions mb-6 text-center">
-								{t("metrics.desc")}
-							</span>
+							<p className="descriptions mb-6 text-center">
+								{t("versions.desc")}
+							</p>
 							<div className="flex flex-col md:flex-row gap-4 pb-8">
 								<button className="btn-text-regular btn-dark relative">
 									{t("hero.demo")}
@@ -769,124 +768,121 @@ function App() {
 						</div>
 
 						<div className="lg:w-1/2">
-							<AccordionItem title={`1. ${t("faq.q1")}`}>
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-bold">
-										Qué hace:
-									</h3>
-								</div>
-								<p className="descriptions mb-4">
-									{t("faq.q1.what")}
-								</p>
+							<AccordionItem className="title-smaller" title={`1. ${t("faq.q1")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q1.answer")}
+  </p>
+</AccordionItem>
 
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-bold">
-										Alertas Típicas:
-									</h3>
-								</div>
-								<p className="descriptions mb-4">
-									{t("faq.q1.alerts")}
-								</p>
+<AccordionItem className="title-smaller" title={`2. ${t("faq.q2")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q2.answer")}
+  </p>
+</AccordionItem>
 
-								<div className="flex justify-start gap-1">
-									<span>ICON</span>
-									<h3 className="title-small font-bold">
-										{t("metrics.title")}
-									</h3>
-								</div>
-								<p className="descriptions mb-4">
-									{t("faq.q1.impact")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`3. ${t("faq.q3")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q3.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`2. ${t("faq.q2")}`}>
-								<p className="descriptions">
-									{t("faq.q2.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`4. ${t("faq.q4")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q4.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`3. ${t("faq.q3")}`}>
-								<p className="descriptions">
-									{t("faq.q3.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`5. ${t("faq.q5")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q5.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`4. ${t("faq.q4")}`}>
-								<p className="descriptions">
-									{t("faq.q4.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`6. ${t("faq.q6")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q6.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`5. ${t("faq.q5")}`}>
-								<p className="descriptions">
-									{t("faq.q5.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`7. ${t("faq.q7")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q7.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`6. ${t("faq.q6")}`}>
-								<p className="descriptions">
-									{t("faq.q6.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`8. ${t("faq.q8")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q8.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`7. ${t("faq.q7")}`}>
-								<p className="descriptions">
-									{t("faq.q7.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`9. ${t("faq.q9")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q9.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`8. ${t("faq.q8")}`}>
-								<p className="descriptions">
-									{t("faq.q8.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`10. ${t("faq.q10")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q10.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`9. ${t("faq.q9")}`}>
-								<p className="descriptions">
-									{t("faq.q9.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`11. ${t("faq.q11")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q11.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`10. ${t("faq.q10")}`}>
-								<p className="descriptions">
-									{t("faq.q10.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`12. ${t("faq.q12")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q12.answer")}
+  </p>
+</AccordionItem>
 
-							<AccordionItem title={`11. ${t("faq.q11")}`}>
-								<p className="descriptions">
-									{t("faq.q11.answer")}
-								</p>
-							</AccordionItem>
-
-							<AccordionItem title={`12. ${t("faq.q12")}`}>
-								<p className="descriptions">
-									{t("faq.q12.answer")}
-								</p>
-							</AccordionItem>
-
-							<AccordionItem title={`13. ${t("faq.q13")}`}>
-								<p className="descriptions">
-									{t("faq.q13.answer")}
-								</p>
-							</AccordionItem>
+<AccordionItem className="title-smaller" title={`13. ${t("faq.q13")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q13.answer")}
+  </p>
+</AccordionItem>
+<AccordionItem className="title-smaller" title={`14. ${t("faq.q14")}`} iconSize="title-smaller">
+  <p className="descriptions">
+    {t("faq.q14.answer")}
+  </p>
+</AccordionItem>
 						</div>
 					</section>
 
 					{/* CTA FINAL */}
-					<section className="bg-black rounded-lg mb-16 flex justify-center p-16 ">
+					<section className="bg-black rounded-lg mb-16 flex justify-center p-16 relative">
+						<CornerFrame
+							hover={false}
+							strokeColor="currentColor"
+							className="text-green-400"
+						/>
+						<img
+							className="absolute top-0 w-[600px] right-0 z-0 pointer-events-none"
+							src="/assets/background/BG-Decoration.png"
+							alt="Atelopus decoración"
+						/>
 						<div className="flex flex-col max-w-[443px]">
 							<h2 className="title-big text-white font-semibold mb-14 text-center">
 								{t("cta.title")}
 							</h2>
-							<div className="flex flex-col gap-4 md:flex-row ">
-								<button className="bg-green-600 text-black py-2 px-2 font-bold rounded-lg border-2 border-black md:flex-[1.2]">
-									{t("cta.demo")}
+							<div className="flex flex-col md:flex-row gap-4">
+								<button className="btn-text-regular btn-green relative">
+									{t("hero.demo")}
+									<CornerFrame
+										strokeColor="currentColor"
+										className="text-neutral-950"
+									/>
 								</button>
-								<button className="bg-white text-black py-2 px-2 font-bold rounded-lg border-2 md:flex-[1]">
-									{t("cta.how")}
+								<button className="btn-text-regular btn-gray relative">
+									{t("hero.how")}
+									<CornerFrame
+										strokeColor="currentColor"
+										className="text-neutral-400"
+									/>
 								</button>
 							</div>
 						</div>

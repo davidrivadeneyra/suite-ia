@@ -4,8 +4,9 @@ export default function AccordionItem({
   title,
   children,
   titleTextColor = "text-black",   // color de título (y del ícono)
-  borderColor = "border-black",    // color de borde
-  className = ""
+  borderColor = "border-neutral-300",    // color de borde
+  className = "",
+  iconSize = ""          // tamaño del ícono (+-)
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,8 +20,8 @@ export default function AccordionItem({
         onClick={() => setIsOpen(!isOpen)}
         className="text-left flex w-full justify-between py-6"
       >
-        <h2 className={`title-small ${titleTextColor}`}>{title}</h2>
-        <span className={`title-small ${titleTextColor}`}>
+        <h2 className={`title-small ${titleTextColor} ${className}`}>{title}</h2>
+        <span className={`title-small ${titleTextColor} ${iconSize} `}>
           {isOpen ? "−" : "+"}
         </span>
       </button>
