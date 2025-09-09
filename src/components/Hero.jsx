@@ -1,9 +1,7 @@
-// src/components/Hero.jsx
 import { useLanguage } from "../i18n/LanguageProvider";
 import React, { useRef, useLayoutEffect } from "react";
 import CornerFrame from "./CornersFrame";
 import { usePageAnimations } from "../anim/usePageAnimations";
-// import { gsap } from "gsap/gsap-core";
 import { gsap } from "../anim/gsapSetup";
 
 export default function Hero() {
