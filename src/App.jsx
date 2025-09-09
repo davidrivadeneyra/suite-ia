@@ -10,6 +10,7 @@ import DashedConnector from "./components/DashConector";
 import CardBenefits from "./components/CardBenefits";
 import DeploymentOptionsTable from "./components/DeploymentOptionsTable";
 import CardMetric from "./components/CardMetric";
+import ContactForm from "./components/ContactForm";
 import { tr } from "motion/react-client";
 
 function App() {
@@ -378,7 +379,9 @@ function App() {
 							<h2 className="title-big font-semibold text-white mb-4">
 								{t("benefits.title")}
 							</h2>
-							<p className="text-neutral-400 pb-8">{t("benefits.desc")}</p>
+							<p className="text-neutral-400 pb-8">
+								{t("benefits.desc")}
+							</p>
 
 							<div className="flex flex-col md:flex-row gap-4 pb-8">
 								<button className="btn-text-regular btn-green relative">
@@ -757,7 +760,12 @@ function App() {
 					</section>
 
 					{/* FAQ */}
-					<section className="flex flex-col gap-14 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16">
+					<section className="flex flex-col gap-14 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16 relative">
+						<CornerFrame
+							hover={false}
+							strokeColor="currentColor"
+							className="text-green-500"
+						/>
 						<div className="flex flex-col lg:w-1/2 gap-10">
 							<h2 className="title-regular">{t("faq.title")}</h2>
 							<img
@@ -768,88 +776,144 @@ function App() {
 						</div>
 
 						<div className="lg:w-1/2">
-							<AccordionItem className="title-smaller" title={`1. ${t("faq.q1")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q1.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`1. ${t("faq.q1")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q1.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`2. ${t("faq.q2")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q2.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`2. ${t("faq.q2")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q2.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`3. ${t("faq.q3")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q3.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`3. ${t("faq.q3")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q3.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`4. ${t("faq.q4")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q4.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`4. ${t("faq.q4")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q4.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`5. ${t("faq.q5")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q5.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`5. ${t("faq.q5")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q5.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`6. ${t("faq.q6")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q6.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`6. ${t("faq.q6")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q6.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`7. ${t("faq.q7")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q7.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`7. ${t("faq.q7")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q7.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`8. ${t("faq.q8")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q8.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`8. ${t("faq.q8")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q8.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`9. ${t("faq.q9")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q9.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`9. ${t("faq.q9")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q9.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`10. ${t("faq.q10")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q10.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`10. ${t("faq.q10")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q10.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`11. ${t("faq.q11")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q11.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`11. ${t("faq.q11")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q11.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`12. ${t("faq.q12")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q12.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`12. ${t("faq.q12")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q12.answer")}
+								</p>
+							</AccordionItem>
 
-<AccordionItem className="title-smaller" title={`13. ${t("faq.q13")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q13.answer")}
-  </p>
-</AccordionItem>
-<AccordionItem className="title-smaller" title={`14. ${t("faq.q14")}`} iconSize="title-smaller">
-  <p className="descriptions">
-    {t("faq.q14.answer")}
-  </p>
-</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`13. ${t("faq.q13")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q13.answer")}
+								</p>
+							</AccordionItem>
+							<AccordionItem
+								className="title-smaller"
+								title={`14. ${t("faq.q14")}`}
+								iconSize="title-smaller"
+							>
+								<p className="descriptions">
+									{t("faq.q14.answer")}
+								</p>
+							</AccordionItem>
 						</div>
 					</section>
 
@@ -889,7 +953,12 @@ function App() {
 					</section>
 
 					{/* FORMULARIO DEMO */}
-					<section className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-16 mb-16">
+					<section className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-16 mb-16 relative">
+						<CornerFrame
+							hover={false}
+							strokeColor="currentColor"
+							className="text-neutral-600"
+						/>
 						<div className=" max-w-2xl w-full">
 							<div className="mb-8">
 								<h1 className="title-big font-bold mb-2">
@@ -899,101 +968,7 @@ function App() {
 							</div>
 						</div>
 
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-							{/* Nombre */}
-							<div className="md:col-span-2">
-								<label className="descriptions-sm mb-2 block">
-									{t("form.name")}
-								</label>
-								<input
-									type="text"
-									name="nombre"
-									placeholder="Jon Doe"
-									required
-									className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 
-                    focus:border-transparent outline-none transition-all"
-								/>
-							</div>
-
-							{/* Empresa / País */}
-							<div>
-								<label className="descriptions-sm mb-2 block">
-									{t("form.company")}
-								</label>
-								<input
-									type="text"
-									name="empresa"
-									placeholder="Transmira INC"
-									required
-									className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 
-                    focus:border-transparent outline-none transition-all"
-								/>
-							</div>
-
-							<div>
-								<label className="descriptions-sm mb-2 block">
-									{t("form.country")}
-								</label>
-								<input
-									type="text"
-									name="pais"
-									placeholder="Panamá"
-									required
-									className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 
-                    focus:border-transparent outline-none transition-all"
-								/>
-							</div>
-
-							{/* Email / Teléfono */}
-							<div>
-								<label className="descriptions-sm mb-2 block">
-									{t("form.email")}
-								</label>
-								<input
-									type="email"
-									name="email"
-									placeholder="jon@mail.com"
-									required
-									className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 
-                    focus:border-transparent outline-none transition-all"
-								/>
-							</div>
-
-							<div>
-								<label className="descriptions-sm mb-2 block">
-									{t("form.phone")}
-								</label>
-								<input
-									type="tel"
-									name="telefono"
-									placeholder="88 999 000 888"
-									required
-									className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent outline-none transition-all"
-								/>
-							</div>
-
-							{/* Mensaje */}
-							<div className="md:col-span-2">
-								<label className="descriptions-sm mb-2 block">
-									{t("form.message")}
-								</label>
-								<textarea
-									name="mensaje"
-									placeholder="Aquí va tu mensaje"
-									required
-									rows="4"
-									className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent outline-none transition-all resize-none"
-								></textarea>
-							</div>
-
-							{/* Botón */}
-							<button
-								type="button"
-								className="w-full bg-black text-white py-3 px-6 rounded-lg font-medium text-lg"
-							>
-								{t("cta.demo")}
-							</button>
-						</div>
+						<ContactForm />
 					</section>
 				</main>
 

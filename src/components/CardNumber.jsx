@@ -1,7 +1,6 @@
 // CardNumber.jsx
 import React from "react";
 import CornerFrame from "./CornersFrame";
-
 export default function CardNumber({
   value,
   className = "relative w-10 h-10 flex items-center justify-center",

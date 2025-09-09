@@ -110,7 +110,8 @@ export const translations = {
 		// Versions
 
 		"versions.title": "Versions or operation options",
-		"versions.desc": "Choose the best way to run the platform: Local or Cloud.",
+		"versions.desc":
+			"Choose the best way to run the platform: Local or Cloud.",
 		"deploy.headers.option": "Option",
 		"deploy.headers.where": "Where it runs",
 		"deploy.headers.offsite": "Off-site video",
@@ -194,7 +195,8 @@ export const translations = {
 
 		// Metrics
 		"metrics.title": "Impact metrics",
-		"metrics.desc": "Key industry figures that highlight the scale and market growth.",
+		"metrics.desc":
+			"Key industry figures that highlight the scale and market growth.",
 
 		"metrics.1.title": "1.82%",
 		"metrics.1.desc":
@@ -224,46 +226,60 @@ export const translations = {
 		"faq.title": "Frequently Asked Questions",
 
 		"faq.q1": "What exactly is this platform?",
-  "faq.q1.answer": "It’s an AI-powered platform that watches your cameras 24/7 and instantly alerts you with a video clip when it detects theft, loitering, or unauthorized access. It helps reduce loss, improve safety, and save hours of manual review.",
+		"faq.q1.answer":
+			"It’s an AI-powered platform that watches your cameras 24/7 and instantly alerts you with a video clip when it detects theft, loitering, or unauthorized access. It helps reduce loss, improve safety, and save hours of manual review.",
 
-  "faq.q2": "Do I need to replace my cameras?",
-  "faq.q2.answer": "No. It works with most cameras you already have and many modern DVR/NVRs. If needed, we use an adapter to connect older systems.",
+		"faq.q2": "Do I need to replace my cameras?",
+		"faq.q2.answer":
+			"No. It works with most cameras you already have and many modern DVR/NVRs. If needed, we use an adapter to connect older systems.",
 
-  "faq.q3": "How do I receive alerts?",
-  "faq.q3.answer": "In a web dashboard and a mobile app (iOS/Android). Each alert includes a short video, location, and recommended actions.",
+		"faq.q3": "How do I receive alerts?",
+		"faq.q3.answer":
+			"In a web dashboard and a mobile app (iOS/Android). Each alert includes a short video, location, and recommended actions.",
 
-  "faq.q4": "What if the Internet goes down?",
-  "faq.q4.answer": "Detection keeps running on-site. Alerts are sent locally and anything queued syncs as soon as the connection returns.",
+		"faq.q4": "What if the Internet goes down?",
+		"faq.q4.answer":
+			"Detection keeps running on-site. Alerts are sent locally and anything queued syncs as soon as the connection returns.",
 
-  "faq.q5": "How accurate is it? What about false positives?",
-  "faq.q5.answer": "We fine-tune rules and zones in a short pilot for your operation. After a few days of calibration, the system reduces false positives and prioritizes what truly matters.",
+		"faq.q5": "How accurate is it? What about false positives?",
+		"faq.q5.answer":
+			"We fine-tune rules and zones in a short pilot for your operation. After a few days of calibration, the system reduces false positives and prioritizes what truly matters.",
 
-  "faq.q6": "Does it integrate with my current systems?",
-  "faq.q6.answer": "Yes. It integrates with video systems (VMS), access control, radios/Push-to-Talk, and we provide an API to connect other tools (e.g., POS in retail).",
+		"faq.q6": "Does it integrate with my current systems?",
+		"faq.q6.answer":
+			"Yes. It integrates with video systems (VMS), access control, radios/Push-to-Talk, and we provide an API to connect other tools (e.g., POS in retail).",
 
-  "faq.q7": "How do you protect privacy?",
-  "faq.q7.answer": "You decide who sees what. We offer roles and permissions, configurable retention, and options to work with metadata only when required. We also offer on-prem deployment if you prefer.",
+		"faq.q7": "How do you protect privacy?",
+		"faq.q7.answer":
+			"You decide who sees what. We offer roles and permissions, configurable retention, and options to work with metadata only when required. We also offer on-prem deployment if you prefer.",
 
-  "faq.q8": "Can I use it in any country?",
-  "faq.q8.answer": "Yes. It’s multi-country and multi-site, with language support (ES/EN), time zones, and data residency options (Local/SaaS/Hybrid) to meet local regulations.",
+		"faq.q8": "Can I use it in any country?",
+		"faq.q8.answer":
+			"Yes. It’s multi-country and multi-site, with language support (ES/EN), time zones, and data residency options (Local/SaaS/Hybrid) to meet local regulations.",
 
-  "faq.q9": "How many cameras does it support?",
-  "faq.q9.answer": "From a few to thousands across multiple sites. We scale in phases while maintaining performance and centralized administration.",
+		"faq.q9": "How many cameras does it support?",
+		"faq.q9.answer":
+			"From a few to thousands across multiple sites. We scale in phases while maintaining performance and centralized administration.",
 
-  "faq.q10": "How long does installation take?",
-  "faq.q10.answer": "Typically 1 to 3 days per site, depending on the number of cameras and access points. Rollout is fast and without interruptions.",
+		"faq.q10": "How long does installation take?",
+		"faq.q10.answer":
+			"Typically 1 to 3 days per site, depending on the number of cameras and access points. Rollout is fast and without interruptions.",
 
-  "faq.q11": "What deployment options do you offer (cloud or on-prem)?",
-  "faq.q11.answer": "Three: On-Prem (Local), Cloud (SaaS), or Hybrid (on-site detection + centralized management). We’ll help you choose the best fit based on data, compliance, and operations.",
+		"faq.q11": "What deployment options do you offer (cloud or on-prem)?",
+		"faq.q11.answer":
+			"Three: On-Prem (Local), Cloud (SaaS), or Hybrid (on-site detection + centralized management). We’ll help you choose the best fit based on data, compliance, and operations.",
 
-  "faq.q12": "How much does it cost?",
-  "faq.q12.answer": "Per-camera and per-module licensing, with volume discounts and optional 24/7 support. We quote based on the number of cameras, modules, and sites.",
+		"faq.q12": "How much does it cost?",
+		"faq.q12.answer":
+			"Per-camera and per-module licensing, with volume discounts and optional 24/7 support. We quote based on the number of cameras, modules, and sites.",
 
-  "faq.q13": "What do I need to get started?",
-  "faq.q13.answer": "A demo, then a pilot in 1–2 sites: we review cameras, define zones and rules, and agree on KPIs (shrinkage, response times, adoption).",
+		"faq.q13": "What do I need to get started?",
+		"faq.q13.answer":
+			"A demo, then a pilot in 1–2 sites: we review cameras, define zones and rules, and agree on KPIs (shrinkage, response times, adoption).",
 
-  "faq.q14": "Who trains and supports my team?",
-  "faq.q14.answer": "We include onboarding and quick guides for guards and supervisors, plus short trainings and ongoing support.",
+		"faq.q14": "Who trains and supports my team?",
+		"faq.q14.answer":
+			"We include onboarding and quick guides for guards and supervisors, plus short trainings and ongoing support.",
 
 		// CTA
 		"cta.title": "Ready to prevent losses and automate your security?",
@@ -274,11 +290,12 @@ export const translations = {
 		"form.title": "Request a demo",
 		"form.desc": "Brief description of the tool goes here",
 		"form.name": "Name *",
-		"form.company": "Company *",
+		"form.company": "Your company *",
 		"form.country": "Country *",
-		"form.email": "Email *",
-		"form.phone": "Phone *",
+		"form.email": "Your email *",
+		"form.phone": "Your phone *",
 		"form.message": "Message *",
+		"form.placeholder": "Type your message here...",
 
 		// Footer
 		"footer.product": "Product",
@@ -387,7 +404,8 @@ export const translations = {
 
 		// Benefits
 		"benefits.title": "Beneficios",
-		"benefits.desc": "Sin cambiar cámaras, alertas en segundos, fácil integración.",
+		"benefits.desc":
+			"Sin cambiar cámaras, alertas en segundos, fácil integración.",
 		"benefits.1": "No cambias cámaras",
 		"benefits.2": "Alertas en seguridad",
 		"benefits.3": "Fácil de instalar e integrar con tus sistemas",
@@ -399,7 +417,8 @@ export const translations = {
 
 		// Versions
 		"versions.title": "Versiones u opciones de funcionamiento",
-		"versions.desc": "Elige la mejor forma de operar la plataforma: Local o Nube.",
+		"versions.desc":
+			"Elige la mejor forma de operar la plataforma: Local o Nube.",
 		"deploy.headers.option": "Opción",
 		"deploy.headers.where": "Dónde corre",
 		"deploy.headers.offsite": "Video fuera del sitio",
@@ -481,7 +500,8 @@ export const translations = {
 
 		// Metrics
 		"metrics.title": "Métricas de impacto",
-		"metrics.desc": "Cifras clave que muestran la magnitud y el crecimiento del mercado.",
+		"metrics.desc":
+			"Cifras clave que muestran la magnitud y el crecimiento del mercado.",
 		"metrics.1.title": "1.82%",
 		"metrics.1.desc":
 			"Tasa global de merma sobre ventas minoristas. (Global Shrink Index – Sensormatic)",
@@ -505,74 +525,87 @@ export const translations = {
 		"metrics.6.title": "US$ 10.3B → 48.9B",
 		"metrics.6.desc":
 			"Mercado de analítica de video 2024–2032 (CAGR ~21.8%). (Fortune Business Insights)",
-
+		
+		
 		// FAQ
-		"faq.title": "Preguntas frecuentes",
-		"faq.q1": "¿Qué es exactamente esta plataforma?",
-		"faq.q2": "¿Necesito cambiar mis cámaras?",
-		"faq.q3": "¿Cómo recibo las alertas?",
-		"faq.q4": "¿Qué pasa si se cae Internet?",
-		"faq.q5": "¿Qué tan precisa es? ¿Y los falsos positivos?",
-		"faq.q6": "¿Se integra con mis sistemas actuales?",
-		"faq.q7": "¿Cómo cuidan la privacidad?",
-		"faq.q8": "¿Puedo usarlo en cualquier país?",
-		"faq.q9": "¿Cuánto tarda la instalación?",
-		"faq.q10": "¿Qué opciones de uso tienen (nube o local)?",
-		"faq.q11": "¿Cuánto cuesta?",
-		"faq.q12": "¿Qué necesito para empezar?",
-		"faq.q13": "¿Quién atiende y capacita a mi equipo?",
 
+		"faq.title": "Preguntas frecuentes",
+
+		"faq.q1": "¿Qué es exactamente esta plataforma?",
+		"faq.q1.answer":
+			"Es una plataforma impulsada con IA que “mira” tus cámaras 24/7 y te avisa al instante con un clip de video cuando detecta robos, merodeo o accesos no autorizados. Te ayuda a reducir pérdidas, mejorar seguridad y ahorrar horas de revisión manual.",
+
+		"faq.q2": "¿Necesito cambiar mis cámaras?",
+		"faq.q2.answer":
+			"No. Funciona con la mayoría de cámaras que ya tienes y con muchos DVR/NVR modernos. Si hiciera falta, usamos un adaptador para conectar sistemas más antiguos.",
+
+		"faq.q3": "¿Cómo recibo las alertas?",
+		"faq.q3.answer":
+			"En un panel web y en una app móvil (iOS/Android). Cada alerta llega con video corto, ubicación y recomendaciones de acción.",
+
+		"faq.q4": "¿Qué pasa si se cae Internet?",
+		"faq.q4.answer":
+			"La detección sigue funcionando en el sitio. Las alertas se envían localmente y, si algo queda en cola, se sincroniza apenas vuelve la conexión.",
+
+		"faq.q5": "¿Qué tan precisa es? ¿Y los falsos positivos?",
+		"faq.q5.answer":
+			"Ajustamos reglas y zonas en un piloto corto para tu operación. Con unos días de calibración, el sistema reduce falsos positivos y prioriza lo realmente importante.",
+
+		"faq.q6": "¿Se integra con mis sistemas actuales?",
+		"faq.q6.answer":
+			"Sí. Se integra con sistemas de video (VMS), control de acceso, radios/Push-to-Talk y contamos con API para conectar otras herramientas (por ejemplo, POS en retail).",
+
+		"faq.q7": "¿Cómo cuidan la privacidad?",
+		"faq.q7.answer":
+			"Tú decides quién ve qué. Hay roles y permisos, retención configurable y opciones para trabajar solo con metadatos cuando sea necesario. También ofrecemos despliegue en tu sitio si lo prefieres.",
+
+		"faq.q8": "¿Puedo usarlo en cualquier país?",
+		"faq.q8.answer":
+			"Sí. Es multi-país y multi-sede, con soporte de idiomas (ES/EN), zonas horarias y opciones de residencia de datos (Local/SaaS/Híbrido) para cumplir normativas locales.",
+
+		"faq.q9": "¿Cuántas cámaras soporta?",
+		"faq.q9.answer":
+			"Desde unas pocas hasta miles en múltiples sedes. Escalamos por etapas, manteniendo el rendimiento y la administración central.",
+
+		"faq.q10": "¿Cuánto tarda la instalación?",
+		"faq.q10.answer":
+			"Normalmente 1 a 3 días por sede, según cantidad de cámaras y accesos. La puesta en marcha es rápida y sin interrupciones.",
+
+		"faq.q11": "¿Qué opciones de uso tienen (nube o local)?",
+		"faq.q11.answer":
+			"Tres: En tu sitio (Local), en la nube (SaaS) o Híbrido (detección en sitio + gestión central). Te ayudamos a elegir la mejor según datos, compliance y operación.",
+
+		"faq.q12": "¿Cuánto cuesta?",
+		"faq.q12.answer":
+			"Licencia por cámara y por módulo, con descuentos por volumen y soporte opcional 24/7. Te cotizamos en base a cantidad de cámaras, módulos y sedes.",
+
+		"faq.q13": "¿Qué necesito para empezar?",
+		"faq.q13.answer":
+			"Una demo, luego un piloto en 1–2 sedes: revisamos cámaras, definimos zonas y reglas, y acordamos KPIs (merma, tiempos, adopción).",
+
+		"faq.q14": "¿Quién atiende y capacita a mi equipo?",
+		"faq.q14.answer":
+			"Incluimos onboarding y guías rápidas para guardias y supervisores. También hay capacitaciones cortas y soporte continuo.",
+		
 		// CTA
 		"cta.title":
 			"¿Listo para prevenir pérdidas y automatizar tu seguridad?",
 		"cta.demo": "Solicitar demo",
 		"cta.how": "Ver cómo funciona",
+			// CTA
 
 		// Contact Form
-		"faq.title": "Preguntas frecuentes",
-
-		"faq.q1": "¿Qué es exactamente esta plataforma?",
-  "faq.q1.answer": "Es una plataforma impulsada con IA que “mira” tus cámaras 24/7 y te avisa al instante con un clip de video cuando detecta robos, merodeo o accesos no autorizados. Te ayuda a reducir pérdidas, mejorar seguridad y ahorrar horas de revisión manual.",
-
-  "faq.q2": "¿Necesito cambiar mis cámaras?",
-  "faq.q2.answer": "No. Funciona con la mayoría de cámaras que ya tienes y con muchos DVR/NVR modernos. Si hiciera falta, usamos un adaptador para conectar sistemas más antiguos.",
-
-  "faq.q3": "¿Cómo recibo las alertas?",
-  "faq.q3.answer": "En un panel web y en una app móvil (iOS/Android). Cada alerta llega con video corto, ubicación y recomendaciones de acción.",
-
-  "faq.q4": "¿Qué pasa si se cae Internet?",
-  "faq.q4.answer": "La detección sigue funcionando en el sitio. Las alertas se envían localmente y, si algo queda en cola, se sincroniza apenas vuelve la conexión.",
-
-  "faq.q5": "¿Qué tan precisa es? ¿Y los falsos positivos?",
-  "faq.q5.answer": "Ajustamos reglas y zonas en un piloto corto para tu operación. Con unos días de calibración, el sistema reduce falsos positivos y prioriza lo realmente importante.",
-
-  "faq.q6": "¿Se integra con mis sistemas actuales?",
-  "faq.q6.answer": "Sí. Se integra con sistemas de video (VMS), control de acceso, radios/Push-to-Talk y contamos con API para conectar otras herramientas (por ejemplo, POS en retail).",
-
-  "faq.q7": "¿Cómo cuidan la privacidad?",
-  "faq.q7.answer": "Tú decides quién ve qué. Hay roles y permisos, retención configurable y opciones para trabajar solo con metadatos cuando sea necesario. También ofrecemos despliegue en tu sitio si lo prefieres.",
-
-  "faq.q8": "¿Puedo usarlo en cualquier país?",
-  "faq.q8.answer": "Sí. Es multi-país y multi-sede, con soporte de idiomas (ES/EN), zonas horarias y opciones de residencia de datos (Local/SaaS/Híbrido) para cumplir normativas locales.",
-
-  "faq.q9": "¿Cuántas cámaras soporta?",
-  "faq.q9.answer": "Desde unas pocas hasta miles en múltiples sedes. Escalamos por etapas, manteniendo el rendimiento y la administración central.",
-
-  "faq.q10": "¿Cuánto tarda la instalación?",
-  "faq.q10.answer": "Normalmente 1 a 3 días por sede, según cantidad de cámaras y accesos. La puesta en marcha es rápida y sin interrupciones.",
-
-  "faq.q11": "¿Qué opciones de uso tienen (nube o local)?",
-  "faq.q11.answer": "Tres: En tu sitio (Local), en la nube (SaaS) o Híbrido (detección en sitio + gestión central). Te ayudamos a elegir la mejor según datos, compliance y operación.",
-
-  "faq.q12": "¿Cuánto cuesta?",
-  "faq.q12.answer": "Licencia por cámara y por módulo, con descuentos por volumen y soporte opcional 24/7. Te cotizamos en base a cantidad de cámaras, módulos y sedes.",
-
-  "faq.q13": "¿Qué necesito para empezar?",
-  "faq.q13.answer": "Una demo, luego un piloto en 1–2 sedes: revisamos cámaras, definimos zonas y reglas, y acordamos KPIs (merma, tiempos, adopción).",
-
-  "faq.q14": "¿Quién atiende y capacita a mi equipo?",
-  "faq.q14.answer": "Incluimos onboarding y guías rápidas para guardias y supervisores. También hay capacitaciones cortas y soporte continuo.",
-		// Footer
+		"form.title": "Solicita una demostración",
+		"form.desc": "En breve nos pondremos en contacto contigo",
+		"form.name": "Tu nombre *",
+		"form.company": "Tu empresa *",
+		"form.country": "Tu país *",
+		"form.email": "Tu email *",
+		"form.phone": "Tu teléfono *",
+		"form.message": "Mensaje *",
+		"form.placeholder": "Escribe tu mensaje aquí...",
+		
+			// Footer
 		"footer.product": "Producto",
 		"footer.legal": "Legal",
 		"footer.contact": "Contacto",
