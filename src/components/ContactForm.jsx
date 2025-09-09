@@ -40,6 +40,7 @@ export default function ContactForm() {
 		<form
 			onSubmit={handleSubmit}
 			className="grid grid-cols-1 md:grid-cols-2 gap-5"
+			id="form"
 		>
 			{/* Nombre */}
 			<div className="md:col-span-2">

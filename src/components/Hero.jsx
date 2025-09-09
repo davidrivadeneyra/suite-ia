@@ -1,6 +1,7 @@
 import { useLanguage } from "../i18n/LanguageProvider";
 import React, { useRef, useLayoutEffect } from "react";
 import CornerFrame from "./CornersFrame";
+import ButtonLink from "./ButtonLink";
 import { usePageAnimations } from "../anim/usePageAnimations";
 import { gsap } from "../anim/gsapSetup";
 
@@ -64,7 +65,7 @@ export default function Hero() {
 	}, []);
 
 	return (
-		<main className="max-h-full mt-24">
+		<main className="max-h-full mt">
 			<section
 				ref={heroRef}
 				className="flex flex-col lg:flex-row gap-14 mb-12"
@@ -83,15 +84,16 @@ export default function Hero() {
 						ref={buttonsRef}
 						className="flex flex-col md:flex-row gap-4"
 					>
-						<button className="btn-text-regular btn-dark relative">
-							{t("hero.demo")}
-							<CornerFrame className="text-green-500" strokeColor="currentColor" />
-							
-						</button>
-						<button className="btn-text-regular btn-white relative">
-							{t("hero.how")}
-							<CornerFrame className="text-neutral-400" strokeColor="currentColor" />
-						</button>
+						<ButtonLink
+							href="#form"
+							copy={t("hero.demo")}
+							variant="dark"
+						/>
+						<ButtonLink
+							href="#how-it-works"
+							copy={t("hero.how")}
+							variant="white"
+						/>
 					</div>
 				</div>
 
