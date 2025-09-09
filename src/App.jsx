@@ -256,7 +256,7 @@ function App() {
 					<section
 						id="about"
 						ref={aboutRef}
-						className=" flex gap-8 max-h-max flex-col lg:flex-row mb-16 relative"
+						className=" flex gap-8 max-h-max flex-col lg:flex-row mb-16 relative scroll-mt-20"
 					>
 
 						
@@ -306,7 +306,7 @@ function App() {
 					{/* MÓDULOS CLAVE */}
 					<section
 						ref={modulesRef}
-						className="relative flex flex-col gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16"
+						className="relative flex flex-col gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16 scroll-mt-20"
 					>
 						<CornerFrame
 							hover={false}
@@ -478,7 +478,7 @@ function App() {
 					<section
 						id="how-it-works"
 						ref={featuresRef}
-						className="flex flex-col p-6 md:p-16 mb-16 relative bg-neutral-100 rounded-lg"
+						className="flex flex-col p-6 md:p-16 mb-16 relative bg-neutral-100 rounded-lg scroll-mt-20"
 					>
 						<CornerFrame
 							hover={false}
@@ -603,7 +603,7 @@ function App() {
 					<section
 						id="benefits"
 						ref={benefitsRef}
-						className=" bg-neutral-950 rounded-lg mb-16 relative"
+						className=" bg-neutral-950 rounded-lg mb-16 relative scroll-mt-20"
 					>
 						<CornerFrame
 							hover={false}
@@ -695,7 +695,7 @@ function App() {
 					{/* VERSIONES / FUNCIONAMIENTO */}
 					<section
 						ref={versionsRef}
-						className="bg-white flex flex-col items-center mb-16 rounded-lg p-6 md:p-16 relative"
+						className="bg-white flex flex-col items-center mb-16 rounded-lg p-6 md:p-16 relative scroll-mt-20"
 					>
 						<CornerFrame
 							strokeColor="currentColor"
@@ -737,7 +737,7 @@ function App() {
 					{/* INDUSTRIAS */}
 					<section
 						ref={industriesRef}
-						className="flex flex-col-reverse gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16 relative"
+						className="flex flex-col-reverse gap-20 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-black mb-16 relative scroll-mt-20"
 					>
 						<CornerFrame
 							strokeColor="currentColor"
@@ -954,7 +954,7 @@ function App() {
 					{/* MÉTRICAS */}
 					<section
 						ref={metricsRef}
-						className="flex flex-col items-center p-16 mb-16"
+						className="flex flex-col items-center p-16 mb-16 scroll-mt-20"
 					>
 						<div
 							ref={metricsHeaderRef}
@@ -1017,7 +1017,7 @@ function App() {
 					{/* FAQ */}
 					<section
 						ref={faqRef}
-						className="flex flex-col gap-14 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16 relative"
+						className="flex flex-col gap-14 lg:flex-row lg:justify-between p-6 md:p-16 rounded-lg bg-white mb-16 relative scroll-mt-20"
 					>
 						<CornerFrame
 							hover={false}
@@ -1182,7 +1182,7 @@ function App() {
 					{/* CTA FINAL */}
 					<section
 						ref={ctaRef}
-						className="bg-black rounded-lg mb-16 flex justify-center p-16 relative"
+						className="bg-black rounded-lg mb-16 flex justify-center p-16 relative scroll-mt-20"
 					>
 						<CornerFrame
 							hover={false}
@@ -1216,7 +1216,7 @@ function App() {
 					{/* FORMULARIO DEMO */}
 					<section
 						ref={formRef}
-						className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-16 mb-16 relative"
+						className="bg-transparent rounded-lg flex flex-col lg:flex-row justify-between p-16 mb-16 relative scroll-mt-20"
 					>
 						<CornerFrame
 							hover={false}

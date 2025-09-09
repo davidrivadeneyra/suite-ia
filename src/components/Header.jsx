@@ -1,9 +1,11 @@
 // src/components/Header.jsx
 import React, { useEffect, useState } from "react";
 import TranslateSwitch from "./TranslateSwitch";
+import { useLanguage } from "../i18n/LanguageProvider";
 import { Menu, X } from "lucide-react";
 
 function HeaderContentDesktop() {
+	const { t } = useLanguage();
 	return (
 		<>
 			<div className="flex flex-row gap-10">
@@ -26,22 +28,22 @@ function HeaderContentDesktop() {
 				<ul className="flex flex-row items-end gap-6">
 					<li>
 						<a href="#about" className="nav-link">
-							About
+							{t("nav.about")}
 						</a>
 					</li>
 					<li>
-						<a href="#features" className="nav-link">
-							Features
+						<a href="#how-it-works" className="nav-link">
+							{t("nav.features")}
 						</a>
 					</li>
 					<li>
 						<a href="#benefits" className="nav-link">
-							Benefits
+							{t("nav.benefits")}
 						</a>
 					</li>
 					<li>
 						<a href="#contact" className="nav-link">
-							Contact
+							{t("nav.contact")}
 						</a>
 					</li>
 				</ul>
@@ -51,6 +53,7 @@ function HeaderContentDesktop() {
 }
 
 function HeaderBarMobile({ onMenuToggle, open }) {
+	const { t } = useLanguage();
 	return (
 		<div
 			className="md:hidden fixed top-0 left-0 right-0 z-50 bg-neutral-100/70 backdrop-blur-md border-b border-neutral-200"
@@ -96,6 +99,7 @@ function HeaderBarMobile({ onMenuToggle, open }) {
 }
 
 function MobileMenuPanel({ open, onNavigate }) {
+	const { t } = useLanguage();
 	return (
 		<div
 			className={[
@@ -119,16 +123,16 @@ function MobileMenuPanel({ open, onNavigate }) {
 								className="nav-link text-neutral-700"
 								onClick={onNavigate}
 							>
-								About
+								{t("nav.about")}
 							</a>
 						</li>
 						<li>
 							<a
-								href="#features"
+								href="#how-it-works"
 								className="nav-link text-neutral-700"
 								onClick={onNavigate}
 							>
-								Features
+								{t("nav.features")}
 							</a>
 						</li>
 						<li>
@@ -137,7 +141,7 @@ function MobileMenuPanel({ open, onNavigate }) {
 								className="nav-link text-neutral-700"
 								onClick={onNavigate}
 							>
-								Benefits
+								{t("nav.benefits")}
 							</a>
 						</li>
 						<li>
@@ -146,7 +150,7 @@ function MobileMenuPanel({ open, onNavigate }) {
 								className="nav-link text-neutral-700"
 								onClick={onNavigate}
 							>
-								Contact
+								{t("nav.contact")}
 							</a>
 						</li>
 					</ul>
