@@ -954,8 +954,11 @@ function App() {
 					{/* MÉTRICAS */}
 					<section
 						ref={metricsRef}
-						className="flex flex-col items-center p-6 md:p-16  mb-16 scroll-mt-20"
-					>
+						className="flex flex-col items-center p-6 md:p-16 mb-16 scroll-mt-20 relative"
+					><CornerFrame
+							strokeColor="currentColor"
+							className="text-neural-400"
+						/>
 						<div
 							ref={metricsHeaderRef}
 							className="flex flex-col mb-10"
