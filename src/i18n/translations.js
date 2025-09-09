@@ -298,23 +298,24 @@ export const translations = {
 		"form.placeholder": "Type your message here...",
 
 		// Footer
-		  "footer.brand": "Atelopus",
-  "footer.copy": "© 2025 ATELOPUS. All rights reserved.",
+		"footer.brand": "Atelopus",
+		"footer.copy": "© 2025 ATELOPUS. All rights reserved.",
 
-  "footer.product.title": "Product",
-  "footer.product.about": "About",
-  "footer.product.features": "Features",
-  "footer.product.benefits": "Benefits",
-  "footer.product.contact": "Contact",
+		"footer.product.title": "Product",
+		"footer.product.about": "About",
+		"footer.product.features": "Features",
+		"footer.product.benefits": "Benefits",
+		"footer.product.contact": "Contact",
 
-  "footer.contact.title": "Contact",
-  "footer.contact.email": "info@hypernovalabs.com",
-  "footer.contact.phone": "(+507) 202–4098/99",
-  "footer.contact.address": "Frontenac Building, 1st floor, Calle 50, Panama City",
+		"footer.contact.title": "Contact",
+		"footer.contact.email": "info@hypernovalabs.com",
+		"footer.contact.phone": "(+507) 202–4098/99",
+		"footer.contact.address":
+			"Frontenac Building, 1st floor, Calle 50, Panama City",
 
-  "footer.legal.title": "Legal",
-  "footer.legal.terms": "Terms of Service",
-  "footer.legal.privacy": "Privacy Policy",
+		"footer.legal.title": "Legal",
+		"footer.legal.terms": "Terms of Service",
+		"footer.legal.privacy": "Privacy Policy",
 	},
 
 	es: {
@@ -536,8 +537,7 @@ export const translations = {
 		"metrics.6.title": "US$ 10.3B → 48.9B",
 		"metrics.6.desc":
 			"Mercado de analítica de video 2024–2032 (CAGR ~21.8%). (Fortune Business Insights)",
-		
-		
+
 		// FAQ
 
 		"faq.title": "Preguntas frecuentes",
@@ -597,13 +597,13 @@ export const translations = {
 		"faq.q14": "¿Quién atiende y capacita a mi equipo?",
 		"faq.q14.answer":
 			"Incluimos onboarding y guías rápidas para guardias y supervisores. También hay capacitaciones cortas y soporte continuo.",
-		
+
 		// CTA
 		"cta.title":
 			"¿Listo para prevenir pérdidas y automatizar tu seguridad?",
 		"cta.demo": "Solicitar demo",
 		"cta.how": "Ver cómo funciona",
-			// CTA
+		// CTA
 
 		// Contact Form
 		"form.title": "Solicita una demostración",
@@ -615,24 +615,25 @@ export const translations = {
 		"form.phone": "Tu teléfono *",
 		"form.message": "Mensaje *",
 		"form.placeholder": "Escribe tu mensaje aquí...",
-		
-			// Footer
-		 "footer.brand": "Atelopus",
-  "footer.copy": "© 2025 ATELOPUS. Todos los derechos reservados.",
 
-  "footer.product.title": "Producto",
-  "footer.product.about": "Acerca de",
-  "footer.product.features": "Características",
-  "footer.product.benefits": "Beneficios",
-  "footer.product.contact": "Contacto",
+		// Footer
+		"footer.brand": "Atelopus",
+		"footer.copy": "© 2025 ATELOPUS. Todos los derechos reservados.",
 
-  "footer.contact.title": "Contacto",
-  "footer.contact.email": "info@hypernovalabs.com",
-  "footer.contact.phone": "(+507) 202–4098/99",
-  "footer.contact.address": "Edificio Frontenac, piso 1, Calle 50, Ciudad de Panamá",
+		"footer.product.title": "Producto",
+		"footer.product.about": "Acerca de",
+		"footer.product.features": "Características",
+		"footer.product.benefits": "Beneficios",
+		"footer.product.contact": "Contacto",
 
-  "footer.legal.title": "Legal",
-  "footer.legal.terms": "Términos de Servicio",
-  "footer.legal.privacy": "Política de Privacidad"
+		"footer.contact.title": "Contacto",
+		"footer.contact.email": "info@hypernovalabs.com",
+		"footer.contact.phone": "(+507) 202–4098/99",
+		"footer.contact.address":
+			"Edificio Frontenac, piso 1, Calle 50, Ciudad de Panamá",
+
+		"footer.legal.title": "Legal",
+		"footer.legal.terms": "Términos de Servicio",
+		"footer.legal.privacy": "Política de Privacidad",
 	},
 };

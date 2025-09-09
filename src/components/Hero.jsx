@@ -122,8 +122,8 @@ export default function Hero() {
 							<p className="text-6xl font-semibold font-title mt-4">
 								+12
 							</p>
-							<p className="descriptions whitespace-nowrap">
-								Clientes satisfechos
+							<p className="descriptions-sm whitespace-nowrap">
+								{t("hero.clients_desc")}
 							</p>
 							<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
 						</div>
