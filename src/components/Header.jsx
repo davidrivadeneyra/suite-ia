@@ -62,7 +62,7 @@ function HeaderBarMobile({ onMenuToggle, open }) {
 		>
 			<div
 				className="mx-auto w-full px-4 py-3 "
-				style={{ maxWidth: "var(--max-width, 1350px)" }}
+				style={{ maxWidth: "var(--max-width, 1302px)" }}
 			>
 				<div className="flex items-center justify-between ">
 					<a href="/">
@@ -209,7 +209,7 @@ export default function Header({ className = "" }) {
 			{/* DESKTOP: header fijo en scroll */}
 			<div
 				className={[
-					"hidden md:block fixed top-0 left-0 right-0 z-50 px-8 md:px-12",
+					"hidden md:block fixed top-0 left-0 right-0 z-50 px-8 md:px-6",
 					"transition-all duration-300 ease-out",
 					showSticky
 						? "opacity-100 translate-y-0"
@@ -217,7 +217,7 @@ export default function Header({ className = "" }) {
 				].join(" ")}
 			>
 				<div
-					className="mx-auto w-full px-4 md:px-6"
+					className="mx-auto w-full px-4"
 					style={{ maxWidth: "var(--max-width, 1350px)" }}
 				>
 					<div className="bg-neutral-100/70 backdrop-blur-md">

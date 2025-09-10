@@ -887,7 +887,7 @@ function App() {
 						ref={industriesRightRef}
 						className="flex flex-col lg:1/2"
 					>
-						<h2 className="title-big text-white font-semibold mb-4">
+						<h2 className="title-big text-white mb-4">
 							{t("industries.title")}
 						</h2>
 						<p className="descriptions text-neutral-400 mb-6">

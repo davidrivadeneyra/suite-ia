@@ -91,7 +91,7 @@ export const translations = {
 		"features.step1": "Connect your cameras",
 		"features.step2": "Edge analyzes in real-time",
 		"features.step3": "Rules & lists",
-		"features.step4": "Metrics & reports",
+		"features.step4": "Actionable alerts",
 		"features.step5": "Automation (doors/radio)",
 		"features.step6": "Metrics & reports",
 
@@ -141,8 +141,7 @@ export const translations = {
 		// Industries
 
 		"industries.title": "Industries",
-		"industries.desc":
-			"Video surveillance solutions for multiple industries.",
+		"industries.desc":"Video surveillance solutions for multiple industries.",
 		"industries.retail.title": "Retail: Better shopping experience",
 		"industries.retail.tagline": "Better shopping experience",
 		"industries.retail.what.title": "What it is",
@@ -410,7 +409,7 @@ export const translations = {
 		"features.step1": "Conecta tus cámaras",
 		"features.step2": "Edge analiza en tiempo real",
 		"features.step3": "Reglas y listas",
-		"features.step4": "Métricas & reportes",
+		"features.step4": "Alertas accionables",
 		"features.step5": "Automatización (puertas/radio)",
 		"features.step6": "Métricas & reportes",
 
@@ -459,8 +458,8 @@ export const translations = {
 		// Industries
 
 		"industries.title": "Industrias",
-		"industries.desc":
-			"Soluciones de videovigilancia para múltiples sectores.",
+		"industries.desc":"Soluciones de videovigilancia para múltiples sectores.",
+		"industries.retail.title": "Retail: Mejor experiencia de compra",
 		"industries.retail.tagline": "Mejor experiencia de compra",
 		"industries.retail.what.title": "Qué es",
 		"industries.retail.what.desc":
