@@ -119,7 +119,7 @@ useLayoutEffect(() => {
       ...vars,
       scrollTrigger: {
         trigger: container,
-        start: "top 35%",
+        start: "top 55%",
         toggleActions: "play none none reverse",
         ...st,
       },
