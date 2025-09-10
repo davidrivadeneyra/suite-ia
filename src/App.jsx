@@ -14,7 +14,7 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import { tr } from "motion/react-client";
 import { usePageAnimations } from "./anim/usePageAnimations";
-import { gsap } from "./anim/gsapSetup";
+import { getGSAP } from "./anim/gsapSetup"
 import { useRef, useLayoutEffect } from "react";
 import ButtonLink from "./components/ButtonLink";
 
@@ -75,167 +75,172 @@ function App() {
 	const formRef = useRef(null);
 	const formHeaderRef = useRef(null);
 
-	useLayoutEffect(() => {
-		if (typeof window === "undefined") return;
-		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
-			return;
+useLayoutEffect(() => {
+  const { gsap, ScrollTrigger } = getGSAP();
+  if (!gsap || !ScrollTrigger) return;
+  if (typeof window === "undefined") return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-		// Helpers
-		const appear = (el, vars = {}, st = {}) => {
-			if (!el) return;
-			gsap.from(el, {
-				opacity: 0,
-				y: 24,
-				duration: 0.6,
-				ease: "power2.out",
-				...vars,
-				scrollTrigger: {
-					trigger: el,
-					start: "top 85%",
-					toggleActions: "play none none reverse",
-					...st,
-				},
-			});
-		};
+  // 🛡️ Espera a que el ref exista (y sea un nodo DOM)
+  const scopeEl = mainRef.current;
+  if (!scopeEl || !(scopeEl instanceof Element)) {
+    // Como último recurso, usa <body> (evita Invalid scope)
+    // pero idealmente corrige el JSX para que mainRef apunte a un DOM real
+    console.warn("[GSAP] mainRef no apunta a un nodo DOM. Usando <body> como fallback.");
+  }
+  const safeScope = scopeEl instanceof Element ? scopeEl : document.body;
 
-		const appearChildren = (
-			container,
-			children,
-			vars = {},
-			stagger = 0.08,
-			st = {}
-		) => {
-			if (!container || !children?.length) return;
-			gsap.from(children, {
-				opacity: 0,
-				y: 16,
-				duration: 0.6,
-				ease: "power2.out",
-				stagger,
-				...vars,
-				scrollTrigger: {
-					trigger: container,
-					start: "top 85%",
-					toggleActions: "play none none reverse",
-					...st,
-				},
-			});
-		};
+  // ---- Helpers (tus mismos helpers) ----
+  const appear = (el, vars = {}, st = {}) => {
+    if (!el) return;
+    gsap.from(el, {
+      opacity: 0,
+      y: 24,
+      duration: 0.6,
+      ease: "power2.out",
+      ...vars,
+      scrollTrigger: {
+        trigger: el,
+        start: "top 85%",
+        toggleActions: "play none none reverse",
+        ...st,
+      },
+    });
+  };
 
-		const ctx = gsap.context(() => {
-			// ABOUT
-			appear(aboutRef.current, { y: 12, duration: 0.5 });
-			appear(aboutLeftRef.current, { y: 24 });
-			appear(aboutRightRef.current, { y: 24, delay: 0.05 });
+  const appearChildren = (container, children, vars = {}, stagger = 0.08, st = {}) => {
+    if (!container || !children?.length) return;
+    gsap.from(children, {
+      opacity: 0,
+      y: 16,
+      duration: 0.6,
+      ease: "power2.out",
+      stagger,
+      ...vars,
+      scrollTrigger: {
+        trigger: container,
+        start: "top 35%",
+        toggleActions: "play none none reverse",
+        ...st,
+      },
+    });
+  };
 
-			// MÓDULOS
-			appear(modulesRef.current, { y: 12, duration: 0.5 });
-			appear(modulesLeftRef.current, { y: 24 });
-			appear(modulesRightRef.current, { y: 24, delay: 0.05 });
+  // ---- Contexto seguro ----
+  const ctx = gsap.context(() => {
+    // 🔽 Tus animaciones tal cual…
+    // ABOUT
+    appear(aboutRef.current, { y: 12, duration: 0.5 });
+    appear(aboutLeftRef.current, { y: 24 });
+    appear(aboutRightRef.current, { y: 24, delay: 0.05 });
 
-			// CÓMO FUNCIONA
-			appear(featuresRef.current, { y: 12, duration: 0.5 });
-			appear(featuresHeaderRef.current, { y: 20 });
-			// botones dentro del header
-			if (featuresButtonsRef.current?.children?.length) {
-				appearChildren(
-					featuresButtonsRef.current,
-					Array.from(featuresButtonsRef.current.children),
-					{ y: 12 },
-					0.08
-				);
-			}
-			// grid de cards/lineas
-			if (featuresGridRef.current) {
-				const gridKids = Array.from(
-					featuresGridRef.current.querySelectorAll(":scope > * > *")
-				);
-				// Selector robusto: toma los hijos directos de cada fila
-				appearChildren(
-					featuresGridRef.current,
-					gridKids,
-					{ y: 16 },
-					0.06
-				);
-			}
+    // MÓDULOS
+    appear(modulesRef.current, { y: 12, duration: 0.5 });
+    appear(modulesLeftRef.current, { y: 24 });
+    appear(modulesRightRef.current, { y: 24, delay: 0.05 });
 
-			// BENEFICIOS
-			appear(benefitsRef.current, { y: 12, duration: 0.5 });
-			appear(benefitsHeaderRef.current, { y: 20 });
-			if (benefitsButtonsRef.current?.children?.length) {
-				appearChildren(
-					benefitsButtonsRef.current,
-					Array.from(benefitsButtonsRef.current.children),
-					{ y: 12 },
-					0.08
-				);
-			}
-			if (benefitsGridRef.current?.children?.length) {
-				appearChildren(
-					benefitsGridRef.current,
-					Array.from(benefitsGridRef.current.children),
-					{ y: 16 },
-					0.06
-				);
-			}
+    // CÓMO FUNCIONA
+    appear(featuresRef.current, { y: 12, duration: 0.5 });
+    appear(featuresHeaderRef.current, { y: 20 });
+    if (featuresButtonsRef.current?.children?.length) {
+      appearChildren(
+        featuresButtonsRef.current,
+        Array.from(featuresButtonsRef.current.children),
+        { y: 12 },
+        0.08
+      );
+    }
+    if (featuresGridRef.current) {
+      const gridKids = Array.from(
+        featuresGridRef.current.querySelectorAll(":scope > * > *")
+      );
+      appearChildren(featuresGridRef.current, gridKids, { y: 16 }, 0.06);
+    }
 
-			// VERSIONES / TABLA
-			appear(versionsRef.current, { y: 12, duration: 0.5 });
-			appear(versionsHeaderRef.current, { y: 20 });
-			if (versionsButtonsRef.current?.children?.length) {
-				appearChildren(
-					versionsButtonsRef.current,
-					Array.from(versionsButtonsRef.current.children),
-					{ y: 12 },
-					0.08
-				);
-			}
-			appear(versionsTableRef.current, { y: 16 });
+    // BENEFICIOS
+    appear(benefitsRef.current, { y: 12, duration: 0.5 });
+    appear(benefitsHeaderRef.current, { y: 20 });
+    if (benefitsButtonsRef.current?.children?.length) {
+      appearChildren(
+        benefitsButtonsRef.current,
+        Array.from(benefitsButtonsRef.current.children),
+        { y: 12 },
+        0.08
+      );
+    }
+    if (benefitsGridRef.current?.children?.length) {
+      appearChildren(
+        benefitsGridRef.current,
+        Array.from(benefitsGridRef.current.children),
+        { y: 16 },
+        0.06
+      );
+    }
 
-			// INDUSTRIAS
-			appear(industriesRef.current, { y: 12, duration: 0.5 });
-			appear(industriesLeftRef.current, { y: 20 });
-			appear(industriesRightRef.current, { y: 20, delay: 0.05 });
+    // VERSIONES / TABLA
+    appear(versionsRef.current, { y: 12, duration: 0.5 });
+    appear(versionsHeaderRef.current, { y: 20 });
+    if (versionsButtonsRef.current?.children?.length) {
+      appearChildren(
+        versionsButtonsRef.current,
+        Array.from(versionsButtonsRef.current.children),
+        { y: 12 },
+        0.08
+      );
+    }
+    appear(versionsTableRef.current, { y: 16 });
 
-			// MÉTRICAS
-			appear(metricsRef.current, { y: 12, duration: 0.5 });
-			appear(metricsHeaderRef.current, { y: 20 });
-			if (metricsButtonsRef.current?.children?.length) {
-				appearChildren(
-					metricsButtonsRef.current,
-					Array.from(metricsButtonsRef.current.children),
-					{ y: 12 },
-					0.08
-				);
-			}
-			if (metricsGridRef.current?.children?.length) {
-				appearChildren(
-					metricsGridRef.current,
-					Array.from(metricsGridRef.current.children),
-					{ y: 16 },
-					0.06
-				);
-			}
+    // INDUSTRIAS
+    appear(industriesRef.current, { y: 12, duration: 0.5 });
+    appear(industriesLeftRef.current, { y: 20 });
+    appear(industriesRightRef.current, { y: 20, delay: 0.05 });
 
-			// FAQ
-			appear(faqRef.current, { y: 12, duration: 0.5 });
-			appear(faqLeftRef.current, { y: 20 });
-			if (faqRightRef.current) {
-				// Anima cada AccordionItem con stagger
-				const items = Array.from(faqRightRef.current.children);
-				appearChildren(faqRightRef.current, items, { y: 16 }, 0.06);
-			}
+    // MÉTRICAS
+    appear(metricsRef.current, { y: 12, duration: 0.5 });
+    appear(metricsHeaderRef.current, { y: 20 });
+    if (metricsButtonsRef.current?.children?.length) {
+      appearChildren(
+        metricsButtonsRef.current,
+        Array.from(metricsButtonsRef.current.children),
+        { y: 12 },
+        0.08
+      );
+    }
+    if (metricsGridRef.current?.children?.length) {
+      appearChildren(
+        metricsGridRef.current,
+        Array.from(metricsGridRef.current.children),
+        { y: 16 },
+        0.06
+      );
+    }
 
-			// CTA FINAL
-			appear(ctaRef.current, { y: 16 });
+    // FAQ
+    appear(faqRef.current, { y: 12, duration: 0.5 });
+    appear(faqLeftRef.current, { y: 20 });
+    if (faqRightRef.current) {
+      const items = Array.from(faqRightRef.current.children);
+      appearChildren(faqRightRef.current, items, { y: 16 }, 0.06);
+    }
 
-			// FORM
-			appear(formRef.current, { y: 12, duration: 0.5 });
-			appear(formHeaderRef.current, { y: 20 });
-		}, mainRef);
+    // CTA FINAL
+    appear(ctaRef.current, { y: 16 });
 
-		return () => ctx.revert();
-	}, []);
+    // FORM
+    appear(formRef.current, { y: 12, duration: 0.5 });
+    appear(formHeaderRef.current, { y: 20 });
+  }, safeScope);
+
+  const raf = requestAnimationFrame(() => ScrollTrigger.refresh());
+  document?.fonts?.ready?.then?.(() => ScrollTrigger.refresh());
+
+  return () => {
+    cancelAnimationFrame(raf);
+    ctx.revert();
+  };
+}, []);
+
+
 
 	return (
 		<>
