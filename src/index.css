@@ -113,15 +113,15 @@
 	}
 
 	.title-small {
-		@apply title title-color text-[21px] md:text-[28px] leading-[100%];
+		@apply title title-color text-[21px] md:text-[26px] leading-[100%];
 	}
 
 	.title-smaller {
-		@apply title title-color text-[17px] md:text-[21px] leading-[100%];
+		@apply title title-color text-[17px] md:text-[19px] leading-[100%];
 	}
 
 	.title-tiny {
-		@apply title title-color text-[16px] md:text-[18px] leading-[100%];
+		@apply title title-color text-[14px] md:text-[16px] leading-[100%];
 	}
 
 	/* descriptions */
