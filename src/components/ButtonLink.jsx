@@ -1,5 +1,4 @@
 import React from "react";
-import CornerFrame from "./CornersFrame";
 
 const VARIANTS = {
   dark: {
@@ -47,7 +46,7 @@ export default function ButtonLink({
       {...rest}
     >
       {copy}
-      <CornerFrame className={v.frameClass} strokeColor={v.strokeColor} />
+    
     </a>
   );
 }

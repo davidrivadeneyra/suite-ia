@@ -1,6 +1,5 @@
 import { useLanguage } from "../i18n/LanguageProvider";
 import React, { useRef, useLayoutEffect } from "react";
-import CornerFrame from "./CornersFrame";
 import ButtonLink from "./ButtonLink";
 import { Cctv } from "lucide-react";
 import { usePageAnimations } from "../anim/usePageAnimations";
@@ -125,7 +124,7 @@ export default function Hero() {
 							<p className="descriptions-sm whitespace-nowrap">
 								{t("hero.clients_desc")}
 							</p>
-							<CornerFrame className="absolute inset-0 fill-green-800 bg-transparent" />
+					
 						</div>
 					</div>
 				</div>

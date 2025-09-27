@@ -1,5 +1,4 @@
 import React from "react";
-import CornerFrame from "./CornersFrame";
 import { useLanguage } from "../i18n/LanguageProvider";
 import { SocialIcon } from "react-social-icons";
 
@@ -26,11 +25,6 @@ export default function Footer({ className = "" }) {
        
         className={`bg-white flex flex-col lg:flex-row p-6 md:p-16  mb-4 gap-28 rounded-lg ${className} relative`}
       >
-        <CornerFrame
-          hover={false}
-          strokeColor="currentColor"
-          className="text-green-500"
-        />
 
         {/* Marca */}
         <div className="flex flex-col gap-4">

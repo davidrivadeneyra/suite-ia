@@ -2,21 +2,13 @@ import AccordionItem from "./components/AccordionItem";
 import { useLanguage } from "./i18n/LanguageProvider";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import GridSquares from "./components/GridSsquares";
-import AccordionData from "./components/AccordionData";
-import CornerFrame from "./components/CornersFrame";
-import CardHowItWorks from "./components/CardHowItWorks";
-import DashedConnector from "./components/DashConector";
-import CardBenefits from "./components/CardBenefits";
-import DeploymentOptionsTable from "./components/DeploymentOptionsTable";
-import CardMetric from "./components/CardMetric";
-import ContactForm from "./components/ContactForm";
+
 import Footer from "./components/Footer";
 import { tr } from "motion/react-client";
 import { usePageAnimations } from "./anim/usePageAnimations";
 import { getGSAP } from "./anim/gsapSetup"
 import { useRef, useLayoutEffect } from "react";
-import ButtonLink from "./components/ButtonLink";
+
 
 function App() {
 	const { t } = useLanguage();
@@ -247,13 +239,10 @@ useLayoutEffect(() => {
 			<div className="px-8 pt-8 md:px-12 md:py-12 max-width-custom mx-auto relative">
 				<div className="absolute inset-0 -z-10 overflow-hidden">
 					<div className="px-4 pt-4 md:px-6 md:py-6 max-width-custom mx-auto absolute top-0 left-0 right-0">
-					
 					</div>
 				</div>
-
 				<Header />
 				<Hero />
-
 				{/* ABOUT */}
 				<section
 					id="about"
