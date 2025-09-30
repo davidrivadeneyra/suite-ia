@@ -1,25 +1,14 @@
 import React from "react";
 
 const VARIANTS = {
-  dark: {
-    btnClass: "btn-dark",
-    frameClass: "text-green-500", 
-    strokeColor: "currentColor",
+  brand: {
+    btnClass: "btn-brand",
   },
-  white: {
-    btnClass: "btn-white",
-    frameClass: "text-neutral-400",
-    strokeColor: "currentColor",
+  ghostDark: {
+    btnClass: "btn-ghost-dark",
   },
-  green: {
-    btnClass: "btn-green",
-    frameClass: "text-neutral-950",
-    strokeColor: "currentColor",
-  },
-  gray: {
-    btnClass: "btn-gray",
-    frameClass: "text-neutral-950",
-    strokeColor: "currentColor",
+  ghostLight: {
+    btnClass: "btn-ghost-light",
   },
 };
 

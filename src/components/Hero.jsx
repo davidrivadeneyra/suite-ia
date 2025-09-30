@@ -1,6 +1,7 @@
 import { useLanguage } from "../i18n/LanguageProvider";
 import React, { useRef, useLayoutEffect } from "react";
 import ButtonLink from "./ButtonLink";
+import OrbitAnimation from "./OrbitAnimation";
 import { Cctv } from "lucide-react";
 import { usePageAnimations } from "../anim/usePageAnimations";
 import { gsap } from "../anim/gsapSetup";
@@ -65,87 +66,52 @@ export default function Hero() {
 	}, []);
 
 	return (
-		<main className="max-h-full pt-24 md:pt-0">
-			<section
-				ref={heroRef}
-				className="flex flex-col lg:flex-row gap-14 mb-12"
-			>
-				<div className="w-full">
-					<h1 ref={titleRef} className="title-bigger pb-4">
+		<main className="w-full bg-gradient-dark hero-height flex flex-col justify-end">
+			<div className="absolute top-0 w-full h-full overflow-hidden">
+					<OrbitAnimation
+						className="absolute inset-0 w-full"
+						innerClass="top-1/2 -translate-y-1/2"
+						speed={1.2}
+					/>
+				</div>
+			<div className="relative section-max-width flex gap-6 pb-16 ">
+				
+
+				<div ref={heroRef} className="flex flex-col justify-end">
+					<h4 className="subtitle-dark subtitle-uppercase pb-6">
+						{t("section.1")}
+					</h4>
+					<h1 ref={titleRef} className="title-bigger title-dark">
 						{t("hero.title")}
 					</h1>
-
-					<p ref={subtitleRef} className="descriptions mb-6">
-						{t("hero.subtitle")}
-					</p>
-
-					{/* Buttons */}
-					<div
-						ref={buttonsRef}
-						className="flex flex-col md:flex-row gap-4"
-					>
-						<ButtonLink
-							href="#form"
-							copy={t("hero.demo")}
-							variant="dark"
-						/>
-						<ButtonLink
-							href="#how-it-works"
-							copy={t("hero.how")}
-							variant="white"
-						/>
-					</div>
 				</div>
+				<div
+					ref={buttonsRef}
+					className="w-full flex flex-col justify-end"
+				>
+					<div>
+						<p
+							ref={subtitleRef}
+							className="description-dark descriptions-base mb-6"
+						>
+							{t("hero.desc")}
+						</p>
 
-				<div className="w-full flex gap-4 items-stretch">
-					<div
-						ref={imageRef}
-						className="relative flex-1 rounded-lg overflow-hidden"
-					>
-						<img
-							className="absolute inset-0 w-full h-full object-cover"
-							src="/assets/imgh.png"
-							alt="Hombre identificado robando"
-						/>
-					</div>
-
-					<div
-						ref={statsRef}
-						className="w-fit lg:h-full h-96 self-start flex flex-col justify-between p-6 bg-white rounded-lg relative items-end"
-					>
-						<Cctv
-							className="text-green-600 mb-2 scale-x-[-1]"
-							size={56}
-						/>
-						<div className="flex flex-col items-start gap-4">
-							<p className="text-6xl font-semibold font-title mt-4">
-								+12
-							</p>
-							<p className="descriptions-sm whitespace-nowrap">
-								{t("hero.clients_desc")}
-							</p>
-					
+						<div className="w-full flex flex-col sm:flex-row gap-4">
+							<ButtonLink
+								href="#form"
+								copy={t("hero.cta.primary")}
+								variant="brand"
+							/>
+							<ButtonLink
+								href="#how-it-works"
+								copy={t("hero.cta.secondary")}
+								variant="ghostDark"
+							/>
 						</div>
 					</div>
 				</div>
-			</section>
-
-			{/* VIDEO */}
-			<video
-				ref={videoRef}
-				className="block w-full h-full object-cover mb-16 rounded-lg"
-				autoPlay
-				loop
-				muted
-				playsInline
-				controls={false}
-				preload="auto"
-				poster="/assets/video/atelopus-poster.jpg"
-				aria-hidden="true"
-			>
-				<source src="/assets/video/atelopus.mp4" type="video/mp4" />
-				{/* <source src="/assets/video/atelopus.webm" type="video/webm" /> */}
-			</video>
+			</div>
 		</main>
 	);
 }
