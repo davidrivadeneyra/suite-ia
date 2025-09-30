@@ -68,15 +68,21 @@ export default function Hero() {
 	return (
 		<main className="w-full bg-gradient-dark hero-height flex flex-col justify-end">
 			<div className="absolute top-0 w-full h-full overflow-hidden">
+				<div className="section-max-width">
 					<OrbitAnimation
-						className="absolute inset-0 w-full"
-						innerClass="top-1/2 -translate-y-1/2"
+						className="absolute inset-0 w-full -translate-y-1/2 scale-50 lg:scale-100"
+						enableScrollSpeed={true}
 						speed={1.2}
+						baseSpeed={1.2}
+						maxBoostDown={0.8} // acelera hasta ~2.0 bajando
+						maxBoostUp={0.6} // puede bajar hasta ~0.6 subiendo
+						responsiveness={8000} // se necesitan scrolls largos para llegar al máximo
+						decayDelay={200} // espera un poquito más antes de volver
+						decayDuration={1.2} // regresa lento y fluido al valor base
 					/>
 				</div>
+			</div>
 			<div className="relative section-max-width flex gap-6 pb-16 ">
-				
-
 				<div ref={heroRef} className="flex flex-col justify-end">
 					<h4 className="subtitle-dark subtitle-uppercase pb-6">
 						{t("section.1")}
