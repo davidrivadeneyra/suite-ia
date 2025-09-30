@@ -70,15 +70,15 @@ export default function Hero() {
 			<div className="absolute top-0 w-full h-full overflow-hidden">
 				<div className="section-max-width">
 					<OrbitAnimation
-						className="absolute inset-0 w-full -translate-y-1/2 scale-50 lg:scale-100"
+						className="absolute inset-0 w-full -translate-y-1/2 scale-50 lg:scale-50"
 						enableScrollSpeed={true}
 						speed={1.2}
 						baseSpeed={1.2}
 						maxBoostDown={0.8} // acelera hasta ~2.0 bajando
 						maxBoostUp={0.6} // puede bajar hasta ~0.6 subiendo
 						responsiveness={8000} // se necesitan scrolls largos para llegar al máximo
-						decayDelay={200} // espera un poquito más antes de volver
-						decayDuration={1.2} // regresa lento y fluido al valor base
+						decayDelay={0} // espera un poquito más antes de volver
+						decayDuration={1} // regresa lento y fluido al valor base
 					/>
 				</div>
 			</div>

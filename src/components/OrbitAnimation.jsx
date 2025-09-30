@@ -109,7 +109,7 @@ export default function OrbitAnimation({
         {/* Núcleo */}
         <div className="oa-layer oa-core oa-o1 oa-spin oa-ccw">
           <img
-            src="/animation-dark/core.png"
+            src="/animation-dark/core.svg"
             alt=""
             decoding="async"
             fetchpriority="low"
