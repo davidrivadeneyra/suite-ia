@@ -8,6 +8,7 @@ import React from "react";
  * - Puedes posicionarlo absolute desde la instancia (className/style)
  * - Controles de velocidad: speed (global) + durations por capa
  * - innerClass: clases aplicadas al contenedor interno (todas las capas)
+ * - section-max-width
  */
 
 export default function OrbitAnimation({
@@ -32,16 +33,16 @@ export default function OrbitAnimation({
 
   return (
     <figure
-      className={`oa-wrap ${pauseOnHover ? "oa--hover-pause" : ""} ${className}`}
+      className={`oa-wrap ${pauseOnHover ? "oa--hover-pause" : ""} ${className} section-max-width`}
       style={{ ...vars, ...style }}
       aria-label="Orbit animation"
     >
       {/* Contenedor interno: mueve/posiciona todo con innerClass si lo necesitas */}
       <div className={`oa-stage ${innerClass}`}>
         {/* Núcleo (tamaño nativo) */}
-        <div className="oa-layer oa-core">
+        <div className="oa-layer oa-core oa-orbit oa-o1 oa-spin oa-ccw">
           <img
-            src="/animation/core.png"
+            src="/animation/core-flat.png"
             alt=""
             decoding="async"
             fetchpriority="low"
@@ -65,11 +66,8 @@ export default function OrbitAnimation({
       </div>
 
       <style>{`
-        /* Bloque responsive: ocupa ancho del padre, mantiene proporción */
-        .oa-wrap{ position:relative; width:100%; aspect-ratio: var(--oa-aspect, 1 / 1); display:block; margin:0; }
+  
 
-        /* Escenario interno: todo centrado; útil para aplicar translate/rotate al grupo */
-        .oa-stage{ position:absolute; inset:0; }
 
         /* Capas centradas por eje, sin escalar individualmente:
            - img usa tamaño nativo del asset (width/height auto), así se conserva la proporción
