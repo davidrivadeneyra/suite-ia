@@ -914,10 +914,10 @@ function App() {
 								/>
 							</div>
 						</div>
-						<div className="relative w-full -z-10">
-							<div className="relative section-max-width h-80">
+						<div className="relative w-full -z-10 ">
+							<div className="relative section-max-width ">
 								<OrbitAnimation
-									className="absolute inset-x-0 bottom-0 -translate-y-1/2 w-full origin-bottom scale-[0.35] lg:scale-50"
+									className="absolute inset-x-0 -translate-y-1/2 w-full origin-bottom scale-[0.25] lg:scale-50"
 									enableScrollSpeed={true}
 									speed={1.2}
 									baseSpeed={1.2}
