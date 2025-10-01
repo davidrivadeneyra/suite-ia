@@ -75,7 +75,7 @@ export default function OrbitAnimation({
             loading="eager"
           /> */}
           <img
-            src={`${coreBasePath}/core.svg`}
+            src={`${coreBasePath}/core.webp`}
             alt=""
             decoding="async"
             fetchpriority="low"
