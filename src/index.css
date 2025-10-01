@@ -79,6 +79,10 @@
 	.hero-height {
 		height: 95vh;
 	}
+
+	.hero-height-mini {
+		height: 60vh;
+	}
 }
 
 @layer components {
@@ -191,10 +195,10 @@
 	}
 
 	.bg-gradient-dark {
-		background: linear-gradient(180deg, #0f0f0f 0%, #262626 100%);
+		background: linear-gradient(180deg, #0A0A0A 0%, #262626 100%);
 	}
-	.bg-gradient-dark-section {
-		background: linear-gradient(180deg, #2C2C2C 0%, #1E1E1E 100%);
+	.bg-gradient-dark-back {
+		background: linear-gradient(180deg, #262626 0%, #0A0A0A 100%);
 	}
 
 	.main-inner-section {
@@ -215,6 +219,6 @@
 
 	/* NAVBAR */
 	.nav-link {
-		@apply font-semibold hover:text-green-700 description-dark text-[12px] md:text-[14px];
+		@apply font-semibold hover:text-orange-500 description-dark text-[12px] md:text-[14px];
 	}
 }

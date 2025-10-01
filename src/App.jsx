@@ -11,7 +11,10 @@ import LabelStatDiff from "./components/LabeStatDiff";
 import CardAgents from "./components/CardAgents";
 import FeatureStep from "./components/FeatureStep";
 import VoicePill from "./components/VoicePill";
+import KpiStatCard from "./components/KpiStatCard";
+import CardTestimonial from "./components/CardTestimonial";
 
+import { Home, BarChart2, Layers, CalendarDays, User } from "lucide-react";
 import Footer from "./components/Footer";
 import { tr } from "motion/react-client";
 import { usePageAnimations } from "./anim/usePageAnimations";
@@ -21,7 +24,6 @@ import { useRef, useLayoutEffect } from "react";
 function App() {
 	const { t } = useLanguage();
 
-	// Refs de secciones y nodos clave
 	const mainRef = useRef(null);
 
 	// ABOUT
@@ -260,9 +262,8 @@ function App() {
 				<Header />
 
 				<Hero />
-				{/* ABOUT */}
 				<section
-					id="about"
+					id="what"
 					ref={aboutRef}
 					className="relative w-full bg-neutral-800 py-36"
 				>
@@ -278,7 +279,7 @@ function App() {
 								{t("what.title")}
 							</h2>
 						</div>
-						<div className="flex gap-6">
+						<div className="flex flex-col lg:flex-row gap-6">
 							<CardAgent
 								subtitle={t("what.maria")}
 								name={t("what.maria.name")}
@@ -319,7 +320,7 @@ function App() {
 						</div>
 					</div>
 					<div className="section-max-width">
-						<div className="flex gap-6 pb-14">
+						<div className="flex flex-col lg:flex-row gap-6 pb-14">
 							<div className="flex flex-col justify-end">
 								<h4 className="subtitle-light subtitle-uppercase pb-6">
 									{t("section.3")}
@@ -334,19 +335,17 @@ function App() {
 
 							{/* Buttons */}
 							<div className="w-full flex flex-col justify-end">
-								<div>
-									<div className="w-full flex flex-col sm:flex-row gap-4">
-										<ButtonLink
-											href="#form"
-											copy={t("hero.cta.primary")}
-											variant="brand"
-										/>
-										<ButtonLink
-											href="#how-it-works"
-											copy={t("hero.cta.secondary")}
-											variant="ghostLight"
-										/>
-									</div>
+								<div className="flex w-full flex-col md:flex-row  gap-4">
+									<ButtonLink
+										href="#form"
+										copy={t("hero.cta.primary")}
+										variant="brand"
+									/>
+									<ButtonLink
+										href="#how-it-works"
+										copy={t("hero.cta.secondary")}
+										variant="ghostLight"
+									/>
 								</div>
 							</div>
 						</div>
@@ -409,9 +408,9 @@ function App() {
 				</section>
 
 				<section
-					id="about"
+					id="value"
 					ref={aboutRef}
-					className="w-full bg-gradient-dark-section py-36"
+					className="w-full bg-neutral-800 py-36"
 				>
 					<div className="section-max-width">
 						<div
@@ -427,7 +426,7 @@ function App() {
 						</div>
 
 						{/* Fila 1 */}
-						<div className="flex flex-col md:flex-row gap-6 pb-6">
+						<div className="flex flex-col lg:flex-row gap-6 pb-6">
 							<BenefitCard
 								description={t("value.sales.bold")}
 								title={t("value.sales.bold2")}
@@ -445,7 +444,7 @@ function App() {
 						</div>
 
 						{/* Fila 2 */}
-						<div className="flex flex-col md:flex-row gap-6 pb-6">
+						<div className="flex flex-col lg:flex-row gap-6 pb-6">
 							<BenefitCard
 								description={t("value.services.bold")}
 								title={t("value.services.bold2")}
@@ -465,11 +464,11 @@ function App() {
 				</section>
 
 				<section
-					id="problem"
+					id="call"
 					ref={aboutRef}
 					className="relative w-full bg-white py-36"
 				>
-					<div className="section-max-width flex flex-row items-start gap-16">
+					<div className="section-max-width flex flex-col lg:flex-row items-start gap-16">
 						<div className="flex gap-6 pb-14 w-full	">
 							<div className="flex flex-col justify-end">
 								<h4 className="subtitle-light subtitle-uppercase pb-6">
@@ -540,7 +539,7 @@ function App() {
 				</section>
 
 				<section
-					id="about"
+					id="agents"
 					ref={aboutRef}
 					className="relative w-full bg-neutral-800 py-36"
 				>
@@ -556,7 +555,7 @@ function App() {
 								{t("agents.title")}
 							</h2>
 						</div>
-						<div className="flex gap-6">
+						<div className="flex flex-col lg:flex-row gap-6">
 							{/* Mar-IA */}
 							<CardAgents
 								subtitle={t("agents.maria.blockTitle")} // "El Vendedor Digital"
@@ -591,28 +590,28 @@ function App() {
 				</section>
 
 				<section
-					id="problem"
+					id="how"
 					ref={aboutRef}
 					className="relative w-full bg-white py-36"
 				>
 					<div className="section-max-width flex flex-col gap-16 items-center">
-						<div className="flex gap-6 pb-14 max-w-3xl">
+						<div className="flex gap-6 max-w-3xl">
 							<div className="flex flex-col  text-center">
 								<h4 className="subtitle-light subtitle-uppercase pb-6">
-									{t("section.5")}
+									{t("section.7")}
 								</h4>
 								<h1 className="title-big title-light pb-6">
-									{t("diff.title")}
+									{t("how.title")}
 								</h1>
-								<p className="description-light descriptions-base mb-6">
-									{t("diff.desc")}
+								<p className="description-light descriptions-base">
+									{t("how.subtitle")}
 								</p>
 							</div>
 						</div>
 						<div className="flex flex-col md:flex-row gap-16 w-full max-w-5xl items-center">
 							<div className="relative">
 								<VoicePill
-									className="mx-auto absolute bottom-5 -left-16"
+									className="absolute bottom-4 md:bottom-6 left-4 right-4 md:-left-16 w-[90%] mx-auto"
 									audioSrc="/audio/demo.mp3"
 									title="Conversa con Mar-IA"
 									avatarSrc="/assets/ias/mar-ia-head.webp"
@@ -659,7 +658,7 @@ function App() {
 				</section>
 
 				<section
-					id="problem"
+					id="demo-video"
 					ref={aboutRef}
 					className="relative w-full bg-gray-50 py-36"
 				>
@@ -703,15 +702,15 @@ function App() {
 				</section>
 
 				<section
-					id="problem"
+					id="integrated"
 					ref={aboutRef}
-					className="relative w-full bg-neutral-800 py-36 overflow-hidden"
+					className="relative w-full bg-gradient-dark-back py-36 overflow-hidden"
 				>
-					<div className="section-max-width flex flex-row items-start gap-16">
+					<div className="section-max-width flex flex-col lg:flex-row items-start gap-16">
 						<div className="w-full relative h-full">
 							<div className="relative w-full h-full">
 								<OrbitAnimation
-									className="absolute inset-0 w-full -translate-y-[75%] scale-[0.35] lg:scale-50 -z-10"
+									className="absolute inset-0 w-full -translate-y-[75%] scale-[0.35] lg:scale-50"
 									enableScrollSpeed={true}
 									speed={1.2}
 									baseSpeed={1.2}
@@ -721,12 +720,17 @@ function App() {
 									decayDelay={0}
 									decayDuration={1}
 									variant="dark"
+									orbitsVariant="no-ias"
 								/>
-								<img src="/assets/ias/ias.webp" alt="" className="absolute bottom-0 w-full"/>
+								<img
+									src="/assets/ias/ias.webp"
+									alt=""
+									className="absolute bottom-0 w-full"
+								/>
 							</div>
 						</div>
 
-						<div className="flex flex-col w-full">
+						<div className="flex flex-col w-full z-10">
 							<div className="flex flex-col justify-end pb-10">
 								<h4 className="subtitle-dark subtitle-uppercase pb-6">
 									{t("section.9")}
@@ -771,7 +775,164 @@ function App() {
 					</div>
 				</section>
 
-				<Footer />
+				<section
+					id="global"
+					ref={aboutRef}
+					className="relative w-full bg-neutral-950 py-36"
+				>
+					<div className="section-max-width">
+						<div
+							ref={aboutLeftRef}
+							className="flex flex-col relative pb-16"
+						>
+							<h4 className="subtitle-dark subtitle-uppercase pb-6">
+								{t("section.10")}
+							</h4>
+							<h2 className="title-big title-dark">
+								{t("benefits.title")}
+							</h2>
+						</div>
+						<div className="flex flex-col md:flex-row gap-2 p-2 bg-neutral-800 rounded-[32px]">
+							<div className="flex flex-row md:flex-col justify-between p-6 bg-neutral-700 rounded-3xl">
+								<div className="flex flex-row-reverse md:flex-col  gap-6">
+									<Home size={24} className="text-white" />
+
+									<BarChart2
+										size={24}
+										className="text-white"
+									/>
+
+									<Layers size={24} className="text-white" />
+									<CalendarDays
+										size={24}
+										className="text-white"
+									/>
+								</div>
+
+								<User size={24} className="text-white" />
+							</div>
+							<div className="flex flex-col w-full gap-2">
+								<div className="flex flex-col md:flex-row gap-2 w-full">
+									<KpiStatCard
+										mainImage="dashboard/recuperacion.svg"
+										icon3D="icons3D/bank.webp"
+										title="+45%"
+										description="satisfacción NPS."
+										className="w-full"
+									/>
+									<KpiStatCard
+										mainImage="dashboard/ciclos.svg"
+										icon3D="icons3D/target.webp"
+										title={t("benefits.metric2.bold")}
+										description={t("benefits.metric2.desc")}
+										className="w-full"
+									/>
+								</div>
+
+								<div className="flex flex-col md:flex-row gap-2 w-full">
+									<KpiStatCard
+										mainImage="dashboard/llamadas.svg"
+										icon3D="icons3D/globe.webp"
+										title={t("benefits.metric3.bold")}
+										description={t("benefits.metric3.desc")}
+										className="w-full"
+									/>
+
+									<KpiStatCard
+										mainImage="dashboard/roi.svg"
+										icon3D="icons3D/calendar.webp"
+										title={t("benefits.metric4.bold")}
+										description={t("benefits.metric4.desc")}
+										className="w-full"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="testimonials"
+					ref={aboutRef}
+					className="relative w-full bg-gray-50 py-36"
+				>
+					<div className="section-max-width">
+						<div className="flex gap-6 pb-14">
+							<div className="flex flex-col justify-end">
+								<h4 className="subtitle-light subtitle-uppercase pb-6">
+									{t("section.11")}
+								</h4>
+								<h1 className="title-big title-light pb-6">
+									{t("testimonials.title")}
+								</h1>
+							</div>
+						</div>
+
+						<div className="flex flex-col md:flex-row gap-4">
+							<CardTestimonial
+								client={t("testimonials.cmf.client")}
+								author={t("testimonials.cmf.author")}
+								quote={t("testimonials.cmf.quote")}
+								imageSrc="/empresas/cmf.webp"
+								className="w-full"
+							/>
+
+							{/* Antares */}
+							<CardTestimonial
+								client={t("testimonials.antares.client")}
+								author={t("testimonials.antares.author")}
+								quote={t("testimonials.antares.quote")}
+								imageSrc="/empresas/antares.webp"
+								className="w-full"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="footer"
+					ref={aboutRef}
+					className="relative w-full bg-gradient-dark-back py-36 hero-height-mini overflow-hidden"
+				>
+					<div className="section-max-width flex flex-col gap-16 items-center ">
+						<div className="flex gap-6 max-w-3xl">
+							<div className="flex flex-col  text-center">
+								<h4 className="subtitle-dark subtitle-uppercase pb-6">
+									{t("section.12")}
+								</h4>
+								<h1 className="title-big title-dark pb-6">
+									{t("closing.title")}
+								</h1>
+								<p className="description-dark descriptions-base pb-4">
+									{t("closing.desc")}
+								</p>
+								<ButtonLink
+									href="#form"
+									copy={t("hero.cta.primary")}
+									variant="brand"
+									className=""
+								/>
+							</div>
+						</div>
+						<div className="relative w-full -z-10">
+							<div className="relative section-max-width h-80">
+								<OrbitAnimation
+									className="absolute inset-x-0 bottom-0 -translate-y-1/2 w-full origin-bottom scale-[0.35] lg:scale-50"
+									enableScrollSpeed={true}
+									speed={1.2}
+									baseSpeed={1.2}
+									maxBoostDown={0.8}
+									maxBoostUp={0.6}
+									responsiveness={8000}
+									decayDelay={0}
+									decayDuration={1}
+									variant="dark"
+									orbitsVariant="no-ias"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</>
 	);

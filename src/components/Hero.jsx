@@ -66,7 +66,7 @@ export default function Hero() {
 	}, []);
 
 	return (
-		<main className="w-full bg-gradient-dark hero-height flex flex-col justify-end">
+		<main id="hero" className="w-full bg-gradient-dark hero-height flex flex-col justify-end">
 			<div className="absolute top-0 w-full h-full overflow-hidden">
 				<div className="section-max-width">
 					<OrbitAnimation
@@ -83,7 +83,7 @@ export default function Hero() {
 					/>
 				</div>
 			</div>
-			<div className="relative section-max-width flex gap-6 pb-16 ">
+			<div className="relative section-max-width flex flex-col lg:flex-row gap-6 pb-16 ">
 				<div ref={heroRef} className="flex flex-col justify-end">
 					<h4 className="subtitle-dark subtitle-uppercase pb-6">
 						{t("section.1")}
@@ -104,7 +104,7 @@ export default function Hero() {
 							{t("hero.desc")}
 						</p>
 
-						<div className="w-full flex flex-col sm:flex-row gap-4">
+						<div className="w-full flex flex-col lg:flex-row gap-4">
 							<ButtonLink
 								href="#form"
 								copy={t("hero.cta.primary")}

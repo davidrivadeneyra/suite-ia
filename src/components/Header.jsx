@@ -4,6 +4,19 @@ import TranslateSwitch from "./TranslateSwitch";
 import { useLanguage } from "../i18n/LanguageProvider";
 import { Menu, X } from "lucide-react";
 
+// ids:
+// what
+// problem
+// value
+// call
+// agents
+// how
+// demo video
+// integrated
+// global
+// testimonials
+// footer
+
 export default function Header() {
 	const { t } = useLanguage();
 	return (
@@ -26,23 +39,23 @@ export default function Header() {
 					<nav>
 						<ul className="flex flex-row items-end gap-6 ">
 							<li>
-								<a href="#about" className="nav-link">
-									{t("nav.about")}
+								<a href="#what" className="nav-link">
+									{t("nav.what")}
 								</a>
 							</li>
 							<li>
-								<a href="#how-it-works" className="nav-link">
-									{t("nav.features")}
+								<a href="#how" className="nav-link">
+									{t("nav.agents")}
 								</a>
 							</li>
 							<li>
-								<a href="#benefits" className="nav-link">
-									{t("nav.benefits")}
+								<a href="#global" className="nav-link">
+									{t("nav.how")}
 								</a>
 							</li>
 							<li>
-								<a href="#contact" className="nav-link">
-									{t("nav.contact")}
+								<a href="#testimonials" className="nav-link">
+									{t("nav.testimonials")}
 								</a>
 							</li>
 						</ul>
