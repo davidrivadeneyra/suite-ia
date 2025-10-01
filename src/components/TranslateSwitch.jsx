@@ -19,7 +19,7 @@ export default function LanguageSwitch({ className = '' }) {
 
   return (
     <div className={`flex items-center gap-2 ${className}`}>
-      <Languages className="w-5 h-5 text-neutral-700" />
+      <Languages className="w-5 h-5 text-neutral-200" />
 
       {/* BUTTON: clickeable en toda el área (misma forma/tamaño) */}
       <button
