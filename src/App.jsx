@@ -7,6 +7,10 @@ import ButtonLink from "./components/ButtonLink";
 import LabelStat from "./components/LabelStat";
 import BenefitCard from "./components/BenefitCard";
 import OrbitAnimation from "./components/OrbitAnimation";
+import LabelStatDiff from "./components/LabeStatDiff";
+import CardAgents from "./components/CardAgents";
+import FeatureStep from "./components/FeatureStep";
+import VoicePill from "./components/VoicePill";
 
 import Footer from "./components/Footer";
 import { tr } from "motion/react-client";
@@ -254,14 +258,13 @@ function App() {
 		<>
 			<div className="w-full relative">
 				<Header />
-				
-				
+
 				<Hero />
 				{/* ABOUT */}
 				<section
 					id="about"
 					ref={aboutRef}
-					className="w-full bg-gradient-dark-section py-36"
+					className="relative w-full bg-neutral-800 py-36"
 				>
 					<div className="section-max-width">
 						<div
@@ -297,8 +300,24 @@ function App() {
 				<section
 					id="problem"
 					ref={aboutRef}
-					className="w-full bg-white py-36"
+					className="relative w-full bg-white py-36"
 				>
+					<div className="absolute top-0 w-full h-full overflow-hidden">
+						<div className="section-max-width">
+							<OrbitAnimation
+								className="absolute inset-0 w-full -translate-y-1/2 translate-x-1/2 scale-[0.35] lg:scale-50"
+								enableScrollSpeed={true}
+								speed={1.2}
+								baseSpeed={1.2}
+								maxBoostDown={0.8}
+								maxBoostUp={0.6}
+								responsiveness={8000}
+								decayDelay={0}
+								decayDuration={1}
+								variant="light"
+							/>
+						</div>
+					</div>
 					<div className="section-max-width">
 						<div className="flex gap-6 pb-14">
 							<div className="flex flex-col justify-end">
@@ -445,7 +464,312 @@ function App() {
 					</div>
 				</section>
 
-				
+				<section
+					id="problem"
+					ref={aboutRef}
+					className="relative w-full bg-white py-36"
+				>
+					<div className="section-max-width flex flex-row items-start gap-16">
+						<div className="flex gap-6 pb-14 w-full	">
+							<div className="flex flex-col justify-end">
+								<h4 className="subtitle-light subtitle-uppercase pb-6">
+									{t("section.5")}
+								</h4>
+								<h1 className="title-big title-light pb-6">
+									{t("diff.title")}
+								</h1>
+								<p className="description-light descriptions-base mb-6">
+									{t("diff.desc")}
+								</p>
+							</div>
+						</div>
+
+						<div className="flex flex-col w-full">
+							<p className="description-light descriptions-base mb-6">
+								{t("diff.extra")}
+							</p>
+							{/* VOZ ULTRA REALISTA */}
+							<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-t border-orange-500">
+								<LabelStatDiff
+									label={t("diff.voice.problem")}
+									title={t("diff.voice.bold")}
+									description={t("diff.voice.desc")}
+									variant="cross"
+									className="w-full"
+									imgSrc="/assets/icons3D/microphone.webp"
+								/>
+							</div>
+
+							{/* ACCIÓN PROACTIVA */}
+							<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-t border-orange-500">
+								<LabelStatDiff
+									label={t("diff.action.problem")}
+									title={t("diff.action.bold")}
+									description={t("diff.action.desc")}
+									variant="cross"
+									className="w-full"
+									imgSrc="/assets/icons3D/phone.webp"
+								/>
+							</div>
+
+							{/* ADAPTACIÓN EN TIEMPO REAL */}
+							<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-t border-orange-500">
+								<LabelStatDiff
+									label={t("diff.adapt.problem")}
+									title={t("diff.adapt.bold")}
+									description={t("diff.adapt.desc")}
+									variant="cross"
+									className="w-full"
+									imgSrc="/assets/icons3D/brain.webp"
+								/>
+							</div>
+
+							{/* ESCALA SIN LÍMITES */}
+							<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-y border-orange-500">
+								<LabelStatDiff
+									label={t("diff.scale.problem")}
+									title={t("diff.scale.bold")}
+									description={t("diff.scale.desc")}
+									variant="cross"
+									className="w-full"
+									imgSrc="/assets/icons3D/thunder.webp"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="about"
+					ref={aboutRef}
+					className="relative w-full bg-neutral-800 py-36"
+				>
+					<div className="section-max-width">
+						<div
+							ref={aboutLeftRef}
+							className="flex flex-col relative pb-16"
+						>
+							<h4 className="subtitle-dark subtitle-uppercase pb-6">
+								{t("section.6")}
+							</h4>
+							<h2 className="title-big title-dark">
+								{t("agents.title")}
+							</h2>
+						</div>
+						<div className="flex gap-6">
+							{/* Mar-IA */}
+							<CardAgents
+								subtitle={t("agents.maria.blockTitle")} // "El Vendedor Digital"
+								name={t("agents.maria.name")} // "Mar-IA"
+								description={t("agents.maria.desc")} // "Encuentra prospectos..."
+								cta={t("agents.maria.cta")} // "Descubre MAR-IA"
+								href="/mar-ia"
+								imageSrc="/assets/ias/mar-ia.webp"
+							/>
+
+							{/* Cel-IA */}
+							<CardAgents
+								subtitle={t("agents.celia.blockTitle")} // "El Cobrador Inteligente"
+								name={t("agents.celia.name")} // "Cel-IA"
+								description={t("agents.celia.desc")} // "Recupera deudas..."
+								cta={t("agents.celia.cta")} // "Explora CEL-IA"
+								href="/cel-ia"
+								imageSrc="/assets/ias/cel-ia.webp"
+							/>
+
+							{/* Serv-IA */}
+							<CardAgents
+								subtitle={t("agents.servia.blockTitle")} // "El Asistente de Servicios"
+								name={t("agents.servia.name")} // "Serv-IA"
+								description={t("agents.servia.desc")} // "Gestiona citas..."
+								cta={t("agents.servia.cta")} // "Conoce SERV-IA"
+								href="/serv-ia"
+								imageSrc="/assets/ias/serv-ia.webp"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="problem"
+					ref={aboutRef}
+					className="relative w-full bg-white py-36"
+				>
+					<div className="section-max-width flex flex-col gap-16 items-center">
+						<div className="flex gap-6 pb-14 max-w-3xl">
+							<div className="flex flex-col  text-center">
+								<h4 className="subtitle-light subtitle-uppercase pb-6">
+									{t("section.5")}
+								</h4>
+								<h1 className="title-big title-light pb-6">
+									{t("diff.title")}
+								</h1>
+								<p className="description-light descriptions-base mb-6">
+									{t("diff.desc")}
+								</p>
+							</div>
+						</div>
+						<div className="flex flex-col md:flex-row gap-16 w-full max-w-5xl items-center">
+							<div className="relative">
+								<VoicePill
+									className="mx-auto absolute bottom-5 -left-16"
+									audioSrc="/audio/demo.mp3"
+									title="Conversa con Mar-IA"
+									avatarSrc="/assets/ias/mar-ia-head.webp"
+								/>
+								<img
+									src="images/suite-ia-person.webp"
+									alt="Perona hablanco con Celia"
+									className="rounded-2xl shadow-lg"
+								/>
+							</div>
+							<div className="flex flex-col w-full">
+								{/* ACCIÓN PROACTIVA */}
+								<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-t border-orange-500">
+									<FeatureStep
+										number="1"
+										variant="light"
+										title={t("how.step1.bold")}
+										description={t("how.step1.desc")}
+									/>
+								</div>
+
+								{/* ADAPTACIÓN EN TIEMPO REAL */}
+								<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-t border-orange-500">
+									<FeatureStep
+										number="2"
+										variant="light"
+										title={t("how.step2.bold")}
+										description={t("how.step2.desc")}
+									/>
+								</div>
+
+								{/* ESCALA SIN LÍMITES */}
+								<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-y border-orange-500">
+									<FeatureStep
+										number="3"
+										variant="light"
+										title={t("how.step3.bold")}
+										description={t("how.step3.desc")}
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="problem"
+					ref={aboutRef}
+					className="relative w-full bg-gray-50 py-36"
+				>
+					<div className="absolute top-0 w-full h-full overflow-hidden">
+						<div className="section-max-width">
+							<OrbitAnimation
+								className="absolute inset-0 w-full -translate-y-1/2 translate-x-1/2 scale-[0.35] lg:scale-50"
+								enableScrollSpeed={true}
+								speed={1.2}
+								baseSpeed={1.2}
+								maxBoostDown={0.8}
+								maxBoostUp={0.6}
+								responsiveness={8000}
+								decayDelay={0}
+								decayDuration={1}
+								variant="light"
+							/>
+						</div>
+					</div>
+					<div className="section-max-width">
+						<div className="flex gap-6 pb-14">
+							<div className="flex flex-col justify-end">
+								<h4 className="subtitle-light subtitle-uppercase pb-6">
+									{t("section.8")}
+								</h4>
+								<h1 className="title-big title-light pb-6">
+									{t("interactions.title")}
+								</h1>
+							</div>
+						</div>
+
+						<div className="flex flex-col">
+							<video
+								src="/assets/video/atelopus.mp4"
+								controls
+								preload="metadata"
+								class="w-full rounded-2xl"
+							></video>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="problem"
+					ref={aboutRef}
+					className="relative w-full bg-neutral-800 py-36 overflow-hidden"
+				>
+					<div className="section-max-width flex flex-row items-start gap-16">
+						<div className="w-full relative h-full">
+							<div className="relative w-full h-full">
+								<OrbitAnimation
+									className="absolute inset-0 w-full -translate-y-[75%] scale-[0.35] lg:scale-50 -z-10"
+									enableScrollSpeed={true}
+									speed={1.2}
+									baseSpeed={1.2}
+									maxBoostDown={0.8}
+									maxBoostUp={0.6}
+									responsiveness={8000}
+									decayDelay={0}
+									decayDuration={1}
+									variant="dark"
+								/>
+								<img src="/assets/ias/ias.webp" alt="" className="absolute bottom-0 w-full"/>
+							</div>
+						</div>
+
+						<div className="flex flex-col w-full">
+							<div className="flex flex-col justify-end pb-10">
+								<h4 className="subtitle-dark subtitle-uppercase pb-6">
+									{t("section.9")}
+								</h4>
+								<h1 className="title-big title-dark pb-6">
+									{t("cases.title")}
+								</h1>
+							</div>
+							{/* VOZ ULTRA REALISTA */}
+							<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-t border-orange-500">
+								<LabelStatDiff
+									title={t("cases.bank.bold")}
+									description={t("cases.bank.desc")}
+									variant="dark"
+									className="w-full"
+									imgSrc="/assets/icons3D/bank.webp"
+								/>
+							</div>
+
+							{/* ACCIÓN PROACTIVA */}
+							<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-t border-orange-500">
+								<LabelStatDiff
+									title={t("cases.fintech.bold")}
+									description={t("cases.fintech.desc")}
+									variant="dark"
+									className="w-full"
+									imgSrc="/assets/icons3D/clients.webp"
+								/>
+							</div>
+
+							{/* ESCALA SIN LÍMITES */}
+							<div className="flex w-full flex-col md:flex-row gap-8 py-8 border-y border-orange-500">
+								<LabelStatDiff
+									title={t("cases.retail.bold")}
+									description={t("cases.retail.desc")}
+									variant="dark"
+									className="w-full"
+									imgSrc="/assets/icons3D/retail.webp"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				<Footer />
 			</div>

@@ -79,6 +79,7 @@ export default function Hero() {
 						responsiveness={8000} // se necesitan scrolls largos para llegar al máximo
 						decayDelay={0} // espera un poquito más antes de volver
 						decayDuration={1} // regresa lento y fluido al valor base
+						variant="dark"
 					/>
 				</div>
 			</div>
