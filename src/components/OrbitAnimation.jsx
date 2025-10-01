@@ -108,6 +108,13 @@ export default function OrbitAnimation({
       <div className={`oa-stage ${innerClass}`}>
         {/* Núcleo */}
         <div className="oa-layer oa-core oa-o1 oa-spin oa-ccw">
+            <img
+            src="/animation-dark/core-blur.svg"
+            alt=""
+            decoding="async"
+            fetchpriority="low"
+            loading="eager"
+          />
           <img
             src="/animation-dark/core.svg"
             alt=""
@@ -115,6 +122,7 @@ export default function OrbitAnimation({
             fetchpriority="low"
             loading="eager"
           />
+          
         </div>
 
         {/* Órbitas */}
